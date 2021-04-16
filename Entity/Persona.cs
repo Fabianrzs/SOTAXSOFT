@@ -11,7 +11,7 @@ namespace Entity
         public string Identificacion { get; set; }
         public double NumeroContacto { get; set; }
 
-        hoalnans
+        
 
     }
 }
