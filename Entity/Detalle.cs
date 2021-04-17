@@ -12,6 +12,10 @@ namespace Entity
         public double ValorDetalle { get; set; }
         public Taxi Taxi { get; set; }
 
+        public Detalle(Taxi taxi)
+        {
+            Taxi = taxi;
+        }
 
         public abstract void GenerarCodigoDetalle();
         
