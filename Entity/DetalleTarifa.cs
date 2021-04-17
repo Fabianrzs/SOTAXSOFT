@@ -4,9 +4,11 @@ using System.Text;
 
 namespace Entity
 {
-    class Condutor : Persona
+    class DetalleTarifa:Detalle
     {
-        public string NumeroLicencia { get; set; }
-
+        public DetalleTarifa()
+        {
+                
+        }
     }
 }

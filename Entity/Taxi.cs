@@ -8,5 +8,6 @@ namespace Entity
     {
         public string  Placa{ get; set; }
         public double Modelo { get; set; }
+        public double Kilometraje { get; set; }
     }
 }

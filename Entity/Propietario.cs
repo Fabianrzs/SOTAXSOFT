@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entity
 {
-    class Propietario
+    class Propietario : Persona
     {
         public double CodPropietario { get; set; }
         public int NumeroTaxis { get; set; }
