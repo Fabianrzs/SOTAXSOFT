@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entity
 {
-    class DetalleReparacion : Detalle
+    public class DetalleReparacion : Detalle
     {
         public DetalleReparacion(Taxi taxi)
         {
