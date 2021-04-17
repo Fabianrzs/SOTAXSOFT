@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Presentacion
 {
-    class Validacion
+    class ControllerRegistro
     {
+
+
+
+
     }
 }
