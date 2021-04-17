@@ -10,14 +10,11 @@ namespace Entity
         public string TipoDetalle { get; set; }
         public DateTime FechaDetalle { get; set; }
         public double ValorDetalle { get; set; }
+        public Taxi Taxi { get; set; }
 
 
-        public void GenerarCodigoDetalle()
-        {
-            var seed = Environment.TickCount;
-            var random = new Random(seed);
-            CodigoDetalle = random.Next(1000, 9999);
-        }
+        public abstract void GenerarCodigoDetalle();
+        
 
 
     }
