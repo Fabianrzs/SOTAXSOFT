@@ -172,10 +172,10 @@ namespace PresentacionGUI
             this.BnfMenu.Controls.Add(this.BnfSeparator);
             this.BnfMenu.Controls.Add(this.label2);
             this.BnfMenu.Controls.Add(this.PctLogo);
-            this.BnfMenu.GradientBottomLeft = System.Drawing.Color.DarkSlateGray;
-            this.BnfMenu.GradientBottomRight = System.Drawing.Color.Maroon;
-            this.BnfMenu.GradientTopLeft = System.Drawing.Color.Teal;
-            this.BnfMenu.GradientTopRight = System.Drawing.Color.Maroon;
+            this.BnfMenu.GradientBottomLeft = System.Drawing.Color.Maroon;
+            this.BnfMenu.GradientBottomRight = System.Drawing.Color.Black;
+            this.BnfMenu.GradientTopLeft = System.Drawing.Color.Turquoise;
+            this.BnfMenu.GradientTopRight = System.Drawing.Color.DarkRed;
             this.BnfMenu.Location = new System.Drawing.Point(12, 19);
             this.BnfMenu.Name = "BnfMenu";
             this.BnfMenu.Quality = 10;
