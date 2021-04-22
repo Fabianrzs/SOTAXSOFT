@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Class1
+    public class Propietario : Persona
     {
+        public double CodPropietario { get; set; }
     }
 }
