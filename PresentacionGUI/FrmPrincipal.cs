@@ -15,6 +15,12 @@ namespace PresentacionGUI
         public FrmPrincipal()
         {
             InitializeComponent();
+            BtnTarifa.Location = new Point(10, 117);
+            BtnGastos.Location = new Point(10, 171);
+            BtnReportes.Location = new Point(10, 225);
+            BtnTaxis.Location = new Point(10, 279);
+            BtnConductores.Location = new Point(10, 333);
+            BtnPropietarios.Location = new Point(10, 387);
         }
 
         private void PctMaximizar_Click(object sender, EventArgs e)
@@ -60,5 +66,19 @@ namespace PresentacionGUI
                 TrnRegreso.Show(BnfMenu);
             }
         }
+
+        private void BtnTarifa_Click(object sender, EventArgs e)
+        {
+            BtnGastos.Location = new Point(10, 256);
+            BtnReportes.Location = new Point(10, 310);
+            BtnTaxis.Location = new Point(10, 364);
+            BtnConductores.Location = new Point(10, 418);
+            BtnPropietarios.Location = new Point(10, 472);
+            PnlMenuTarifas.Visible = true;
+
+        }
+
     }
 }
+
+//<div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>

@@ -30,9 +30,9 @@ namespace PresentacionGUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.PnlTitulo = new System.Windows.Forms.Panel();
             this.PctRestaurar = new System.Windows.Forms.PictureBox();
             this.PctMinimizar = new System.Windows.Forms.PictureBox();
@@ -42,6 +42,8 @@ namespace PresentacionGUI
             this.PctMenu = new System.Windows.Forms.PictureBox();
             this.PnlIzquierdo = new System.Windows.Forms.Panel();
             this.BnfMenu = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.PnlMenuTarifas = new System.Windows.Forms.Panel();
+            this.BtnRegistrarTarifa = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BtnPropietarios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BtnConductores = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BtnTaxis = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -50,6 +52,7 @@ namespace PresentacionGUI
             this.BtnTarifa = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BnfSeparator = new Bunifu.Framework.UI.BunifuSeparator();
             this.PnlCentral = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ElpMenu = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.TrnIda = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.TrnRegreso = new BunifuAnimatorNS.BunifuTransition(this.components);
@@ -61,6 +64,9 @@ namespace PresentacionGUI
             ((System.ComponentModel.ISupportInitialize)(this.PctMenu)).BeginInit();
             this.PnlIzquierdo.SuspendLayout();
             this.BnfMenu.SuspendLayout();
+            this.PnlMenuTarifas.SuspendLayout();
+            this.PnlCentral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlTitulo
@@ -177,7 +183,7 @@ namespace PresentacionGUI
             this.PnlIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlIzquierdo.Location = new System.Drawing.Point(0, 40);
             this.PnlIzquierdo.Name = "PnlIzquierdo";
-            this.PnlIzquierdo.Size = new System.Drawing.Size(250, 553);
+            this.PnlIzquierdo.Size = new System.Drawing.Size(250, 611);
             this.PnlIzquierdo.TabIndex = 1;
             // 
             // BnfMenu
@@ -187,6 +193,7 @@ namespace PresentacionGUI
             this.BnfMenu.BackColor = System.Drawing.SystemColors.HotTrack;
             this.BnfMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BnfMenu.BackgroundImage")));
             this.BnfMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BnfMenu.Controls.Add(this.PnlMenuTarifas);
             this.BnfMenu.Controls.Add(this.BtnPropietarios);
             this.BnfMenu.Controls.Add(this.BtnConductores);
             this.BnfMenu.Controls.Add(this.BtnTaxis);
@@ -203,9 +210,56 @@ namespace PresentacionGUI
             this.BnfMenu.Location = new System.Drawing.Point(12, 19);
             this.BnfMenu.Name = "BnfMenu";
             this.BnfMenu.Quality = 10;
-            this.BnfMenu.Size = new System.Drawing.Size(222, 522);
+            this.BnfMenu.Size = new System.Drawing.Size(222, 580);
             this.BnfMenu.TabIndex = 0;
-
+            // 
+            // PnlMenuTarifas
+            // 
+            this.PnlMenuTarifas.BackColor = System.Drawing.Color.Transparent;
+            this.PnlMenuTarifas.Controls.Add(this.BtnRegistrarTarifa);
+            this.TrnRegreso.SetDecoration(this.PnlMenuTarifas, BunifuAnimatorNS.DecorationType.None);
+            this.TrnIda.SetDecoration(this.PnlMenuTarifas, BunifuAnimatorNS.DecorationType.None);
+            this.PnlMenuTarifas.Location = new System.Drawing.Point(52, 161);
+            this.PnlMenuTarifas.Name = "PnlMenuTarifas";
+            this.PnlMenuTarifas.Size = new System.Drawing.Size(167, 93);
+            this.PnlMenuTarifas.TabIndex = 12;
+            this.PnlMenuTarifas.Visible = false;
+            // 
+            // BtnRegistrarTarifa
+            // 
+            this.BtnRegistrarTarifa.Activecolor = System.Drawing.Color.IndianRed;
+            this.BtnRegistrarTarifa.BackColor = System.Drawing.Color.Transparent;
+            this.BtnRegistrarTarifa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnRegistrarTarifa.BorderRadius = 0;
+            this.BtnRegistrarTarifa.ButtonText = "           REGISTRAR";
+            this.BtnRegistrarTarifa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrnIda.SetDecoration(this.BtnRegistrarTarifa, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.BtnRegistrarTarifa, BunifuAnimatorNS.DecorationType.None);
+            this.BtnRegistrarTarifa.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnRegistrarTarifa.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnRegistrarTarifa.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnRegistrarTarifa.Iconimage")));
+            this.BtnRegistrarTarifa.Iconimage_right = null;
+            this.BtnRegistrarTarifa.Iconimage_right_Selected = null;
+            this.BtnRegistrarTarifa.Iconimage_Selected = null;
+            this.BtnRegistrarTarifa.IconMarginLeft = 0;
+            this.BtnRegistrarTarifa.IconMarginRight = 0;
+            this.BtnRegistrarTarifa.IconRightVisible = true;
+            this.BtnRegistrarTarifa.IconRightZoom = 0D;
+            this.BtnRegistrarTarifa.IconVisible = true;
+            this.BtnRegistrarTarifa.IconZoom = 44D;
+            this.BtnRegistrarTarifa.IsTab = true;
+            this.BtnRegistrarTarifa.Location = new System.Drawing.Point(3, 3);
+            this.BtnRegistrarTarifa.Name = "BtnRegistrarTarifa";
+            this.BtnRegistrarTarifa.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnRegistrarTarifa.OnHovercolor = System.Drawing.Color.Transparent;
+            this.BtnRegistrarTarifa.OnHoverTextColor = System.Drawing.Color.White;
+            this.BtnRegistrarTarifa.selected = false;
+            this.BtnRegistrarTarifa.Size = new System.Drawing.Size(164, 33);
+            this.BtnRegistrarTarifa.TabIndex = 1;
+            this.BtnRegistrarTarifa.Text = "           REGISTRAR";
+            this.BtnRegistrarTarifa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRegistrarTarifa.Textcolor = System.Drawing.Color.White;
+            this.BtnRegistrarTarifa.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // BtnPropietarios
             // 
@@ -230,7 +284,7 @@ namespace PresentacionGUI
             this.BtnPropietarios.IconVisible = true;
             this.BtnPropietarios.IconZoom = 50D;
             this.BtnPropietarios.IsTab = false;
-            this.BtnPropietarios.Location = new System.Drawing.Point(10, 417);
+            this.BtnPropietarios.Location = new System.Drawing.Point(10, 472);
             this.BtnPropietarios.Name = "BtnPropietarios";
             this.BtnPropietarios.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnPropietarios.OnHovercolor = System.Drawing.Color.Transparent;
@@ -266,7 +320,7 @@ namespace PresentacionGUI
             this.BtnConductores.IconVisible = true;
             this.BtnConductores.IconZoom = 50D;
             this.BtnConductores.IsTab = false;
-            this.BtnConductores.Location = new System.Drawing.Point(10, 357);
+            this.BtnConductores.Location = new System.Drawing.Point(10, 418);
             this.BtnConductores.Name = "BtnConductores";
             this.BtnConductores.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnConductores.OnHovercolor = System.Drawing.Color.Transparent;
@@ -302,7 +356,7 @@ namespace PresentacionGUI
             this.BtnTaxis.IconVisible = true;
             this.BtnTaxis.IconZoom = 55D;
             this.BtnTaxis.IsTab = false;
-            this.BtnTaxis.Location = new System.Drawing.Point(10, 297);
+            this.BtnTaxis.Location = new System.Drawing.Point(10, 364);
             this.BtnTaxis.Name = "BtnTaxis";
             this.BtnTaxis.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnTaxis.OnHovercolor = System.Drawing.Color.Transparent;
@@ -338,7 +392,7 @@ namespace PresentacionGUI
             this.BtnReportes.IconVisible = true;
             this.BtnReportes.IconZoom = 50D;
             this.BtnReportes.IsTab = false;
-            this.BtnReportes.Location = new System.Drawing.Point(10, 237);
+            this.BtnReportes.Location = new System.Drawing.Point(10, 310);
             this.BtnReportes.Name = "BtnReportes";
             this.BtnReportes.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnReportes.OnHovercolor = System.Drawing.Color.Transparent;
@@ -374,7 +428,7 @@ namespace PresentacionGUI
             this.BtnGastos.IconVisible = true;
             this.BtnGastos.IconZoom = 50D;
             this.BtnGastos.IsTab = false;
-            this.BtnGastos.Location = new System.Drawing.Point(10, 177);
+            this.BtnGastos.Location = new System.Drawing.Point(10, 256);
             this.BtnGastos.Name = "BtnGastos";
             this.BtnGastos.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnGastos.OnHovercolor = System.Drawing.Color.Transparent;
@@ -422,6 +476,7 @@ namespace PresentacionGUI
             this.BtnTarifa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnTarifa.Textcolor = System.Drawing.Color.Ivory;
             this.BtnTarifa.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTarifa.Click += new System.EventHandler(this.BtnTarifa_Click);
             // 
             // BnfSeparator
             // 
@@ -441,13 +496,27 @@ namespace PresentacionGUI
             // PnlCentral
             // 
             this.PnlCentral.BackColor = System.Drawing.Color.OldLace;
+            this.PnlCentral.Controls.Add(this.pictureBox1);
             this.TrnRegreso.SetDecoration(this.PnlCentral, BunifuAnimatorNS.DecorationType.None);
             this.TrnIda.SetDecoration(this.PnlCentral, BunifuAnimatorNS.DecorationType.None);
             this.PnlCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlCentral.Location = new System.Drawing.Point(250, 40);
             this.PnlCentral.Name = "PnlCentral";
-            this.PnlCentral.Size = new System.Drawing.Size(925, 553);
+            this.PnlCentral.Size = new System.Drawing.Size(925, 611);
             this.PnlCentral.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.AccessibleName = "PctLogo";
+            this.TrnIda.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(343, 170);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 230);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // ElpMenu
             // 
@@ -458,49 +527,49 @@ namespace PresentacionGUI
             // 
             this.TrnIda.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.TrnIda.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.TrnIda.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.TrnIda.DefaultAnimation = animation1;
             // 
             // TrnRegreso
             // 
             this.TrnRegreso.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.TrnRegreso.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 1F;
-            this.TrnRegreso.DefaultAnimation = animation4;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.TrnRegreso.DefaultAnimation = animation2;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1175, 593);
+            this.ClientSize = new System.Drawing.Size(1175, 651);
             this.Controls.Add(this.PnlCentral);
             this.Controls.Add(this.PnlIzquierdo);
             this.Controls.Add(this.PnlTitulo);
@@ -519,6 +588,9 @@ namespace PresentacionGUI
             ((System.ComponentModel.ISupportInitialize)(this.PctMenu)).EndInit();
             this.PnlIzquierdo.ResumeLayout(false);
             this.BnfMenu.ResumeLayout(false);
+            this.PnlMenuTarifas.ResumeLayout(false);
+            this.PnlCentral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -541,10 +613,13 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuFlatButton BtnConductores;
         private Bunifu.Framework.UI.BunifuFlatButton BtnTaxis;
         private Bunifu.Framework.UI.BunifuFlatButton BtnReportes;
-        private Bunifu.Framework.UI.BunifuFlatButton BtnGastos;
         private Bunifu.Framework.UI.BunifuElipse ElpMenu;
         private BunifuAnimatorNS.BunifuTransition TrnIda;
         private BunifuAnimatorNS.BunifuTransition TrnRegreso;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel PnlMenuTarifas;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnGastos;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnRegistrarTarifa;
     }
 }
 
