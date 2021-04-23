@@ -40,5 +40,19 @@ namespace PresentacionGUI
         {
             Application.Exit();
         }
+
+        private void PctMenu_Click(object sender, EventArgs e)
+        {
+            if (BnfMenu.Width == 220)
+            {
+                BnfMenu.Width = 78;
+                PnlIzquierdo.Width = 103;
+            }
+            else
+            {
+                BnfMenu.Width = 220;
+                PnlIzquierdo.Width = 250;
+            }
+        }
     }
 }
