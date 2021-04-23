@@ -16,10 +16,5 @@ namespace PresentacionGUI
         {
             InitializeComponent();
         }
-
-        private void doubleBitmapControl1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
