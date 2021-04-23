@@ -78,6 +78,15 @@ namespace PresentacionGUI
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRegistrarTarifa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
