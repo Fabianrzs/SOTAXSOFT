@@ -29,7 +29,10 @@ namespace PresentacionGUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.PnlTitulo = new System.Windows.Forms.Panel();
             this.PctRestaurar = new System.Windows.Forms.PictureBox();
             this.PctMinimizar = new System.Windows.Forms.PictureBox();
@@ -47,6 +50,9 @@ namespace PresentacionGUI
             this.BtnTarifa = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BnfSeparator = new Bunifu.Framework.UI.BunifuSeparator();
             this.PnlCentral = new System.Windows.Forms.Panel();
+            this.ElpMenu = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.TrnIda = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.TrnRegreso = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.PnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).BeginInit();
@@ -66,6 +72,8 @@ namespace PresentacionGUI
             this.PnlTitulo.Controls.Add(this.PctSalir);
             this.PnlTitulo.Controls.Add(this.label1);
             this.PnlTitulo.Controls.Add(this.PctMenu);
+            this.TrnRegreso.SetDecoration(this.PnlTitulo, BunifuAnimatorNS.DecorationType.None);
+            this.TrnIda.SetDecoration(this.PnlTitulo, BunifuAnimatorNS.DecorationType.None);
             this.PnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlTitulo.Location = new System.Drawing.Point(0, 0);
             this.PnlTitulo.Name = "PnlTitulo";
@@ -76,6 +84,8 @@ namespace PresentacionGUI
             // 
             this.PctRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PctRestaurar.Cursor = System.Windows.Forms.Cursors.SizeNESW;
+            this.TrnIda.SetDecoration(this.PctRestaurar, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.PctRestaurar, BunifuAnimatorNS.DecorationType.None);
             this.PctRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("PctRestaurar.Image")));
             this.PctRestaurar.Location = new System.Drawing.Point(1113, 9);
             this.PctRestaurar.Name = "PctRestaurar";
@@ -90,6 +100,8 @@ namespace PresentacionGUI
             // 
             this.PctMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PctMinimizar.Cursor = System.Windows.Forms.Cursors.SizeNESW;
+            this.TrnIda.SetDecoration(this.PctMinimizar, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.PctMinimizar, BunifuAnimatorNS.DecorationType.None);
             this.PctMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("PctMinimizar.Image")));
             this.PctMinimizar.Location = new System.Drawing.Point(1085, 9);
             this.PctMinimizar.Name = "PctMinimizar";
@@ -103,6 +115,8 @@ namespace PresentacionGUI
             // 
             this.PctMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PctMaximizar.Cursor = System.Windows.Forms.Cursors.SizeNESW;
+            this.TrnIda.SetDecoration(this.PctMaximizar, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.PctMaximizar, BunifuAnimatorNS.DecorationType.None);
             this.PctMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("PctMaximizar.Image")));
             this.PctMaximizar.Location = new System.Drawing.Point(1113, 9);
             this.PctMaximizar.Name = "PctMaximizar";
@@ -116,6 +130,8 @@ namespace PresentacionGUI
             // 
             this.PctSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PctSalir.Cursor = System.Windows.Forms.Cursors.SizeNESW;
+            this.TrnIda.SetDecoration(this.PctSalir, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.PctSalir, BunifuAnimatorNS.DecorationType.None);
             this.PctSalir.Image = ((System.Drawing.Image)(resources.GetObject("PctSalir.Image")));
             this.PctSalir.Location = new System.Drawing.Point(1141, 9);
             this.PctSalir.Name = "PctSalir";
@@ -128,6 +144,8 @@ namespace PresentacionGUI
             // label1
             // 
             this.label1.AutoSize = true;
+            this.TrnIda.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(51, 14);
@@ -139,6 +157,8 @@ namespace PresentacionGUI
             // PctMenu
             // 
             this.PctMenu.Cursor = System.Windows.Forms.Cursors.SizeNESW;
+            this.TrnIda.SetDecoration(this.PctMenu, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.PctMenu, BunifuAnimatorNS.DecorationType.None);
             this.PctMenu.Image = ((System.Drawing.Image)(resources.GetObject("PctMenu.Image")));
             this.PctMenu.Location = new System.Drawing.Point(12, 9);
             this.PctMenu.Name = "PctMenu";
@@ -152,6 +172,8 @@ namespace PresentacionGUI
             // 
             this.PnlIzquierdo.BackColor = System.Drawing.Color.IndianRed;
             this.PnlIzquierdo.Controls.Add(this.BnfMenu);
+            this.TrnRegreso.SetDecoration(this.PnlIzquierdo, BunifuAnimatorNS.DecorationType.None);
+            this.TrnIda.SetDecoration(this.PnlIzquierdo, BunifuAnimatorNS.DecorationType.None);
             this.PnlIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlIzquierdo.Location = new System.Drawing.Point(0, 40);
             this.PnlIzquierdo.Name = "PnlIzquierdo";
@@ -172,6 +194,8 @@ namespace PresentacionGUI
             this.BnfMenu.Controls.Add(this.BtnGastos);
             this.BnfMenu.Controls.Add(this.BtnTarifa);
             this.BnfMenu.Controls.Add(this.BnfSeparator);
+            this.TrnRegreso.SetDecoration(this.BnfMenu, BunifuAnimatorNS.DecorationType.None);
+            this.TrnIda.SetDecoration(this.BnfMenu, BunifuAnimatorNS.DecorationType.None);
             this.BnfMenu.GradientBottomLeft = System.Drawing.Color.DarkCyan;
             this.BnfMenu.GradientBottomRight = System.Drawing.Color.Bisque;
             this.BnfMenu.GradientTopLeft = System.Drawing.Color.SlateGray;
@@ -179,8 +203,9 @@ namespace PresentacionGUI
             this.BnfMenu.Location = new System.Drawing.Point(12, 19);
             this.BnfMenu.Name = "BnfMenu";
             this.BnfMenu.Quality = 10;
-            this.BnfMenu.Size = new System.Drawing.Size(220, 522);
+            this.BnfMenu.Size = new System.Drawing.Size(222, 522);
             this.BnfMenu.TabIndex = 0;
+
             // 
             // BtnPropietarios
             // 
@@ -188,8 +213,10 @@ namespace PresentacionGUI
             this.BtnPropietarios.BackColor = System.Drawing.Color.Transparent;
             this.BtnPropietarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPropietarios.BorderRadius = 0;
-            this.BtnPropietarios.ButtonText = "        PROPIETARIOS";
+            this.BtnPropietarios.ButtonText = "      PROPIETARIOS";
             this.BtnPropietarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrnIda.SetDecoration(this.BtnPropietarios, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.BtnPropietarios, BunifuAnimatorNS.DecorationType.None);
             this.BtnPropietarios.DisabledColor = System.Drawing.Color.Gray;
             this.BtnPropietarios.Iconcolor = System.Drawing.Color.Transparent;
             this.BtnPropietarios.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnPropietarios.Iconimage")));
@@ -203,7 +230,7 @@ namespace PresentacionGUI
             this.BtnPropietarios.IconVisible = true;
             this.BtnPropietarios.IconZoom = 50D;
             this.BtnPropietarios.IsTab = false;
-            this.BtnPropietarios.Location = new System.Drawing.Point(14, 417);
+            this.BtnPropietarios.Location = new System.Drawing.Point(10, 417);
             this.BtnPropietarios.Name = "BtnPropietarios";
             this.BtnPropietarios.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnPropietarios.OnHovercolor = System.Drawing.Color.Transparent;
@@ -211,9 +238,9 @@ namespace PresentacionGUI
             this.BtnPropietarios.selected = false;
             this.BtnPropietarios.Size = new System.Drawing.Size(181, 54);
             this.BtnPropietarios.TabIndex = 11;
-            this.BtnPropietarios.Text = "        PROPIETARIOS";
+            this.BtnPropietarios.Text = "      PROPIETARIOS";
             this.BtnPropietarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPropietarios.Textcolor = System.Drawing.Color.White;
+            this.BtnPropietarios.Textcolor = System.Drawing.Color.Ivory;
             this.BtnPropietarios.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // BtnConductores
@@ -222,8 +249,10 @@ namespace PresentacionGUI
             this.BtnConductores.BackColor = System.Drawing.Color.Transparent;
             this.BtnConductores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnConductores.BorderRadius = 0;
-            this.BtnConductores.ButtonText = "        CONDUCTORES";
+            this.BtnConductores.ButtonText = "      CONDUCTORES";
             this.BtnConductores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrnIda.SetDecoration(this.BtnConductores, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.BtnConductores, BunifuAnimatorNS.DecorationType.None);
             this.BtnConductores.DisabledColor = System.Drawing.Color.Gray;
             this.BtnConductores.Iconcolor = System.Drawing.Color.Transparent;
             this.BtnConductores.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnConductores.Iconimage")));
@@ -237,7 +266,7 @@ namespace PresentacionGUI
             this.BtnConductores.IconVisible = true;
             this.BtnConductores.IconZoom = 50D;
             this.BtnConductores.IsTab = false;
-            this.BtnConductores.Location = new System.Drawing.Point(14, 357);
+            this.BtnConductores.Location = new System.Drawing.Point(10, 357);
             this.BtnConductores.Name = "BtnConductores";
             this.BtnConductores.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnConductores.OnHovercolor = System.Drawing.Color.Transparent;
@@ -245,9 +274,9 @@ namespace PresentacionGUI
             this.BtnConductores.selected = false;
             this.BtnConductores.Size = new System.Drawing.Size(181, 54);
             this.BtnConductores.TabIndex = 10;
-            this.BtnConductores.Text = "        CONDUCTORES";
+            this.BtnConductores.Text = "      CONDUCTORES";
             this.BtnConductores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnConductores.Textcolor = System.Drawing.Color.White;
+            this.BtnConductores.Textcolor = System.Drawing.Color.Ivory;
             this.BtnConductores.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // BtnTaxis
@@ -256,8 +285,10 @@ namespace PresentacionGUI
             this.BtnTaxis.BackColor = System.Drawing.Color.Transparent;
             this.BtnTaxis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnTaxis.BorderRadius = 0;
-            this.BtnTaxis.ButtonText = "        TAXIS";
+            this.BtnTaxis.ButtonText = "      TAXIS";
             this.BtnTaxis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrnIda.SetDecoration(this.BtnTaxis, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.BtnTaxis, BunifuAnimatorNS.DecorationType.None);
             this.BtnTaxis.DisabledColor = System.Drawing.Color.Gray;
             this.BtnTaxis.Iconcolor = System.Drawing.Color.Transparent;
             this.BtnTaxis.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnTaxis.Iconimage")));
@@ -271,7 +302,7 @@ namespace PresentacionGUI
             this.BtnTaxis.IconVisible = true;
             this.BtnTaxis.IconZoom = 55D;
             this.BtnTaxis.IsTab = false;
-            this.BtnTaxis.Location = new System.Drawing.Point(14, 297);
+            this.BtnTaxis.Location = new System.Drawing.Point(10, 297);
             this.BtnTaxis.Name = "BtnTaxis";
             this.BtnTaxis.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnTaxis.OnHovercolor = System.Drawing.Color.Transparent;
@@ -279,9 +310,9 @@ namespace PresentacionGUI
             this.BtnTaxis.selected = false;
             this.BtnTaxis.Size = new System.Drawing.Size(181, 54);
             this.BtnTaxis.TabIndex = 9;
-            this.BtnTaxis.Text = "        TAXIS";
+            this.BtnTaxis.Text = "      TAXIS";
             this.BtnTaxis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnTaxis.Textcolor = System.Drawing.Color.White;
+            this.BtnTaxis.Textcolor = System.Drawing.Color.Ivory;
             this.BtnTaxis.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // BtnReportes
@@ -290,8 +321,10 @@ namespace PresentacionGUI
             this.BtnReportes.BackColor = System.Drawing.Color.Transparent;
             this.BtnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnReportes.BorderRadius = 0;
-            this.BtnReportes.ButtonText = "        REPORTES";
+            this.BtnReportes.ButtonText = "      REPORTES";
             this.BtnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrnIda.SetDecoration(this.BtnReportes, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.BtnReportes, BunifuAnimatorNS.DecorationType.None);
             this.BtnReportes.DisabledColor = System.Drawing.Color.Gray;
             this.BtnReportes.Iconcolor = System.Drawing.Color.Transparent;
             this.BtnReportes.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnReportes.Iconimage")));
@@ -305,7 +338,7 @@ namespace PresentacionGUI
             this.BtnReportes.IconVisible = true;
             this.BtnReportes.IconZoom = 50D;
             this.BtnReportes.IsTab = false;
-            this.BtnReportes.Location = new System.Drawing.Point(14, 237);
+            this.BtnReportes.Location = new System.Drawing.Point(10, 237);
             this.BtnReportes.Name = "BtnReportes";
             this.BtnReportes.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnReportes.OnHovercolor = System.Drawing.Color.Transparent;
@@ -313,9 +346,9 @@ namespace PresentacionGUI
             this.BtnReportes.selected = false;
             this.BtnReportes.Size = new System.Drawing.Size(181, 54);
             this.BtnReportes.TabIndex = 8;
-            this.BtnReportes.Text = "        REPORTES";
+            this.BtnReportes.Text = "      REPORTES";
             this.BtnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnReportes.Textcolor = System.Drawing.Color.White;
+            this.BtnReportes.Textcolor = System.Drawing.Color.Ivory;
             this.BtnReportes.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // BtnGastos
@@ -324,8 +357,10 @@ namespace PresentacionGUI
             this.BtnGastos.BackColor = System.Drawing.Color.Transparent;
             this.BtnGastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnGastos.BorderRadius = 0;
-            this.BtnGastos.ButtonText = "        GASTOS";
+            this.BtnGastos.ButtonText = "      GASTOS";
             this.BtnGastos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrnIda.SetDecoration(this.BtnGastos, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.BtnGastos, BunifuAnimatorNS.DecorationType.None);
             this.BtnGastos.DisabledColor = System.Drawing.Color.Gray;
             this.BtnGastos.Iconcolor = System.Drawing.Color.Transparent;
             this.BtnGastos.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnGastos.Iconimage")));
@@ -339,7 +374,7 @@ namespace PresentacionGUI
             this.BtnGastos.IconVisible = true;
             this.BtnGastos.IconZoom = 50D;
             this.BtnGastos.IsTab = false;
-            this.BtnGastos.Location = new System.Drawing.Point(14, 177);
+            this.BtnGastos.Location = new System.Drawing.Point(10, 177);
             this.BtnGastos.Name = "BtnGastos";
             this.BtnGastos.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnGastos.OnHovercolor = System.Drawing.Color.Transparent;
@@ -347,9 +382,9 @@ namespace PresentacionGUI
             this.BtnGastos.selected = false;
             this.BtnGastos.Size = new System.Drawing.Size(181, 54);
             this.BtnGastos.TabIndex = 7;
-            this.BtnGastos.Text = "        GASTOS";
+            this.BtnGastos.Text = "      GASTOS";
             this.BtnGastos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGastos.Textcolor = System.Drawing.Color.White;
+            this.BtnGastos.Textcolor = System.Drawing.Color.Ivory;
             this.BtnGastos.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // BtnTarifa
@@ -358,8 +393,10 @@ namespace PresentacionGUI
             this.BtnTarifa.BackColor = System.Drawing.Color.Transparent;
             this.BtnTarifa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnTarifa.BorderRadius = 0;
-            this.BtnTarifa.ButtonText = "        TARIFAS";
+            this.BtnTarifa.ButtonText = "      TARIFAS";
             this.BtnTarifa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrnIda.SetDecoration(this.BtnTarifa, BunifuAnimatorNS.DecorationType.None);
+            this.TrnRegreso.SetDecoration(this.BtnTarifa, BunifuAnimatorNS.DecorationType.None);
             this.BtnTarifa.DisabledColor = System.Drawing.Color.Gray;
             this.BtnTarifa.Iconcolor = System.Drawing.Color.Transparent;
             this.BtnTarifa.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnTarifa.Iconimage")));
@@ -373,7 +410,7 @@ namespace PresentacionGUI
             this.BtnTarifa.IconVisible = true;
             this.BtnTarifa.IconZoom = 50D;
             this.BtnTarifa.IsTab = false;
-            this.BtnTarifa.Location = new System.Drawing.Point(14, 117);
+            this.BtnTarifa.Location = new System.Drawing.Point(10, 117);
             this.BtnTarifa.Name = "BtnTarifa";
             this.BtnTarifa.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnTarifa.OnHovercolor = System.Drawing.Color.Transparent;
@@ -381,18 +418,20 @@ namespace PresentacionGUI
             this.BtnTarifa.selected = false;
             this.BtnTarifa.Size = new System.Drawing.Size(181, 54);
             this.BtnTarifa.TabIndex = 6;
-            this.BtnTarifa.Text = "        TARIFAS";
+            this.BtnTarifa.Text = "      TARIFAS";
             this.BtnTarifa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnTarifa.Textcolor = System.Drawing.Color.White;
+            this.BtnTarifa.Textcolor = System.Drawing.Color.Ivory;
             this.BtnTarifa.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // BnfSeparator
             // 
             this.BnfSeparator.BackColor = System.Drawing.Color.Transparent;
+            this.TrnRegreso.SetDecoration(this.BnfSeparator, BunifuAnimatorNS.DecorationType.None);
+            this.TrnIda.SetDecoration(this.BnfSeparator, BunifuAnimatorNS.DecorationType.None);
             this.BnfSeparator.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BnfSeparator.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BnfSeparator.LineThickness = 1;
-            this.BnfSeparator.Location = new System.Drawing.Point(14, 94);
+            this.BnfSeparator.Location = new System.Drawing.Point(19, 94);
             this.BnfSeparator.Name = "BnfSeparator";
             this.BnfSeparator.Size = new System.Drawing.Size(181, 10);
             this.BnfSeparator.TabIndex = 0;
@@ -402,11 +441,60 @@ namespace PresentacionGUI
             // PnlCentral
             // 
             this.PnlCentral.BackColor = System.Drawing.Color.OldLace;
+            this.TrnRegreso.SetDecoration(this.PnlCentral, BunifuAnimatorNS.DecorationType.None);
+            this.TrnIda.SetDecoration(this.PnlCentral, BunifuAnimatorNS.DecorationType.None);
             this.PnlCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlCentral.Location = new System.Drawing.Point(250, 40);
             this.PnlCentral.Name = "PnlCentral";
             this.PnlCentral.Size = new System.Drawing.Size(925, 553);
             this.PnlCentral.TabIndex = 2;
+            // 
+            // ElpMenu
+            // 
+            this.ElpMenu.ElipseRadius = 7;
+            this.ElpMenu.TargetControl = this.BnfMenu;
+            // 
+            // TrnIda
+            // 
+            this.TrnIda.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.TrnIda.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.TrnIda.DefaultAnimation = animation3;
+            // 
+            // TrnRegreso
+            // 
+            this.TrnRegreso.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
+            this.TrnRegreso.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 1F;
+            this.TrnRegreso.DefaultAnimation = animation4;
             // 
             // FrmPrincipal
             // 
@@ -416,6 +504,8 @@ namespace PresentacionGUI
             this.Controls.Add(this.PnlCentral);
             this.Controls.Add(this.PnlIzquierdo);
             this.Controls.Add(this.PnlTitulo);
+            this.TrnRegreso.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.TrnIda.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -452,6 +542,9 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuFlatButton BtnTaxis;
         private Bunifu.Framework.UI.BunifuFlatButton BtnReportes;
         private Bunifu.Framework.UI.BunifuFlatButton BtnGastos;
+        private Bunifu.Framework.UI.BunifuElipse ElpMenu;
+        private BunifuAnimatorNS.BunifuTransition TrnIda;
+        private BunifuAnimatorNS.BunifuTransition TrnRegreso;
     }
 }
 

@@ -43,15 +43,21 @@ namespace PresentacionGUI
 
         private void PctMenu_Click(object sender, EventArgs e)
         {
-            if (BnfMenu.Width == 220)
+            if (BnfMenu.Width == 222)
             {
-                BnfMenu.Width = 78;
-                PnlIzquierdo.Width = 103;
+                BnfMenu.Visible = false;
+                BnfMenu.Width = 66;
+                PnlIzquierdo.Width = 93;
+                BnfSeparator.Width = 30;
+                TrnIda.Show(BnfMenu);
             }
             else
             {
-                BnfMenu.Width = 220;
+                BnfMenu.Visible = false;
+                BnfMenu.Width = 222;
                 PnlIzquierdo.Width = 250;
+                BnfSeparator.Width = 181;
+                TrnRegreso.Show(BnfMenu);
             }
         }
     }
