@@ -38,6 +38,7 @@ namespace PresentacionGUI
             this.ClientSize = new System.Drawing.Size(925, 611);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmTarifaRegistrar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTarifaRegistrar";
             this.ResumeLayout(false);
 
