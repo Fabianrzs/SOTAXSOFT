@@ -57,25 +57,43 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificar.Designer.cs">
+      <DependentUpon>FrmModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmTarifaRegistrar.cs">
+    <Compile Include="FrmConsultar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTarifaRegistrar.Designer.cs">
-      <DependentUpon>FrmTarifaRegistrar.cs</DependentUpon>
+    <Compile Include="FrmConsultar.Designer.cs">
+      <DependentUpon>FrmConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrar.Designer.cs">
+      <DependentUpon>FrmRegistrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmModificar.resx">
+      <DependentUpon>FrmModificar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTarifaRegistrar.resx">
-      <DependentUpon>FrmTarifaRegistrar.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConsultar.resx">
+      <DependentUpon>FrmConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrar.resx">
+      <DependentUpon>FrmRegistrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -108,6 +127,33 @@
       <Project>{48fd6133-71ca-4161-b66c-e20ce6f8a803}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver-flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace PresentacionGUI
+{
+    public partial class FrmModificar : Form
+    {
+        public FrmModificar()
+        {
+            InitializeComponent();
+        }
+<<<<<<< HEAD:PresentacionGUI/FrmModificar.cs
+
+        private void bunifuCustomTextbox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+=======
+>>>>>>> 2915e5824eecc4df8c84b1a470de4ee56b1de6a8:PresentacionGUI/FrmTarifaRegistrar.cs
+    }
+}
