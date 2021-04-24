@@ -57,11 +57,23 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmModificarDetalle.cs">
+    <Compile Include="FrmConsultaPersona.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmModificarDetalle.Designer.cs">
-      <DependentUpon>FrmModificarDetalle.cs</DependentUpon>
+    <Compile Include="FrmConsultaPersona.Designer.cs">
+      <DependentUpon>FrmConsultaPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificaDetalle.Designer.cs">
+      <DependentUpon>FrmModificaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificaPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificaPersona.Designer.cs">
+      <DependentUpon>FrmModificaPersona.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -69,31 +81,46 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultarDetalle.cs">
+    <Compile Include="FrmConsultaDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsultarDetalle.Designer.cs">
-      <DependentUpon>FrmConsultarDetalle.cs</DependentUpon>
+    <Compile Include="FrmConsultaDetalle.Designer.cs">
+      <DependentUpon>FrmConsultaDetalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistrarDetalle.cs">
+    <Compile Include="FrmRegistraDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistrarDetalle.Designer.cs">
-      <DependentUpon>FrmRegistrarDetalle.cs</DependentUpon>
+    <Compile Include="FrmRegistraDetalle.Designer.cs">
+      <DependentUpon>FrmRegistraDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroPersona.Designer.cs">
+      <DependentUpon>FrmRegistroPersona.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmModificarDetalle.resx">
-      <DependentUpon>FrmModificarDetalle.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConsultaPersona.resx">
+      <DependentUpon>FrmConsultaPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificaDetalle.resx">
+      <DependentUpon>FrmModificaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificaPersona.resx">
+      <DependentUpon>FrmModificaPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmConsultarDetalle.resx">
-      <DependentUpon>FrmConsultarDetalle.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConsultaDetalle.resx">
+      <DependentUpon>FrmConsultaDetalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarDetalle.resx">
-      <DependentUpon>FrmRegistrarDetalle.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistraDetalle.resx">
+      <DependentUpon>FrmRegistraDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroPersona.resx">
+      <DependentUpon>FrmRegistroPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

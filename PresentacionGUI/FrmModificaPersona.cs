@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace PresentacionGUI
 {
-    public partial class FrmModificarDetalle : Form
+    public partial class FrmModificaPersona : Form
     {
-        public FrmModificarDetalle()
+        public FrmModificaPersona()
         {
             InitializeComponent();
         }
+
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PresentacionGUI
 {
-    public partial class FrmRegistrarDetalle : Form
+    public partial class FrmRegistraDetalle : Form
     {
-        public FrmRegistrarDetalle()
+        public FrmRegistraDetalle()
         {
             InitializeComponent();
         }

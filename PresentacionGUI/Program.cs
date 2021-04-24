@@ -16,7 +16,7 @@ namespace PresentacionGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmRegistrarDetalle());
+            Application.Run(new FrmPrincipal());
         }
     }
 }

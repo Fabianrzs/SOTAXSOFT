@@ -1,7 +1,7 @@
 ﻿
 namespace PresentacionGUI
 {
-    partial class FrmConsultarDetalle
+    partial class FrmConsultaDetalle
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@ namespace PresentacionGUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarDetalle));
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultaDetalle));
+            this.PnlConsultaDetalle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtIdentificacionConductor = new Bunifu.Framework.UI.BunifuTextbox();
@@ -40,33 +40,32 @@ namespace PresentacionGUI
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuGradientPanel1.SuspendLayout();
+            this.PnlConsultaDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuGradientPanel1
+            // PnlConsultaDetalle
             // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.CalendarFecha);
-            this.bunifuGradientPanel1.Controls.Add(this.label5);
-            this.bunifuGradientPanel1.Controls.Add(this.TxtIdentificacionConductor);
-            this.bunifuGradientPanel1.Controls.Add(this.BtnGuardar);
-            this.bunifuGradientPanel1.Controls.Add(this.label3);
-            this.bunifuGradientPanel1.Controls.Add(this.TxtPlaca);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton1);
-            this.bunifuGradientPanel1.Controls.Add(this.DtgDetallesRegistrados);
-            this.bunifuGradientPanel1.Controls.Add(this.REGISTRO);
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Aqua;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Honeydew;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Maroon;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.MistyRose;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(925, 611);
-            this.bunifuGradientPanel1.TabIndex = 21;
+            this.PnlConsultaDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlConsultaDetalle.BackgroundImage")));
+            this.PnlConsultaDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlConsultaDetalle.Controls.Add(this.CalendarFecha);
+            this.PnlConsultaDetalle.Controls.Add(this.label5);
+            this.PnlConsultaDetalle.Controls.Add(this.TxtIdentificacionConductor);
+            this.PnlConsultaDetalle.Controls.Add(this.BtnGuardar);
+            this.PnlConsultaDetalle.Controls.Add(this.label3);
+            this.PnlConsultaDetalle.Controls.Add(this.TxtPlaca);
+            this.PnlConsultaDetalle.Controls.Add(this.bunifuFlatButton1);
+            this.PnlConsultaDetalle.Controls.Add(this.DtgDetallesRegistrados);
+            this.PnlConsultaDetalle.Controls.Add(this.REGISTRO);
+            this.PnlConsultaDetalle.GradientBottomLeft = System.Drawing.Color.Aqua;
+            this.PnlConsultaDetalle.GradientBottomRight = System.Drawing.Color.Honeydew;
+            this.PnlConsultaDetalle.GradientTopLeft = System.Drawing.Color.Maroon;
+            this.PnlConsultaDetalle.GradientTopRight = System.Drawing.Color.MistyRose;
+            this.PnlConsultaDetalle.Location = new System.Drawing.Point(0, 0);
+            this.PnlConsultaDetalle.Name = "PnlConsultaDetalle";
+            this.PnlConsultaDetalle.Quality = 10;
+            this.PnlConsultaDetalle.Size = new System.Drawing.Size(925, 611);
+            this.PnlConsultaDetalle.TabIndex = 21;
             // 
             // CalendarFecha
             // 
@@ -89,9 +88,9 @@ namespace PresentacionGUI
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(423, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 18);
+            this.label5.Size = new System.Drawing.Size(107, 18);
             this.label5.TabIndex = 26;
-            this.label5.Text = "Id Conductor ";
+            this.label5.Text = "ID Conductor ";
             // 
             // TxtIdentificacionConductor
             // 
@@ -230,13 +229,13 @@ namespace PresentacionGUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 611);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.Controls.Add(this.PnlConsultaDetalle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTarifaRegistrar";
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
+            this.PnlConsultaDetalle.ResumeLayout(false);
+            this.PnlConsultaDetalle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).EndInit();
             this.ResumeLayout(false);
 
@@ -244,7 +243,7 @@ namespace PresentacionGUI
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.Framework.UI.BunifuGradientPanel PnlConsultaDetalle;
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacionConductor;
         private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
