@@ -29,205 +29,230 @@ namespace PresentacionGUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarDetalle));
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnl_registroDetalle = new System.Windows.Forms.Panel();
-            this.btnVolver = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.BtnlimpiarCampos = new Bunifu.Framework.UI.BunifuFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
-            this.pnl_registroDetalle.SuspendLayout();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TxtIdentificacionConductor = new Bunifu.Framework.UI.BunifuTextbox();
+            this.BtnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TxtPlaca = new Bunifu.Framework.UI.BunifuTextbox();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
+            this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuCustomDataGrid1
+            // bunifuGradientPanel1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(230, 215);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(464, 197);
-            this.bunifuCustomDataGrid1.TabIndex = 9;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.CalendarFecha);
+            this.bunifuGradientPanel1.Controls.Add(this.label5);
+            this.bunifuGradientPanel1.Controls.Add(this.TxtIdentificacionConductor);
+            this.bunifuGradientPanel1.Controls.Add(this.BtnGuardar);
+            this.bunifuGradientPanel1.Controls.Add(this.label3);
+            this.bunifuGradientPanel1.Controls.Add(this.TxtPlaca);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuFlatButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.DtgDetallesRegistrados);
+            this.bunifuGradientPanel1.Controls.Add(this.REGISTRO);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Aqua;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Honeydew;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Maroon;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.MistyRose;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(925, 611);
+            this.bunifuGradientPanel1.TabIndex = 21;
             // 
-            // label4
+            // CalendarFecha
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(51, 63);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 23);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Consultar Gastos";
+            this.CalendarFecha.BackColor = System.Drawing.Color.Transparent;
+            this.CalendarFecha.BorderRadius = 0;
+            this.CalendarFecha.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.CalendarFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.CalendarFecha.FormatCustom = null;
+            this.CalendarFecha.Location = new System.Drawing.Point(544, 241);
+            this.CalendarFecha.Name = "CalendarFecha";
+            this.CalendarFecha.Size = new System.Drawing.Size(303, 36);
+            this.CalendarFecha.TabIndex = 28;
+            this.CalendarFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
             // 
-            // label2
+            // label5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(44, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 18);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Placa";
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(423, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 18);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Id Conductor ";
             // 
-            // label1
+            // TxtIdentificacionConductor
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(51, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Consultar  Tarifa";
+            this.TxtIdentificacionConductor.BackColor = System.Drawing.Color.Silver;
+            this.TxtIdentificacionConductor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionConductor.BackgroundImage")));
+            this.TxtIdentificacionConductor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtIdentificacionConductor.ForeColor = System.Drawing.Color.DimGray;
+            this.TxtIdentificacionConductor.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionConductor.Icon")));
+            this.TxtIdentificacionConductor.Location = new System.Drawing.Point(535, 143);
+            this.TxtIdentificacionConductor.Name = "TxtIdentificacionConductor";
+            this.TxtIdentificacionConductor.Size = new System.Drawing.Size(166, 18);
+            this.TxtIdentificacionConductor.TabIndex = 27;
+            this.TxtIdentificacionConductor.text = "";
             // 
-            // pnl_registroDetalle
+            // BtnGuardar
             // 
-            this.pnl_registroDetalle.BackColor = System.Drawing.Color.OldLace;
-            this.pnl_registroDetalle.Controls.Add(this.btnVolver);
-            this.pnl_registroDetalle.Controls.Add(this.label1);
-            this.pnl_registroDetalle.Controls.Add(this.label2);
-            this.pnl_registroDetalle.Controls.Add(this.bunifuTextbox1);
-            this.pnl_registroDetalle.Controls.Add(this.label4);
-            this.pnl_registroDetalle.Controls.Add(this.BtnlimpiarCampos);
-            this.pnl_registroDetalle.Controls.Add(this.bunifuCustomDataGrid1);
-            this.pnl_registroDetalle.Location = new System.Drawing.Point(0, -1);
-            this.pnl_registroDetalle.Name = "pnl_registroDetalle";
-            this.pnl_registroDetalle.Size = new System.Drawing.Size(926, 614);
-            this.pnl_registroDetalle.TabIndex = 11;
+            this.BtnGuardar.Activecolor = System.Drawing.Color.DarkRed;
+            this.BtnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuardar.BorderRadius = 0;
+            this.BtnGuardar.ButtonText = "    CONSULTAR";
+            this.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGuardar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnGuardar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtnGuardar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnGuardar.Iconimage = global::PresentacionGUI.Properties.Resources.consulta;
+            this.BtnGuardar.Iconimage_right = null;
+            this.BtnGuardar.Iconimage_right_Selected = null;
+            this.BtnGuardar.Iconimage_Selected = null;
+            this.BtnGuardar.IconMarginLeft = 0;
+            this.BtnGuardar.IconMarginRight = 0;
+            this.BtnGuardar.IconRightVisible = true;
+            this.BtnGuardar.IconRightZoom = 0D;
+            this.BtnGuardar.IconVisible = true;
+            this.BtnGuardar.IconZoom = 50D;
+            this.BtnGuardar.IsTab = false;
+            this.BtnGuardar.Location = new System.Drawing.Point(727, 531);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnGuardar.OnHovercolor = System.Drawing.Color.Transparent;
+            this.BtnGuardar.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.BtnGuardar.selected = false;
+            this.BtnGuardar.Size = new System.Drawing.Size(120, 26);
+            this.BtnGuardar.TabIndex = 25;
+            this.BtnGuardar.Text = "    CONSULTAR";
+            this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnGuardar.Textcolor = System.Drawing.Color.Black;
+            this.BtnGuardar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // btnVolver
+            // label3
             // 
-            this.btnVolver.Activecolor = System.Drawing.Color.DarkRed;
-            this.btnVolver.BackColor = System.Drawing.Color.Transparent;
-            this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnVolver.BorderRadius = 0;
-            this.btnVolver.ButtonText = "    CERRAR";
-            this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVolver.DisabledColor = System.Drawing.Color.Gray;
-            this.btnVolver.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnVolver.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnVolver.Iconimage = global::PresentacionGUI.Properties.Resources.volver_flecha;
-            this.btnVolver.Iconimage_right = null;
-            this.btnVolver.Iconimage_right_Selected = null;
-            this.btnVolver.Iconimage_Selected = null;
-            this.btnVolver.IconMarginLeft = 0;
-            this.btnVolver.IconMarginRight = 0;
-            this.btnVolver.IconRightVisible = true;
-            this.btnVolver.IconRightZoom = 0D;
-            this.btnVolver.IconVisible = true;
-            this.btnVolver.IconZoom = 50D;
-            this.btnVolver.IsTab = false;
-            this.btnVolver.Location = new System.Drawing.Point(114, 481);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnVolver.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnVolver.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.btnVolver.selected = false;
-            this.btnVolver.Size = new System.Drawing.Size(120, 26);
-            this.btnVolver.TabIndex = 19;
-            this.btnVolver.Text = "    CERRAR";
-            this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVolver.Textcolor = System.Drawing.Color.Black;
-            this.btnVolver.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(177, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 18);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Placa";
             // 
-            // bunifuTextbox1
+            // TxtPlaca
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.Silver;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.DimGray;
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(151, 138);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(98, 18);
-            this.bunifuTextbox1.TabIndex = 8;
-            this.bunifuTextbox1.text = "";
+            this.TxtPlaca.BackColor = System.Drawing.Color.Silver;
+            this.TxtPlaca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtPlaca.BackgroundImage")));
+            this.TxtPlaca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtPlaca.ForeColor = System.Drawing.Color.DimGray;
+            this.TxtPlaca.Icon = ((System.Drawing.Image)(resources.GetObject("TxtPlaca.Icon")));
+            this.TxtPlaca.Location = new System.Drawing.Point(233, 143);
+            this.TxtPlaca.Name = "TxtPlaca";
+            this.TxtPlaca.Size = new System.Drawing.Size(110, 18);
+            this.TxtPlaca.TabIndex = 22;
+            this.TxtPlaca.text = "";
             // 
-            // BtnlimpiarCampos
+            // bunifuFlatButton1
             // 
-            this.BtnlimpiarCampos.Activecolor = System.Drawing.Color.DarkRed;
-            this.BtnlimpiarCampos.BackColor = System.Drawing.Color.Transparent;
-            this.BtnlimpiarCampos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnlimpiarCampos.BorderRadius = 0;
-            this.BtnlimpiarCampos.ButtonText = " LIMPIAR CAMPOS";
-            this.BtnlimpiarCampos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnlimpiarCampos.DisabledColor = System.Drawing.Color.Gray;
-            this.BtnlimpiarCampos.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnlimpiarCampos.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtnlimpiarCampos.Iconimage = global::PresentacionGUI.Properties.Resources.limpiar11;
-            this.BtnlimpiarCampos.Iconimage_right = null;
-            this.BtnlimpiarCampos.Iconimage_right_Selected = null;
-            this.BtnlimpiarCampos.Iconimage_Selected = null;
-            this.BtnlimpiarCampos.IconMarginLeft = 0;
-            this.BtnlimpiarCampos.IconMarginRight = 0;
-            this.BtnlimpiarCampos.IconRightVisible = true;
-            this.BtnlimpiarCampos.IconRightZoom = 0D;
-            this.BtnlimpiarCampos.IconVisible = true;
-            this.BtnlimpiarCampos.IconZoom = 50D;
-            this.BtnlimpiarCampos.IsTab = false;
-            this.BtnlimpiarCampos.Location = new System.Drawing.Point(307, 481);
-            this.BtnlimpiarCampos.Name = "BtnlimpiarCampos";
-            this.BtnlimpiarCampos.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtnlimpiarCampos.OnHovercolor = System.Drawing.Color.Transparent;
-            this.BtnlimpiarCampos.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.BtnlimpiarCampos.selected = false;
-            this.BtnlimpiarCampos.Size = new System.Drawing.Size(181, 54);
-            this.BtnlimpiarCampos.TabIndex = 13;
-            this.BtnlimpiarCampos.Text = " LIMPIAR CAMPOS";
-            this.BtnlimpiarCampos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnlimpiarCampos.Textcolor = System.Drawing.Color.Black;
-            this.BtnlimpiarCampos.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.DarkRed;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "    CERRAR";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = global::PresentacionGUI.Properties.Resources.volver_flecha;
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 50D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(43, 531);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(120, 26);
+            this.bunifuFlatButton1.TabIndex = 20;
+            this.bunifuFlatButton1.Text = "    CERRAR";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Black;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // DtgDetallesRegistrados
+            // 
+            this.DtgDetallesRegistrados.BackgroundColor = System.Drawing.Color.LightGray;
+            this.DtgDetallesRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgDetallesRegistrados.Location = new System.Drawing.Point(106, 241);
+            this.DtgDetallesRegistrados.Name = "DtgDetallesRegistrados";
+            this.DtgDetallesRegistrados.Size = new System.Drawing.Size(300, 120);
+            this.DtgDetallesRegistrados.TabIndex = 1;
+            // 
+            // REGISTRO
+            // 
+            this.REGISTRO.AccessibleName = "";
+            this.REGISTRO.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.REGISTRO.AutoSize = true;
+            this.REGISTRO.BackColor = System.Drawing.Color.Transparent;
+            this.REGISTRO.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.REGISTRO.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.REGISTRO.Location = new System.Drawing.Point(352, 36);
+            this.REGISTRO.Name = "REGISTRO";
+            this.REGISTRO.Size = new System.Drawing.Size(199, 38);
+            this.REGISTRO.TabIndex = 0;
+            this.REGISTRO.Text = "CONSULTA";
+            this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FrmConsultarDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 611);
-            this.Controls.Add(this.pnl_registroDetalle);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTarifaRegistrar";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
-            this.pnl_registroDetalle.ResumeLayout(false);
-            this.pnl_registroDetalle.PerformLayout();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private Bunifu.Framework.UI.BunifuFlatButton BtnlimpiarCampos;
-        private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnVolver;
-        private System.Windows.Forms.Panel pnl_registroDetalle;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacionConductor;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.Framework.UI.BunifuTextbox TxtPlaca;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private System.Windows.Forms.DataGridView DtgDetallesRegistrados;
+        private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
+        private Bunifu.Framework.UI.BunifuDatepicker CalendarFecha;
     }
 }
