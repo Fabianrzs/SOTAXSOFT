@@ -16,6 +16,7 @@ namespace PresentacionGUI
         {
             InitializeComponent();
         }
+<<<<<<< HEAD:PresentacionGUI/FrmModificar.cs~HEAD
 <<<<<<< HEAD:PresentacionGUI/FrmModificar.cs
 
         private void bunifuCustomTextbox2_TextChanged(object sender, EventArgs e)
@@ -24,5 +25,7 @@ namespace PresentacionGUI
         }
 =======
 >>>>>>> 2915e5824eecc4df8c84b1a470de4ee56b1de6a8:PresentacionGUI/FrmTarifaRegistrar.cs
+=======
+>>>>>>> 2915e58 (Confirmo BUtton Tarias Y Gatos):PresentacionGUI/FrmTarifaRegistrar.cs
     }
 }

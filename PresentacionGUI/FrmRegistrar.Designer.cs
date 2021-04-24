@@ -58,7 +58,7 @@ namespace PresentacionGUI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(55, 51);
+            this.label1.Location = new System.Drawing.Point(55, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 23);
             this.label1.TabIndex = 3;
@@ -154,7 +154,7 @@ namespace PresentacionGUI
             this.btnVolver.BackColor = System.Drawing.Color.Transparent;
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnVolver.BorderRadius = 0;
-            this.btnVolver.ButtonText = "        CERRAR";
+            this.btnVolver.ButtonText = "  CERRAR";
             this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVolver.DisabledColor = System.Drawing.Color.Gray;
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -178,7 +178,7 @@ namespace PresentacionGUI
             this.btnVolver.selected = false;
             this.btnVolver.Size = new System.Drawing.Size(181, 54);
             this.btnVolver.TabIndex = 18;
-            this.btnVolver.Text = "        CERRAR";
+            this.btnVolver.Text = "  CERRAR";
             this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVolver.Textcolor = System.Drawing.Color.Black;
             this.btnVolver.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -247,7 +247,7 @@ namespace PresentacionGUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(50, 28);
+            this.label4.Location = new System.Drawing.Point(55, 44);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 23);
             this.label4.TabIndex = 12;

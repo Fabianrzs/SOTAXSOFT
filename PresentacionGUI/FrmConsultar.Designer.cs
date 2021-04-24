@@ -64,7 +64,7 @@ namespace PresentacionGUI
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(215, 191);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(230, 215);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(464, 197);
@@ -75,7 +75,7 @@ namespace PresentacionGUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(25, 80);
+            this.label4.Location = new System.Drawing.Point(51, 63);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 23);
             this.label4.TabIndex = 12;
@@ -100,7 +100,7 @@ namespace PresentacionGUI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(25, 57);
+            this.label1.Location = new System.Drawing.Point(51, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 23);
             this.label1.TabIndex = 3;
@@ -145,7 +145,7 @@ namespace PresentacionGUI
             this.btnVolver.IconVisible = true;
             this.btnVolver.IconZoom = 50D;
             this.btnVolver.IsTab = false;
-            this.btnVolver.Location = new System.Drawing.Point(119, 462);
+            this.btnVolver.Location = new System.Drawing.Point(114, 481);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Normalcolor = System.Drawing.Color.Transparent;
             this.btnVolver.OnHovercolor = System.Drawing.Color.Transparent;
@@ -194,7 +194,7 @@ namespace PresentacionGUI
             this.BtnlimpiarCampos.IconVisible = true;
             this.BtnlimpiarCampos.IconZoom = 50D;
             this.BtnlimpiarCampos.IsTab = false;
-            this.BtnlimpiarCampos.Location = new System.Drawing.Point(732, 334);
+            this.BtnlimpiarCampos.Location = new System.Drawing.Point(742, 358);
             this.BtnlimpiarCampos.Name = "BtnlimpiarCampos";
             this.BtnlimpiarCampos.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnlimpiarCampos.OnHovercolor = System.Drawing.Color.Transparent;
