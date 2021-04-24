@@ -1,7 +1,7 @@
 ﻿
 namespace PresentacionGUI
 {
-    partial class FrmTarifaRegistrar
+    partial class FrmConsultarDetalle
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@ namespace PresentacionGUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTarifaRegistrar));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarDetalle));
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,19 +46,19 @@ namespace PresentacionGUI
             // 
             // bunifuCustomDataGrid1
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.LightGoldenrodYellow;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
@@ -80,19 +80,17 @@ namespace PresentacionGUI
             this.label4.Size = new System.Drawing.Size(154, 23);
             this.label4.TabIndex = 12;
             this.label4.Text = "Consultar Gastos";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(341, 134);
+            this.label2.Location = new System.Drawing.Point(44, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Placa";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -105,7 +103,6 @@ namespace PresentacionGUI
             this.label1.Size = new System.Drawing.Size(154, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Consultar  Tarifa";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pnl_registroDetalle
             // 
@@ -121,7 +118,6 @@ namespace PresentacionGUI
             this.pnl_registroDetalle.Name = "pnl_registroDetalle";
             this.pnl_registroDetalle.Size = new System.Drawing.Size(926, 614);
             this.pnl_registroDetalle.TabIndex = 11;
-            this.pnl_registroDetalle.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_registroDetalle_Paint);
             // 
             // btnVolver
             // 
@@ -165,12 +161,11 @@ namespace PresentacionGUI
             this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox1.ForeColor = System.Drawing.Color.DimGray;
             this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(448, 134);
+            this.bunifuTextbox1.Location = new System.Drawing.Point(151, 138);
             this.bunifuTextbox1.Name = "bunifuTextbox1";
             this.bunifuTextbox1.Size = new System.Drawing.Size(98, 18);
             this.bunifuTextbox1.TabIndex = 8;
             this.bunifuTextbox1.text = "";
-            this.bunifuTextbox1.OnTextChange += new System.EventHandler(this.bunifuTextbox1_OnTextChange);
             // 
             // BtnlimpiarCampos
             // 
@@ -194,7 +189,7 @@ namespace PresentacionGUI
             this.BtnlimpiarCampos.IconVisible = true;
             this.BtnlimpiarCampos.IconZoom = 50D;
             this.BtnlimpiarCampos.IsTab = false;
-            this.BtnlimpiarCampos.Location = new System.Drawing.Point(742, 358);
+            this.BtnlimpiarCampos.Location = new System.Drawing.Point(307, 481);
             this.BtnlimpiarCampos.Name = "BtnlimpiarCampos";
             this.BtnlimpiarCampos.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnlimpiarCampos.OnHovercolor = System.Drawing.Color.Transparent;
@@ -206,19 +201,17 @@ namespace PresentacionGUI
             this.BtnlimpiarCampos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnlimpiarCampos.Textcolor = System.Drawing.Color.Black;
             this.BtnlimpiarCampos.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnlimpiarCampos.Click += new System.EventHandler(this.BtnTarifa_Click);
             // 
-            // FrmTarifaRegistrar
+            // FrmConsultarDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 611);
             this.Controls.Add(this.pnl_registroDetalle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmTarifaRegistrar";
+            this.Name = "FrmConsultarDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTarifaRegistrar";
-            this.Load += new System.EventHandler(this.FrmTarifaRegistrar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.pnl_registroDetalle.ResumeLayout(false);
             this.pnl_registroDetalle.PerformLayout();

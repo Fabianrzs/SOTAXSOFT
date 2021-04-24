@@ -63,28 +63,28 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultar.cs">
+    <Compile Include="FrmConsultarDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsultar.Designer.cs">
-      <DependentUpon>FrmConsultar.cs</DependentUpon>
+    <Compile Include="FrmConsultarDetalle.Designer.cs">
+      <DependentUpon>FrmConsultarDetalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistrar.cs">
+    <Compile Include="FrmRegistrarDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistrar.Designer.cs">
-      <DependentUpon>FrmRegistrar.cs</DependentUpon>
+    <Compile Include="FrmRegistrarDetalle.Designer.cs">
+      <DependentUpon>FrmRegistrarDetalle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmConsultar.resx">
-      <DependentUpon>FrmConsultar.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConsultarDetalle.resx">
+      <DependentUpon>FrmConsultarDetalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrar.resx">
-      <DependentUpon>FrmRegistrar.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistrarDetalle.resx">
+      <DependentUpon>FrmRegistrarDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
