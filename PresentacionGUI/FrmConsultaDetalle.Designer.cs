@@ -31,7 +31,6 @@ namespace PresentacionGUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultaDetalle));
             this.PnlConsultaDetalle = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtIdentificacionConductor = new Bunifu.Framework.UI.BunifuTextbox();
             this.BtnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -40,6 +39,10 @@ namespace PresentacionGUI
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.CheckboxPlaca = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CheckboxID = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.CheckboxCalendar = new Bunifu.Framework.UI.BunifuCheckbox();
             this.PnlConsultaDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +51,10 @@ namespace PresentacionGUI
             // 
             this.PnlConsultaDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlConsultaDetalle.BackgroundImage")));
             this.PnlConsultaDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlConsultaDetalle.Controls.Add(this.CheckboxCalendar);
             this.PnlConsultaDetalle.Controls.Add(this.CalendarFecha);
+            this.PnlConsultaDetalle.Controls.Add(this.CheckboxID);
+            this.PnlConsultaDetalle.Controls.Add(this.CheckboxPlaca);
             this.PnlConsultaDetalle.Controls.Add(this.label5);
             this.PnlConsultaDetalle.Controls.Add(this.TxtIdentificacionConductor);
             this.PnlConsultaDetalle.Controls.Add(this.BtnGuardar);
@@ -66,19 +72,6 @@ namespace PresentacionGUI
             this.PnlConsultaDetalle.Quality = 10;
             this.PnlConsultaDetalle.Size = new System.Drawing.Size(925, 611);
             this.PnlConsultaDetalle.TabIndex = 21;
-            // 
-            // CalendarFecha
-            // 
-            this.CalendarFecha.BackColor = System.Drawing.Color.Transparent;
-            this.CalendarFecha.BorderRadius = 0;
-            this.CalendarFecha.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.CalendarFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.CalendarFecha.FormatCustom = null;
-            this.CalendarFecha.Location = new System.Drawing.Point(544, 241);
-            this.CalendarFecha.Name = "CalendarFecha";
-            this.CalendarFecha.Size = new System.Drawing.Size(303, 36);
-            this.CalendarFecha.TabIndex = 28;
-            this.CalendarFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
             // 
             // label5
             // 
@@ -224,14 +217,63 @@ namespace PresentacionGUI
             this.REGISTRO.Text = "CONSULTA";
             this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // FrmConsultarDetalle
+            // CheckboxPlaca
+            // 
+            this.CheckboxPlaca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.CheckboxPlaca.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxPlaca.Checked = true;
+            this.CheckboxPlaca.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxPlaca.ForeColor = System.Drawing.Color.White;
+            this.CheckboxPlaca.Location = new System.Drawing.Point(151, 143);
+            this.CheckboxPlaca.Name = "CheckboxPlaca";
+            this.CheckboxPlaca.Size = new System.Drawing.Size(20, 20);
+            this.CheckboxPlaca.TabIndex = 28;
+            // 
+            // CheckboxID
+            // 
+            this.CheckboxID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.CheckboxID.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxID.Checked = true;
+            this.CheckboxID.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxID.ForeColor = System.Drawing.Color.White;
+            this.CheckboxID.Location = new System.Drawing.Point(397, 143);
+            this.CheckboxID.Name = "CheckboxID";
+            this.CheckboxID.Size = new System.Drawing.Size(20, 20);
+            this.CheckboxID.TabIndex = 29;
+            // 
+            // CalendarFecha
+            // 
+            this.CalendarFecha.BackColor = System.Drawing.Color.Transparent;
+            this.CalendarFecha.BorderRadius = 0;
+            this.CalendarFecha.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.CalendarFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.CalendarFecha.FormatCustom = null;
+            this.CalendarFecha.Location = new System.Drawing.Point(544, 241);
+            this.CalendarFecha.Name = "CalendarFecha";
+            this.CalendarFecha.Size = new System.Drawing.Size(303, 36);
+            this.CalendarFecha.TabIndex = 30;
+            this.CalendarFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
+            // 
+            // CheckboxCalendar
+            // 
+            this.CheckboxCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.CheckboxCalendar.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxCalendar.Checked = true;
+            this.CheckboxCalendar.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxCalendar.ForeColor = System.Drawing.Color.White;
+            this.CheckboxCalendar.Location = new System.Drawing.Point(510, 241);
+            this.CheckboxCalendar.Name = "CheckboxCalendar";
+            this.CheckboxCalendar.Size = new System.Drawing.Size(20, 20);
+            this.CheckboxCalendar.TabIndex = 31;
+            // 
+            // FrmConsultaDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 611);
             this.Controls.Add(this.PnlConsultaDetalle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmConsultarDetalle";
+            this.Name = "FrmConsultaDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTarifaRegistrar";
             this.PnlConsultaDetalle.ResumeLayout(false);
@@ -252,6 +294,9 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.DataGridView DtgDetallesRegistrados;
         private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
+        private Bunifu.Framework.UI.BunifuCheckbox CheckboxID;
+        private Bunifu.Framework.UI.BunifuCheckbox CheckboxPlaca;
+        private Bunifu.Framework.UI.BunifuCheckbox CheckboxCalendar;
         private Bunifu.Framework.UI.BunifuDatepicker CalendarFecha;
     }
 }
