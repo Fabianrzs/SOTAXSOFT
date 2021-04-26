@@ -97,16 +97,15 @@ namespace PresentacionGUI
             this.PnlReporte.Location = new System.Drawing.Point(0, 0);
             this.PnlReporte.Name = "PnlReporte";
             this.PnlReporte.Quality = 10;
-            this.PnlReporte.Size = new System.Drawing.Size(1190, 701);
+            this.PnlReporte.Size = new System.Drawing.Size(1300, 700);
             this.PnlReporte.TabIndex = 22;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(20, 597);
+            this.label10.Location = new System.Drawing.Point(32, 597);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(185, 22);
             this.label10.TabIndex = 56;
@@ -114,11 +113,10 @@ namespace PresentacionGUI
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(20, 555);
+            this.label9.Location = new System.Drawing.Point(32, 555);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(153, 22);
             this.label9.TabIndex = 55;
@@ -126,11 +124,10 @@ namespace PresentacionGUI
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(20, 513);
+            this.label8.Location = new System.Drawing.Point(32, 513);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(158, 22);
             this.label8.TabIndex = 54;
@@ -143,7 +140,7 @@ namespace PresentacionGUI
             this.TxtGastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtGastos.ForeColor = System.Drawing.Color.Wheat;
             this.TxtGastos.Icon = ((System.Drawing.Image)(resources.GetObject("TxtGastos.Icon")));
-            this.TxtGastos.Location = new System.Drawing.Point(217, 553);
+            this.TxtGastos.Location = new System.Drawing.Point(229, 553);
             this.TxtGastos.Name = "TxtGastos";
             this.TxtGastos.Size = new System.Drawing.Size(200, 26);
             this.TxtGastos.TabIndex = 53;
@@ -156,7 +153,7 @@ namespace PresentacionGUI
             this.TxtGanancia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtGanancia.ForeColor = System.Drawing.Color.Wheat;
             this.TxtGanancia.Icon = ((System.Drawing.Image)(resources.GetObject("TxtGanancia.Icon")));
-            this.TxtGanancia.Location = new System.Drawing.Point(217, 593);
+            this.TxtGanancia.Location = new System.Drawing.Point(229, 593);
             this.TxtGanancia.Name = "TxtGanancia";
             this.TxtGanancia.Size = new System.Drawing.Size(200, 26);
             this.TxtGanancia.TabIndex = 52;
@@ -169,7 +166,7 @@ namespace PresentacionGUI
             this.TxtIngresos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtIngresos.ForeColor = System.Drawing.Color.Black;
             this.TxtIngresos.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIngresos.Icon")));
-            this.TxtIngresos.Location = new System.Drawing.Point(217, 513);
+            this.TxtIngresos.Location = new System.Drawing.Point(229, 513);
             this.TxtIngresos.Name = "TxtIngresos";
             this.TxtIngresos.Size = new System.Drawing.Size(200, 26);
             this.TxtIngresos.TabIndex = 51;
@@ -178,12 +175,10 @@ namespace PresentacionGUI
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AccessibleName = "";
-            this.bunifuCustomLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(642, 134);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(745, 140);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(96, 24);
             this.bunifuCustomLabel1.TabIndex = 50;
@@ -196,7 +191,7 @@ namespace PresentacionGUI
             this.bunifuSeparator3.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(584, 161);
+            this.bunifuSeparator3.Location = new System.Drawing.Point(683, 163);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
             this.bunifuSeparator3.Size = new System.Drawing.Size(214, 10);
             this.bunifuSeparator3.TabIndex = 49;
@@ -207,20 +202,18 @@ namespace PresentacionGUI
             // 
             this.DtgGastosRegistrados.BackgroundColor = System.Drawing.Color.White;
             this.DtgGastosRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgGastosRegistrados.Location = new System.Drawing.Point(491, 177);
+            this.DtgGastosRegistrados.Location = new System.Drawing.Point(549, 176);
             this.DtgGastosRegistrados.Name = "DtgGastosRegistrados";
-            this.DtgGastosRegistrados.Size = new System.Drawing.Size(426, 297);
+            this.DtgGastosRegistrados.Size = new System.Drawing.Size(497, 297);
             this.DtgGastosRegistrados.TabIndex = 48;
             // 
             // bunifuCustomLabel7
             // 
             this.bunifuCustomLabel7.AccessibleName = "";
-            this.bunifuCustomLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(163, 134);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(222, 134);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(116, 24);
             this.bunifuCustomLabel7.TabIndex = 47;
@@ -233,7 +226,7 @@ namespace PresentacionGUI
             this.bunifuSeparator1.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(105, 161);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(167, 161);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(214, 10);
             this.bunifuSeparator1.TabIndex = 46;
@@ -246,7 +239,7 @@ namespace PresentacionGUI
             this.bunifuSeparator2.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(272, 76);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(372, 76);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(333, 10);
             this.bunifuSeparator2.TabIndex = 45;
@@ -281,10 +274,10 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkSlateGray;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Teal;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Cyan;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(952, 0);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(1062, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(238, 701);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(238, 700);
             this.bunifuGradientPanel1.TabIndex = 44;
             // 
             // label7
@@ -528,20 +521,18 @@ namespace PresentacionGUI
             // 
             this.DtgIngresosRegistrados.BackgroundColor = System.Drawing.Color.White;
             this.DtgIngresosRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgIngresosRegistrados.Location = new System.Drawing.Point(12, 177);
+            this.DtgIngresosRegistrados.Location = new System.Drawing.Point(21, 176);
             this.DtgIngresosRegistrados.Name = "DtgIngresosRegistrados";
-            this.DtgIngresosRegistrados.Size = new System.Drawing.Size(426, 297);
+            this.DtgIngresosRegistrados.Size = new System.Drawing.Size(522, 297);
             this.DtgIngresosRegistrados.TabIndex = 1;
             // 
             // nn
             // 
             this.nn.AccessibleName = "";
-            this.nn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nn.AutoSize = true;
             this.nn.BackColor = System.Drawing.Color.Transparent;
             this.nn.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nn.Location = new System.Drawing.Point(346, 35);
+            this.nn.Location = new System.Drawing.Point(452, 35);
             this.nn.Name = "nn";
             this.nn.Size = new System.Drawing.Size(190, 38);
             this.nn.TabIndex = 0;
@@ -552,13 +543,12 @@ namespace PresentacionGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1190, 701);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.PnlReporte);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmReportes";
             this.Text = "FrmReportes";
             this.PnlReporte.ResumeLayout(false);
-            this.PnlReporte.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgGastosRegistrados)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();

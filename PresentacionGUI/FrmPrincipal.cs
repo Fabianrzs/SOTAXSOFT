@@ -16,19 +16,36 @@ namespace PresentacionGUI
         {
             InitializeComponent();
             InicializarMenuPrincipal();
+            RecogerDashboard();
         }
-        
-        private void AbrirFromHijo(object frmHijo)
-        {
-            if (this.PnlCentral.Controls.Count > 0)
-                this.PnlCentral.Controls.RemoveAt(0);
 
-            Form pnlHijo = frmHijo as Form;
-            pnlHijo.TopLevel = false;
-            pnlHijo.Dock = DockStyle.Fill;
-            this.PnlCentral.Controls.Add(pnlHijo);
-            this.PnlCentral.Tag = pnlHijo;
-            pnlHijo.Show();
+        private Form frmActual = null;
+        private void AbrirFromHijo(Form frmHijo)
+        {
+            if (frmActual != null)
+            {
+                if (frmActual.GetType() != frmHijo.GetType())
+                {
+                    frmActual.Close();
+                    frmActual = frmHijo;
+                    frmHijo.TopLevel = false;
+                    frmHijo.Dock = DockStyle.Fill;
+                    PnlCentral.Controls.Add(frmHijo);
+                    PnlCentral.Tag = frmHijo;
+                    frmHijo.BringToFront();
+                    frmHijo.Show();
+                }
+            }
+            else
+            {
+                frmActual = frmHijo;
+                frmHijo.TopLevel = false;
+                frmHijo.Dock = DockStyle.Fill;
+                PnlCentral.Controls.Add(frmHijo);
+                PnlCentral.Tag = frmHijo;
+                frmHijo.BringToFront();
+                frmHijo.Show();
+            }
         }
 
         private void InicializarMenuPrincipal()
@@ -39,6 +56,16 @@ namespace PresentacionGUI
             BtnTaxis.Location = new Point(10, 279);
             BtnConductores.Location = new Point(10, 333);
             BtnPropietarios.Location = new Point(10, 387);
+        }
+
+
+        private void RecogerDashboard()
+        {
+            BnfMenu.Visible = false;
+            BnfMenu.Width = 56;
+            PnlIzquierdo.Width = 83;
+            BnfSeparator.Width = 20;
+            TrnIda.Show(BnfMenu);
         }
 
         private void PctMaximizar_Click(object sender, EventArgs e)
@@ -69,11 +96,7 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                BnfMenu.Visible = false;
-                BnfMenu.Width = 56;
-                PnlIzquierdo.Width = 83;
-                BnfSeparator.Width = 20;
-                TrnIda.Show(BnfMenu);
+                RecogerDashboard();
             }
             else
             {
@@ -89,18 +112,26 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                BtnTarifa.Location = new Point(10, 117);
-                BtnGastos.Location = new Point(10, 286);
-                BtnReportes.Location = new Point(10, 340);
-                BtnTaxis.Location = new Point(10, 394);
-                BtnConductores.Location = new Point(10, 448);
-                BtnPropietarios.Location = new Point(10, 502);
+                if (PnlMenuTarifas.Visible == true)
+                {
+                    PnlMenuTarifas.Visible = false;
+                    InicializarMenuPrincipal();
+                }
+                else
+                {
+                    BtnTarifa.Location = new Point(10, 117);
+                    BtnGastos.Location = new Point(10, 286);
+                    BtnReportes.Location = new Point(10, 340);
+                    BtnTaxis.Location = new Point(10, 394);
+                    BtnConductores.Location = new Point(10, 448);
+                    BtnPropietarios.Location = new Point(10, 502);
 
-                PnlMenuTarifas.Visible = true;
-                PnlMenuTarifas.Location = new Point(44, 163);
-                PnlMenuGatos.Visible = false;
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuTaxis.Visible = false;
+                    PnlMenuTarifas.Visible = true;
+                    PnlMenuTarifas.Location = new Point(44, 163);
+                    PnlMenuGatos.Hide();
+                    PnlMenuPropietarios.Hide();
+                    PnlMenuTaxis.Hide();
+                }
             }
         }
 
@@ -129,19 +160,27 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                BtnTarifa.Location = new Point(10, 117);
-                BtnGastos.Location = new Point(10, 171);
-                BtnReportes.Location = new Point(10, 340);
-                BtnTaxis.Location = new Point(10, 394);
-                BtnConductores.Location = new Point(10, 448);
-                BtnPropietarios.Location = new Point(10, 502);
+                if (PnlMenuGatos.Visible == true)
+                {
+                    PnlMenuGatos.Visible = false;
+                    InicializarMenuPrincipal();
+                }
+                else
+                {
+                    BtnTarifa.Location = new Point(10, 117);
+                    BtnGastos.Location = new Point(10, 171);
+                    BtnReportes.Location = new Point(10, 340);
+                    BtnTaxis.Location = new Point(10, 394);
+                    BtnConductores.Location = new Point(10, 448);
+                    BtnPropietarios.Location = new Point(10, 502);
 
-                PnlMenuGatos.Visible = true;
-                PnlMenuGatos.Location = new Point(44, 208);
-                PnlMenuTarifas.Visible = false;
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuTaxis.Visible = false;
-                PnlMenuConductores.Visible = false;
+                    PnlMenuGatos.Visible = true;
+                    PnlMenuGatos.Location = new Point(44, 208);
+                    PnlMenuTarifas.Hide();
+                    PnlMenuPropietarios.Hide();
+                    PnlMenuTaxis.Hide();
+                    PnlMenuConductores.Hide();
+                }
             }
         }
 
@@ -171,33 +210,40 @@ namespace PresentacionGUI
             if (BnfMenu.Width == 222)
             {
                 InicializarMenuPrincipal();
-                PnlMenuTaxis.Visible = false;
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuGatos.Visible = false;
-                PnlMenuTarifas.Visible = false;
-                PnlMenuConductores.Visible = false;
+                PnlMenuTaxis.Hide();
+                PnlMenuPropietarios.Hide();
+                PnlMenuGatos.Hide();
+                PnlMenuTarifas.Hide();
+                PnlMenuConductores.Hide();
+                AbrirFromHijo(new FrmReportes());
             }
-            AbrirFromHijo(new FrmReportes());
-
         }
 
         private void BtnTaxis_Click(object sender, EventArgs e)
         {
             if (BnfMenu.Width == 222)
             {
-                BtnTarifa.Location = new Point(10, 117);
-                BtnGastos.Location = new Point(10, 171);
-                BtnReportes.Location = new Point(10, 225);
-                BtnTaxis.Location = new Point(10, 279);
-                BtnConductores.Location = new Point(10, 480);
-                BtnPropietarios.Location = new Point(10, 534);
+                if (PnlMenuTaxis.Visible == true)
+                {
+                    PnlMenuTaxis.Visible = false;
+                    InicializarMenuPrincipal();
+                }
+                else
+                {
+                    BtnTarifa.Location = new Point(10, 117);
+                    BtnGastos.Location = new Point(10, 171);
+                    BtnReportes.Location = new Point(10, 225);
+                    BtnTaxis.Location = new Point(10, 279);
+                    BtnConductores.Location = new Point(10, 480);
+                    BtnPropietarios.Location = new Point(10, 534);
 
-                PnlMenuTaxis.Visible = true;
-                PnlMenuTaxis.Location = new Point(44, 315);
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuGatos.Visible = false;
-                PnlMenuTarifas.Visible = false;
-                PnlMenuConductores.Visible = false;
+                    PnlMenuTaxis.Visible = true;
+                    PnlMenuTaxis.Location = new Point(44, 315);
+                    PnlMenuPropietarios.Visible = false;
+                    PnlMenuGatos.Visible = false;
+                    PnlMenuTarifas.Visible = false;
+                    PnlMenuConductores.Visible = false;
+                }
             }
         }
 
@@ -206,7 +252,6 @@ namespace PresentacionGUI
             PnlMenuTaxis.Visible = false;
             InicializarMenuPrincipal();
             AbrirFromHijo(new FrmRegistroTaxi());
-
         }
 
         private void BtnConsultarTaxi_Click(object sender, EventArgs e)
@@ -234,19 +279,27 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                BtnTarifa.Location = new Point(10, 117);
-                BtnGastos.Location = new Point(10, 171);
-                BtnReportes.Location = new Point(10, 225);
-                BtnTaxis.Location = new Point(10, 279);
-                BtnConductores.Location = new Point(10, 333);
-                BtnPropietarios.Location = new Point(10, 534);
+                if (PnlMenuConductores.Visible == true)
+                {
+                    PnlMenuConductores.Visible = false;
+                    InicializarMenuPrincipal();
+                }
+                else
+                {
+                    BtnTarifa.Location = new Point(10, 117);
+                    BtnGastos.Location = new Point(10, 171);
+                    BtnReportes.Location = new Point(10, 225);
+                    BtnTaxis.Location = new Point(10, 279);
+                    BtnConductores.Location = new Point(10, 333);
+                    BtnPropietarios.Location = new Point(10, 534);
 
-                PnlMenuConductores.Visible = true;
-                PnlMenuConductores.Location = new Point(44, 375);
-                PnlMenuTaxis.Visible = false;
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuGatos.Visible = false;
-                PnlMenuTarifas.Visible = false;
+                    PnlMenuConductores.Visible = true;
+                    PnlMenuConductores.Location = new Point(44, 375);
+                    PnlMenuTaxis.Hide();
+                    PnlMenuPropietarios.Hide();
+                    PnlMenuGatos.Hide();
+                    PnlMenuTarifas.Hide();
+                } 
             }
         }
 
@@ -282,13 +335,20 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                InicializarMenuPrincipal();
-                PnlMenuPropietarios.Visible = true;
-                PnlMenuPropietarios.Location = new Point(44, 430);
-                PnlMenuGatos.Visible = false;
-                PnlMenuTarifas.Visible = false;
-                PnlMenuTaxis.Visible = false;
-                PnlMenuConductores.Visible = false;
+                if (PnlMenuPropietarios.Visible == true)
+                {
+                    PnlMenuPropietarios.Visible = false;
+                    InicializarMenuPrincipal();
+                }
+                else
+                {
+                    PnlMenuPropietarios.Visible = true;
+                    PnlMenuPropietarios.Location = new Point(44, 430);
+                    PnlMenuGatos.Visible = false;
+                    PnlMenuTarifas.Visible = false;
+                    PnlMenuTaxis.Visible = false;
+                    PnlMenuConductores.Visible = false;
+                }  
             }
         }
 
@@ -318,6 +378,15 @@ namespace PresentacionGUI
             PnlMenuPropietarios.Visible = false;
             InicializarMenuPrincipal();
             AbrirFromHijo(new FrmEliminarPersona());
+        }
+
+        private void PctLogo1_Click(object sender, EventArgs e)
+        {
+            if (frmActual != null)
+            {
+                frmActual.Close();
+                PnlCentral.Visible = true;
+            }
         }
     }
 }

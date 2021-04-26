@@ -69,7 +69,7 @@ namespace PresentacionGUI
             this.PnlEliminarPersona.Location = new System.Drawing.Point(0, 0);
             this.PnlEliminarPersona.Name = "PnlEliminarPersona";
             this.PnlEliminarPersona.Quality = 10;
-            this.PnlEliminarPersona.Size = new System.Drawing.Size(925, 611);
+            this.PnlEliminarPersona.Size = new System.Drawing.Size(1300, 700);
             this.PnlEliminarPersona.TabIndex = 3;
             // 
             // bunifuFlatButton1
@@ -94,7 +94,7 @@ namespace PresentacionGUI
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 50D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(483, 418);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(850, 483);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
@@ -113,7 +113,7 @@ namespace PresentacionGUI
             this.bunifuSeparator3.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(42, 446);
+            this.bunifuSeparator3.Location = new System.Drawing.Point(409, 511);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
             this.bunifuSeparator3.Size = new System.Drawing.Size(402, 13);
             this.bunifuSeparator3.TabIndex = 42;
@@ -127,7 +127,7 @@ namespace PresentacionGUI
             this.TxtConfirmarID.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtConfirmarID.ForeColor = System.Drawing.Color.White;
             this.TxtConfirmarID.Icon = ((System.Drawing.Image)(resources.GetObject("TxtConfirmarID.Icon")));
-            this.TxtConfirmarID.Location = new System.Drawing.Point(245, 418);
+            this.TxtConfirmarID.Location = new System.Drawing.Point(612, 483);
             this.TxtConfirmarID.Name = "TxtConfirmarID";
             this.TxtConfirmarID.Size = new System.Drawing.Size(182, 18);
             this.TxtConfirmarID.TabIndex = 41;
@@ -139,7 +139,7 @@ namespace PresentacionGUI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(60, 418);
+            this.label1.Location = new System.Drawing.Point(427, 483);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 18);
             this.label1.TabIndex = 40;
@@ -151,7 +151,7 @@ namespace PresentacionGUI
             this.bunifuSeparator1.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(285, 79);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(469, 79);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(288, 13);
             this.bunifuSeparator1.TabIndex = 39;
@@ -164,7 +164,7 @@ namespace PresentacionGUI
             this.bunifuSeparator2.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(208, 164);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(337, 169);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(561, 10);
             this.bunifuSeparator2.TabIndex = 38;
@@ -178,7 +178,7 @@ namespace PresentacionGUI
             this.TxtIdentificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtIdentificacion.ForeColor = System.Drawing.Color.White;
             this.TxtIdentificacion.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.Icon")));
-            this.TxtIdentificacion.Location = new System.Drawing.Point(361, 136);
+            this.TxtIdentificacion.Location = new System.Drawing.Point(490, 141);
             this.TxtIdentificacion.Name = "TxtIdentificacion";
             this.TxtIdentificacion.Size = new System.Drawing.Size(231, 18);
             this.TxtIdentificacion.TabIndex = 36;
@@ -206,7 +206,7 @@ namespace PresentacionGUI
             this.BtnConsultar.IconVisible = true;
             this.BtnConsultar.IconZoom = 50D;
             this.BtnConsultar.IsTab = false;
-            this.BtnConsultar.Location = new System.Drawing.Point(637, 136);
+            this.BtnConsultar.Location = new System.Drawing.Point(766, 141);
             this.BtnConsultar.Name = "BtnConsultar";
             this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
@@ -225,7 +225,7 @@ namespace PresentacionGUI
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(226, 136);
+            this.label2.Location = new System.Drawing.Point(355, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 18);
             this.label2.TabIndex = 21;
@@ -235,20 +235,18 @@ namespace PresentacionGUI
             // 
             this.DtgPersonaRegistrados.BackgroundColor = System.Drawing.Color.White;
             this.DtgPersonaRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgPersonaRegistrados.Location = new System.Drawing.Point(176, 180);
+            this.DtgPersonaRegistrados.Location = new System.Drawing.Point(98, 194);
             this.DtgPersonaRegistrados.Name = "DtgPersonaRegistrados";
-            this.DtgPersonaRegistrados.Size = new System.Drawing.Size(615, 176);
+            this.DtgPersonaRegistrados.Size = new System.Drawing.Size(1061, 255);
             this.DtgPersonaRegistrados.TabIndex = 1;
             // 
             // consulta
             // 
             this.consulta.AccessibleName = "";
-            this.consulta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.consulta.AutoSize = true;
             this.consulta.BackColor = System.Drawing.Color.Transparent;
             this.consulta.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consulta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.consulta.Location = new System.Drawing.Point(338, 38);
+            this.consulta.Location = new System.Drawing.Point(527, 38);
             this.consulta.Name = "consulta";
             this.consulta.Size = new System.Drawing.Size(181, 38);
             this.consulta.TabIndex = 0;
@@ -259,7 +257,7 @@ namespace PresentacionGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 611);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.PnlEliminarPersona);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEliminarPersona";

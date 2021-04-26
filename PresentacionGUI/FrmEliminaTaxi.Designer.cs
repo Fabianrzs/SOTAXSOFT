@@ -69,7 +69,7 @@ namespace PresentacionGUI
             this.PnlEliminarTaxi.Location = new System.Drawing.Point(0, 0);
             this.PnlEliminarTaxi.Name = "PnlEliminarTaxi";
             this.PnlEliminarTaxi.Quality = 10;
-            this.PnlEliminarTaxi.Size = new System.Drawing.Size(909, 572);
+            this.PnlEliminarTaxi.Size = new System.Drawing.Size(1300, 700);
             this.PnlEliminarTaxi.TabIndex = 4;
             // 
             // BtnEliminar
@@ -94,7 +94,7 @@ namespace PresentacionGUI
             this.BtnEliminar.IconVisible = true;
             this.BtnEliminar.IconZoom = 50D;
             this.BtnEliminar.IsTab = false;
-            this.BtnEliminar.Location = new System.Drawing.Point(483, 418);
+            this.BtnEliminar.Location = new System.Drawing.Point(880, 496);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnEliminar.OnHovercolor = System.Drawing.Color.Transparent;
@@ -113,7 +113,7 @@ namespace PresentacionGUI
             this.bunifuSeparator3.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(42, 446);
+            this.bunifuSeparator3.Location = new System.Drawing.Point(439, 524);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
             this.bunifuSeparator3.Size = new System.Drawing.Size(402, 13);
             this.bunifuSeparator3.TabIndex = 42;
@@ -127,7 +127,7 @@ namespace PresentacionGUI
             this.TxtConfirmarPlaca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtConfirmarPlaca.ForeColor = System.Drawing.Color.White;
             this.TxtConfirmarPlaca.Icon = ((System.Drawing.Image)(resources.GetObject("TxtConfirmarPlaca.Icon")));
-            this.TxtConfirmarPlaca.Location = new System.Drawing.Point(245, 418);
+            this.TxtConfirmarPlaca.Location = new System.Drawing.Point(642, 496);
             this.TxtConfirmarPlaca.Name = "TxtConfirmarPlaca";
             this.TxtConfirmarPlaca.Size = new System.Drawing.Size(182, 18);
             this.TxtConfirmarPlaca.TabIndex = 41;
@@ -135,11 +135,10 @@ namespace PresentacionGUI
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(60, 418);
+            this.label1.Location = new System.Drawing.Point(457, 496);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 18);
             this.label1.TabIndex = 40;
@@ -151,7 +150,7 @@ namespace PresentacionGUI
             this.bunifuSeparator1.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(276, 74);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(483, 79);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(288, 13);
             this.bunifuSeparator1.TabIndex = 39;
@@ -164,7 +163,7 @@ namespace PresentacionGUI
             this.bunifuSeparator2.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(208, 164);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(352, 164);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(561, 10);
             this.bunifuSeparator2.TabIndex = 38;
@@ -178,7 +177,7 @@ namespace PresentacionGUI
             this.TxtPlaca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtPlaca.ForeColor = System.Drawing.Color.White;
             this.TxtPlaca.Icon = ((System.Drawing.Image)(resources.GetObject("TxtPlaca.Icon")));
-            this.TxtPlaca.Location = new System.Drawing.Point(361, 136);
+            this.TxtPlaca.Location = new System.Drawing.Point(502, 140);
             this.TxtPlaca.Name = "TxtPlaca";
             this.TxtPlaca.Size = new System.Drawing.Size(231, 18);
             this.TxtPlaca.TabIndex = 36;
@@ -206,7 +205,7 @@ namespace PresentacionGUI
             this.BtnConsultar.IconVisible = true;
             this.BtnConsultar.IconZoom = 50D;
             this.BtnConsultar.IsTab = false;
-            this.BtnConsultar.Location = new System.Drawing.Point(637, 136);
+            this.BtnConsultar.Location = new System.Drawing.Point(778, 140);
             this.BtnConsultar.Name = "BtnConsultar";
             this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
@@ -221,11 +220,10 @@ namespace PresentacionGUI
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(226, 136);
+            this.label2.Location = new System.Drawing.Point(367, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 18);
             this.label2.TabIndex = 21;
@@ -235,20 +233,18 @@ namespace PresentacionGUI
             // 
             this.DtgTaxisRegistrados.BackgroundColor = System.Drawing.Color.White;
             this.DtgTaxisRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgTaxisRegistrados.Location = new System.Drawing.Point(176, 180);
+            this.DtgTaxisRegistrados.Location = new System.Drawing.Point(137, 180);
             this.DtgTaxisRegistrados.Name = "DtgTaxisRegistrados";
-            this.DtgTaxisRegistrados.Size = new System.Drawing.Size(615, 176);
+            this.DtgTaxisRegistrados.Size = new System.Drawing.Size(1041, 278);
             this.DtgTaxisRegistrados.TabIndex = 1;
             // 
             // consulta
             // 
             this.consulta.AccessibleName = "";
-            this.consulta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.consulta.AutoSize = true;
             this.consulta.BackColor = System.Drawing.Color.Transparent;
             this.consulta.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consulta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.consulta.Location = new System.Drawing.Point(330, 38);
+            this.consulta.Location = new System.Drawing.Point(529, 38);
             this.consulta.Name = "consulta";
             this.consulta.Size = new System.Drawing.Size(181, 38);
             this.consulta.TabIndex = 0;
@@ -258,13 +254,12 @@ namespace PresentacionGUI
             // FrmEliminaTaxi
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(909, 572);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.PnlEliminarTaxi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEliminaTaxi";
             this.Text = "FrmElimina";
             this.PnlEliminarTaxi.ResumeLayout(false);
-            this.PnlEliminarTaxi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgTaxisRegistrados)).EndInit();
             this.ResumeLayout(false);
 

@@ -71,18 +71,16 @@ namespace PresentacionGUI
             this.PnlConsultaTaxi.Location = new System.Drawing.Point(0, 0);
             this.PnlConsultaTaxi.Name = "PnlConsultaTaxi";
             this.PnlConsultaTaxi.Quality = 10;
-            this.PnlConsultaTaxi.Size = new System.Drawing.Size(909, 572);
+            this.PnlConsultaTaxi.Size = new System.Drawing.Size(1300, 700);
             this.PnlConsultaTaxi.TabIndex = 22;
             // 
             // bunifuCustomLabel7
             // 
             this.bunifuCustomLabel7.AccessibleName = "";
-            this.bunifuCustomLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(172, 146);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(368, 146);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(108, 24);
             this.bunifuCustomLabel7.TabIndex = 47;
@@ -95,7 +93,7 @@ namespace PresentacionGUI
             this.bunifuSeparator1.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(113, 168);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(304, 167);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(214, 10);
             this.bunifuSeparator1.TabIndex = 46;
@@ -108,7 +106,7 @@ namespace PresentacionGUI
             this.bunifuSeparator2.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(287, 95);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(493, 95);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(290, 10);
             this.bunifuSeparator2.TabIndex = 45;
@@ -135,10 +133,10 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkSlateGray;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Teal;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Cyan;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(531, 133);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(858, 123);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(370, 354);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(370, 444);
             this.bunifuGradientPanel1.TabIndex = 44;
             // 
             // TxtIdentificacionPropietario
@@ -148,7 +146,7 @@ namespace PresentacionGUI
             this.TxtIdentificacionPropietario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtIdentificacionPropietario.ForeColor = System.Drawing.Color.White;
             this.TxtIdentificacionPropietario.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionPropietario.Icon")));
-            this.TxtIdentificacionPropietario.Location = new System.Drawing.Point(197, 145);
+            this.TxtIdentificacionPropietario.Location = new System.Drawing.Point(197, 187);
             this.TxtIdentificacionPropietario.Name = "TxtIdentificacionPropietario";
             this.TxtIdentificacionPropietario.Size = new System.Drawing.Size(130, 18);
             this.TxtIdentificacionPropietario.TabIndex = 36;
@@ -160,7 +158,7 @@ namespace PresentacionGUI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(79, 145);
+            this.label1.Location = new System.Drawing.Point(82, 187);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 18);
             this.label1.TabIndex = 35;
@@ -188,7 +186,7 @@ namespace PresentacionGUI
             this.BtnGuardar.IconVisible = true;
             this.BtnGuardar.IconZoom = 50D;
             this.BtnGuardar.IsTab = false;
-            this.BtnGuardar.Location = new System.Drawing.Point(129, 296);
+            this.BtnGuardar.Location = new System.Drawing.Point(122, 295);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnGuardar.OnHovercolor = System.Drawing.Color.Transparent;
@@ -208,7 +206,7 @@ namespace PresentacionGUI
             this.CheckboxIDPropietario.Checked = true;
             this.CheckboxIDPropietario.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.CheckboxIDPropietario.ForeColor = System.Drawing.Color.White;
-            this.CheckboxIDPropietario.Location = new System.Drawing.Point(53, 145);
+            this.CheckboxIDPropietario.Location = new System.Drawing.Point(53, 187);
             this.CheckboxIDPropietario.Name = "CheckboxIDPropietario";
             this.CheckboxIDPropietario.Size = new System.Drawing.Size(20, 20);
             this.CheckboxIDPropietario.TabIndex = 31;
@@ -235,7 +233,7 @@ namespace PresentacionGUI
             this.TxtPlaca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtPlaca.ForeColor = System.Drawing.Color.White;
             this.TxtPlaca.Icon = ((System.Drawing.Image)(resources.GetObject("TxtPlaca.Icon")));
-            this.TxtPlaca.Location = new System.Drawing.Point(197, 72);
+            this.TxtPlaca.Location = new System.Drawing.Point(197, 83);
             this.TxtPlaca.Name = "TxtPlaca";
             this.TxtPlaca.Size = new System.Drawing.Size(130, 18);
             this.TxtPlaca.TabIndex = 22;
@@ -248,7 +246,7 @@ namespace PresentacionGUI
             this.TxtIdentificacionConductor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtIdentificacionConductor.ForeColor = System.Drawing.Color.White;
             this.TxtIdentificacionConductor.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionConductor.Icon")));
-            this.TxtIdentificacionConductor.Location = new System.Drawing.Point(197, 108);
+            this.TxtIdentificacionConductor.Location = new System.Drawing.Point(197, 132);
             this.TxtIdentificacionConductor.Name = "TxtIdentificacionConductor";
             this.TxtIdentificacionConductor.Size = new System.Drawing.Size(130, 18);
             this.TxtIdentificacionConductor.TabIndex = 27;
@@ -261,7 +259,7 @@ namespace PresentacionGUI
             this.CheckboxIDConductor.Checked = true;
             this.CheckboxIDConductor.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.CheckboxIDConductor.ForeColor = System.Drawing.Color.White;
-            this.CheckboxIDConductor.Location = new System.Drawing.Point(53, 106);
+            this.CheckboxIDConductor.Location = new System.Drawing.Point(53, 130);
             this.CheckboxIDConductor.Name = "CheckboxIDConductor";
             this.CheckboxIDConductor.Size = new System.Drawing.Size(20, 20);
             this.CheckboxIDConductor.TabIndex = 29;
@@ -272,7 +270,7 @@ namespace PresentacionGUI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(79, 72);
+            this.label3.Location = new System.Drawing.Point(146, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 18);
             this.label3.TabIndex = 21;
@@ -284,7 +282,7 @@ namespace PresentacionGUI
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(79, 108);
+            this.label5.Location = new System.Drawing.Point(84, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 18);
             this.label5.TabIndex = 26;
@@ -297,7 +295,7 @@ namespace PresentacionGUI
             this.CheckboxPlaca.Checked = true;
             this.CheckboxPlaca.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.CheckboxPlaca.ForeColor = System.Drawing.Color.White;
-            this.CheckboxPlaca.Location = new System.Drawing.Point(53, 72);
+            this.CheckboxPlaca.Location = new System.Drawing.Point(53, 83);
             this.CheckboxPlaca.Name = "CheckboxPlaca";
             this.CheckboxPlaca.Size = new System.Drawing.Size(20, 20);
             this.CheckboxPlaca.TabIndex = 28;
@@ -308,18 +306,16 @@ namespace PresentacionGUI
             this.DtgTaxisRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtgTaxisRegistrados.Location = new System.Drawing.Point(22, 178);
             this.DtgTaxisRegistrados.Name = "DtgTaxisRegistrados";
-            this.DtgTaxisRegistrados.Size = new System.Drawing.Size(462, 189);
+            this.DtgTaxisRegistrados.Size = new System.Drawing.Size(770, 210);
             this.DtgTaxisRegistrados.TabIndex = 1;
             // 
             // REGISTRO
             // 
             this.REGISTRO.AccessibleName = "";
-            this.REGISTRO.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.REGISTRO.AutoSize = true;
             this.REGISTRO.BackColor = System.Drawing.Color.Transparent;
             this.REGISTRO.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.REGISTRO.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.REGISTRO.Location = new System.Drawing.Point(346, 54);
+            this.REGISTRO.Location = new System.Drawing.Point(542, 54);
             this.REGISTRO.Name = "REGISTRO";
             this.REGISTRO.Size = new System.Drawing.Size(199, 38);
             this.REGISTRO.TabIndex = 0;
@@ -330,13 +326,12 @@ namespace PresentacionGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 572);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.PnlConsultaTaxi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultaTaxi";
             this.Text = "FrmConsultaTaxi";
             this.PnlConsultaTaxi.ResumeLayout(false);
-            this.PnlConsultaTaxi.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgTaxisRegistrados)).EndInit();

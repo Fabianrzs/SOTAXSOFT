@@ -61,7 +61,7 @@ namespace PresentacionGUI
             this.PnlConsultaPersona.Location = new System.Drawing.Point(0, 0);
             this.PnlConsultaPersona.Name = "PnlConsultaPersona";
             this.PnlConsultaPersona.Quality = 10;
-            this.PnlConsultaPersona.Size = new System.Drawing.Size(925, 611);
+            this.PnlConsultaPersona.Size = new System.Drawing.Size(1300, 700);
             this.PnlConsultaPersona.TabIndex = 2;
             // 
             // bunifuSeparator1
@@ -70,7 +70,7 @@ namespace PresentacionGUI
             this.bunifuSeparator1.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(304, 74);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(493, 77);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(288, 13);
             this.bunifuSeparator1.TabIndex = 39;
@@ -83,7 +83,7 @@ namespace PresentacionGUI
             this.bunifuSeparator2.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(169, 195);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(366, 192);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(561, 10);
             this.bunifuSeparator2.TabIndex = 38;
@@ -97,7 +97,7 @@ namespace PresentacionGUI
             this.TxtIdentificacionr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtIdentificacionr.ForeColor = System.Drawing.Color.White;
             this.TxtIdentificacionr.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionr.Icon")));
-            this.TxtIdentificacionr.Location = new System.Drawing.Point(322, 167);
+            this.TxtIdentificacionr.Location = new System.Drawing.Point(521, 171);
             this.TxtIdentificacionr.Name = "TxtIdentificacionr";
             this.TxtIdentificacionr.Size = new System.Drawing.Size(231, 18);
             this.TxtIdentificacionr.TabIndex = 36;
@@ -125,7 +125,7 @@ namespace PresentacionGUI
             this.BtnConsultar.IconVisible = true;
             this.BtnConsultar.IconZoom = 50D;
             this.BtnConsultar.IsTab = false;
-            this.BtnConsultar.Location = new System.Drawing.Point(598, 167);
+            this.BtnConsultar.Location = new System.Drawing.Point(797, 171);
             this.BtnConsultar.Name = "BtnConsultar";
             this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
@@ -144,7 +144,7 @@ namespace PresentacionGUI
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(187, 167);
+            this.label2.Location = new System.Drawing.Point(386, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 18);
             this.label2.TabIndex = 21;
@@ -154,20 +154,18 @@ namespace PresentacionGUI
             // 
             this.DtgDetallesRegistrados.BackgroundColor = System.Drawing.Color.White;
             this.DtgDetallesRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgDetallesRegistrados.Location = new System.Drawing.Point(137, 233);
+            this.DtgDetallesRegistrados.Location = new System.Drawing.Point(183, 223);
             this.DtgDetallesRegistrados.Name = "DtgDetallesRegistrados";
-            this.DtgDetallesRegistrados.Size = new System.Drawing.Size(615, 246);
+            this.DtgDetallesRegistrados.Size = new System.Drawing.Size(927, 286);
             this.DtgDetallesRegistrados.TabIndex = 1;
             // 
             // consulta
             // 
             this.consulta.AccessibleName = "";
-            this.consulta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.consulta.AutoSize = true;
             this.consulta.BackColor = System.Drawing.Color.Transparent;
             this.consulta.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consulta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.consulta.Location = new System.Drawing.Point(354, 38);
+            this.consulta.Location = new System.Drawing.Point(545, 41);
             this.consulta.Name = "consulta";
             this.consulta.Size = new System.Drawing.Size(199, 38);
             this.consulta.TabIndex = 0;
@@ -178,7 +176,7 @@ namespace PresentacionGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 611);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.PnlConsultaPersona);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultaPersona";

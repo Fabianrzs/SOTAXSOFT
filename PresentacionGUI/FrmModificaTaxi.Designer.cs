@@ -31,6 +31,7 @@ namespace PresentacionGUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificaTaxi));
             this.PnlModificaTaxi = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtModelo = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -48,7 +49,6 @@ namespace PresentacionGUI
             this.label3 = new System.Windows.Forms.Label();
             this.TxtPlaca = new Bunifu.Framework.UI.BunifuTextbox();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.PnlModificaTaxi.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgTaxisRegistrados)).BeginInit();
@@ -74,8 +74,21 @@ namespace PresentacionGUI
             this.PnlModificaTaxi.Location = new System.Drawing.Point(0, 0);
             this.PnlModificaTaxi.Name = "PnlModificaTaxi";
             this.PnlModificaTaxi.Quality = 10;
-            this.PnlModificaTaxi.Size = new System.Drawing.Size(909, 572);
+            this.PnlModificaTaxi.Size = new System.Drawing.Size(1300, 700);
             this.PnlModificaTaxi.TabIndex = 23;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.ForeColor = System.Drawing.Color.White;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator2.LineThickness = 1;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(473, 74);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(288, 10);
+            this.bunifuSeparator2.TabIndex = 44;
+            this.bunifuSeparator2.Transparency = 255;
+            this.bunifuSeparator2.Vertical = false;
             // 
             // bunifuGradientPanel1
             // 
@@ -96,10 +109,10 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkSlateGray;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Teal;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Cyan;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(509, 129);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(879, 113);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(370, 354);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(370, 481);
             this.bunifuGradientPanel1.TabIndex = 43;
             // 
             // bunifuCustomLabel5
@@ -107,7 +120,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Georgia", 12F);
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(60, 201);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(101, 232);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(60, 18);
             this.bunifuCustomLabel5.TabIndex = 44;
@@ -116,7 +129,7 @@ namespace PresentacionGUI
             // TxtModelo
             // 
             this.TxtModelo.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtModelo.Location = new System.Drawing.Point(223, 202);
+            this.TxtModelo.Location = new System.Drawing.Point(223, 234);
             this.TxtModelo.Name = "TxtModelo";
             this.TxtModelo.Size = new System.Drawing.Size(100, 20);
             this.TxtModelo.TabIndex = 45;
@@ -126,7 +139,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Georgia", 12F);
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(60, 83);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(74, 91);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(87, 18);
             this.bunifuCustomLabel3.TabIndex = 42;
@@ -135,7 +148,7 @@ namespace PresentacionGUI
             // TxtPropietario
             // 
             this.TxtPropietario.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtPropietario.Location = new System.Drawing.Point(223, 84);
+            this.TxtPropietario.Location = new System.Drawing.Point(223, 92);
             this.TxtPropietario.Name = "TxtPropietario";
             this.TxtPropietario.Size = new System.Drawing.Size(100, 20);
             this.TxtPropietario.TabIndex = 43;
@@ -163,7 +176,7 @@ namespace PresentacionGUI
             this.BtnGuardar.IconVisible = true;
             this.BtnGuardar.IconZoom = 50D;
             this.BtnGuardar.IsTab = false;
-            this.BtnGuardar.Location = new System.Drawing.Point(129, 299);
+            this.BtnGuardar.Location = new System.Drawing.Point(132, 357);
             this.BtnGuardar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Normalcolor = System.Drawing.Color.Transparent;
@@ -195,7 +208,7 @@ namespace PresentacionGUI
             // TxtKilometraje
             // 
             this.TxtKilometraje.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtKilometraje.Location = new System.Drawing.Point(223, 161);
+            this.TxtKilometraje.Location = new System.Drawing.Point(223, 184);
             this.TxtKilometraje.Name = "TxtKilometraje";
             this.TxtKilometraje.Size = new System.Drawing.Size(100, 20);
             this.TxtKilometraje.TabIndex = 32;
@@ -205,7 +218,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Georgia", 12F);
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(60, 163);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(71, 184);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(90, 18);
             this.bunifuCustomLabel4.TabIndex = 33;
@@ -216,7 +229,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Georgia", 12F);
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(60, 120);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(80, 136);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(81, 18);
             this.bunifuCustomLabel1.TabIndex = 29;
@@ -225,7 +238,7 @@ namespace PresentacionGUI
             // TxtConductor
             // 
             this.TxtConductor.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtConductor.Location = new System.Drawing.Point(223, 121);
+            this.TxtConductor.Location = new System.Drawing.Point(223, 135);
             this.TxtConductor.Name = "TxtConductor";
             this.TxtConductor.Size = new System.Drawing.Size(100, 20);
             this.TxtConductor.TabIndex = 30;
@@ -233,12 +246,10 @@ namespace PresentacionGUI
             // bunifuCustomLabel7
             // 
             this.bunifuCustomLabel7.AccessibleName = "";
-            this.bunifuCustomLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(189, 174);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(381, 171);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(108, 24);
             this.bunifuCustomLabel7.TabIndex = 42;
@@ -251,7 +262,7 @@ namespace PresentacionGUI
             this.bunifuSeparator1.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(130, 192);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(325, 192);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(214, 14);
             this.bunifuSeparator1.TabIndex = 41;
@@ -264,7 +275,7 @@ namespace PresentacionGUI
             this.DtgTaxisRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtgTaxisRegistrados.Location = new System.Drawing.Point(27, 212);
             this.DtgTaxisRegistrados.Name = "DtgTaxisRegistrados";
-            this.DtgTaxisRegistrados.Size = new System.Drawing.Size(439, 120);
+            this.DtgTaxisRegistrados.Size = new System.Drawing.Size(767, 150);
             this.DtgTaxisRegistrados.TabIndex = 40;
             // 
             // label3
@@ -273,7 +284,7 @@ namespace PresentacionGUI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(146, 365);
+            this.label3.Location = new System.Drawing.Point(341, 394);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 18);
             this.label3.TabIndex = 21;
@@ -286,7 +297,7 @@ namespace PresentacionGUI
             this.TxtPlaca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtPlaca.ForeColor = System.Drawing.Color.White;
             this.TxtPlaca.Icon = ((System.Drawing.Image)(resources.GetObject("TxtPlaca.Icon")));
-            this.TxtPlaca.Location = new System.Drawing.Point(221, 365);
+            this.TxtPlaca.Location = new System.Drawing.Point(416, 394);
             this.TxtPlaca.Name = "TxtPlaca";
             this.TxtPlaca.Size = new System.Drawing.Size(110, 18);
             this.TxtPlaca.TabIndex = 22;
@@ -295,36 +306,21 @@ namespace PresentacionGUI
             // REGISTRO
             // 
             this.REGISTRO.AccessibleName = "";
-            this.REGISTRO.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.REGISTRO.AutoSize = true;
             this.REGISTRO.BackColor = System.Drawing.Color.Transparent;
             this.REGISTRO.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.REGISTRO.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.REGISTRO.Location = new System.Drawing.Point(333, 36);
+            this.REGISTRO.Location = new System.Drawing.Point(500, 33);
             this.REGISTRO.Name = "REGISTRO";
-            this.REGISTRO.Size = new System.Drawing.Size(188, 38);
+            this.REGISTRO.Size = new System.Drawing.Size(243, 38);
             this.REGISTRO.TabIndex = 0;
-            this.REGISTRO.Text = "MODIFICA";
+            this.REGISTRO.Text = "MODIFICAR";
             this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.ForeColor = System.Drawing.Color.White;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(283, 77);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(288, 10);
-            this.bunifuSeparator2.TabIndex = 44;
-            this.bunifuSeparator2.Transparency = 255;
-            this.bunifuSeparator2.Vertical = false;
             // 
             // FrmModificaTaxi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 572);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.PnlModificaTaxi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmModificaTaxi";
