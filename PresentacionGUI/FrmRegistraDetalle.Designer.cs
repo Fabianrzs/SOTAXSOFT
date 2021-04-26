@@ -40,10 +40,10 @@ namespace PresentacionGUI
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtPlaca = new Bunifu.Framework.UI.BunifuTextbox();
             this.BtnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.TxtDetalle = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.TxtDetalleDescripcion = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtTarifaGastos = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.TxtDetalleSaldo = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -123,10 +123,10 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel4);
             this.bunifuGradientPanel1.Controls.Add(this.TxtPlaca);
             this.bunifuGradientPanel1.Controls.Add(this.BtnGuardar);
-            this.bunifuGradientPanel1.Controls.Add(this.TxtDetalle);
+            this.bunifuGradientPanel1.Controls.Add(this.TxtDetalleDescripcion);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel3);
-            this.bunifuGradientPanel1.Controls.Add(this.TxtTarifaGastos);
+            this.bunifuGradientPanel1.Controls.Add(this.TxtDetalleSaldo);
             this.bunifuGradientPanel1.Controls.Add(this.CalendarFecha);
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Maroon;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkSlateGray;
@@ -227,13 +227,13 @@ namespace PresentacionGUI
             this.BtnGuardar.Textcolor = System.Drawing.Color.White;
             this.BtnGuardar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // TxtDetalle
+            // TxtDetalleDescripcion
             // 
-            this.TxtDetalle.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtDetalle.Location = new System.Drawing.Point(207, 147);
-            this.TxtDetalle.Name = "TxtDetalle";
-            this.TxtDetalle.Size = new System.Drawing.Size(110, 20);
-            this.TxtDetalle.TabIndex = 27;
+            this.TxtDetalleDescripcion.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtDetalleDescripcion.Location = new System.Drawing.Point(207, 147);
+            this.TxtDetalleDescripcion.Name = "TxtDetalleDescripcion";
+            this.TxtDetalleDescripcion.Size = new System.Drawing.Size(110, 20);
+            this.TxtDetalleDescripcion.TabIndex = 27;
             // 
             // label2
             // 
@@ -255,17 +255,17 @@ namespace PresentacionGUI
             this.bunifuCustomLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(61, 103);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(49, 18);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(46, 18);
             this.bunifuCustomLabel3.TabIndex = 26;
-            this.bunifuCustomLabel3.Text = "Gasto";
+            this.bunifuCustomLabel3.Text = "Saldo";
             // 
-            // TxtTarifaGastos
+            // TxtDetalleSaldo
             // 
-            this.TxtTarifaGastos.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtTarifaGastos.Location = new System.Drawing.Point(207, 104);
-            this.TxtTarifaGastos.Name = "TxtTarifaGastos";
-            this.TxtTarifaGastos.Size = new System.Drawing.Size(110, 20);
-            this.TxtTarifaGastos.TabIndex = 24;
+            this.TxtDetalleSaldo.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtDetalleSaldo.Location = new System.Drawing.Point(207, 104);
+            this.TxtDetalleSaldo.Name = "TxtDetalleSaldo";
+            this.TxtDetalleSaldo.Size = new System.Drawing.Size(110, 20);
+            this.TxtDetalleSaldo.TabIndex = 24;
             // 
             // CalendarFecha
             // 
@@ -330,10 +330,10 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuTextbox TxtPlaca;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtTarifaGastos;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtDetalleSaldo;
         private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtDetalle;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtDetalleDescripcion;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;

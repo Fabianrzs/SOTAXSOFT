@@ -30,13 +30,16 @@ namespace PresentacionGUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportes));
-            this.PnlConsultaDetalle = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuTextbox3 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuTextbox2 = new Bunifu.Framework.UI.BunifuTextbox();
-            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.PnlReporte = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TxtGastos = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TxtGanancia = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TxtIngresos = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DtgGastosRegistrados = new System.Windows.Forms.DataGridView();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -59,85 +62,118 @@ namespace PresentacionGUI
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.CheckboxPlaca = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
+            this.DtgIngresosRegistrados = new System.Windows.Forms.DataGridView();
             this.nn = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.PnlConsultaDetalle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.PnlReporte.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgGastosRegistrados)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgIngresosRegistrados)).BeginInit();
             this.SuspendLayout();
             // 
-            // PnlConsultaDetalle
+            // PnlReporte
             // 
-            this.PnlConsultaDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlConsultaDetalle.BackgroundImage")));
-            this.PnlConsultaDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PnlConsultaDetalle.Controls.Add(this.label10);
-            this.PnlConsultaDetalle.Controls.Add(this.label9);
-            this.PnlConsultaDetalle.Controls.Add(this.label8);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuTextbox3);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuTextbox2);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuTextbox1);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuCustomLabel1);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuSeparator3);
-            this.PnlConsultaDetalle.Controls.Add(this.dataGridView1);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuCustomLabel7);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuSeparator1);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuSeparator2);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuGradientPanel1);
-            this.PnlConsultaDetalle.Controls.Add(this.DtgDetallesRegistrados);
-            this.PnlConsultaDetalle.Controls.Add(this.nn);
-            this.PnlConsultaDetalle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlConsultaDetalle.GradientBottomLeft = System.Drawing.Color.Aqua;
-            this.PnlConsultaDetalle.GradientBottomRight = System.Drawing.Color.Honeydew;
-            this.PnlConsultaDetalle.GradientTopLeft = System.Drawing.Color.Maroon;
-            this.PnlConsultaDetalle.GradientTopRight = System.Drawing.Color.MistyRose;
-            this.PnlConsultaDetalle.Location = new System.Drawing.Point(0, 0);
-            this.PnlConsultaDetalle.Name = "PnlConsultaDetalle";
-            this.PnlConsultaDetalle.Quality = 10;
-            this.PnlConsultaDetalle.Size = new System.Drawing.Size(1190, 701);
-            this.PnlConsultaDetalle.TabIndex = 22;
+            this.PnlReporte.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlReporte.BackgroundImage")));
+            this.PnlReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlReporte.Controls.Add(this.label10);
+            this.PnlReporte.Controls.Add(this.label9);
+            this.PnlReporte.Controls.Add(this.label8);
+            this.PnlReporte.Controls.Add(this.TxtGastos);
+            this.PnlReporte.Controls.Add(this.TxtGanancia);
+            this.PnlReporte.Controls.Add(this.TxtIngresos);
+            this.PnlReporte.Controls.Add(this.bunifuCustomLabel1);
+            this.PnlReporte.Controls.Add(this.bunifuSeparator3);
+            this.PnlReporte.Controls.Add(this.DtgGastosRegistrados);
+            this.PnlReporte.Controls.Add(this.bunifuCustomLabel7);
+            this.PnlReporte.Controls.Add(this.bunifuSeparator1);
+            this.PnlReporte.Controls.Add(this.bunifuSeparator2);
+            this.PnlReporte.Controls.Add(this.bunifuGradientPanel1);
+            this.PnlReporte.Controls.Add(this.DtgIngresosRegistrados);
+            this.PnlReporte.Controls.Add(this.nn);
+            this.PnlReporte.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlReporte.GradientBottomLeft = System.Drawing.Color.Aqua;
+            this.PnlReporte.GradientBottomRight = System.Drawing.Color.Honeydew;
+            this.PnlReporte.GradientTopLeft = System.Drawing.Color.Maroon;
+            this.PnlReporte.GradientTopRight = System.Drawing.Color.MistyRose;
+            this.PnlReporte.Location = new System.Drawing.Point(0, 0);
+            this.PnlReporte.Name = "PnlReporte";
+            this.PnlReporte.Quality = 10;
+            this.PnlReporte.Size = new System.Drawing.Size(1190, 701);
+            this.PnlReporte.TabIndex = 22;
             // 
-            // bunifuTextbox3
+            // label10
             // 
-            this.bunifuTextbox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTextbox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox3.BackgroundImage")));
-            this.bunifuTextbox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox3.ForeColor = System.Drawing.Color.Wheat;
-            this.bunifuTextbox3.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox3.Icon")));
-            this.bunifuTextbox3.Location = new System.Drawing.Point(217, 553);
-            this.bunifuTextbox3.Name = "bunifuTextbox3";
-            this.bunifuTextbox3.Size = new System.Drawing.Size(200, 26);
-            this.bunifuTextbox3.TabIndex = 53;
-            this.bunifuTextbox3.text = "";
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(20, 597);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(185, 22);
+            this.label10.TabIndex = 56;
+            this.label10.Text = "Ganancias totales ";
             // 
-            // bunifuTextbox2
+            // label9
             // 
-            this.bunifuTextbox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuTextbox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox2.BackgroundImage")));
-            this.bunifuTextbox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox2.ForeColor = System.Drawing.Color.Wheat;
-            this.bunifuTextbox2.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox2.Icon")));
-            this.bunifuTextbox2.Location = new System.Drawing.Point(217, 593);
-            this.bunifuTextbox2.Name = "bunifuTextbox2";
-            this.bunifuTextbox2.Size = new System.Drawing.Size(200, 26);
-            this.bunifuTextbox2.TabIndex = 52;
-            this.bunifuTextbox2.text = "";
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(20, 555);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(153, 22);
+            this.label9.TabIndex = 55;
+            this.label9.Text = "Gastos totales ";
             // 
-            // bunifuTextbox1
+            // label8
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.White;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(217, 513);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(200, 26);
-            this.bunifuTextbox1.TabIndex = 51;
-            this.bunifuTextbox1.text = "";
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(20, 513);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(158, 22);
+            this.label8.TabIndex = 54;
+            this.label8.Text = "Igresos totales ";
+            // 
+            // TxtGastos
+            // 
+            this.TxtGastos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TxtGastos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtGastos.BackgroundImage")));
+            this.TxtGastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtGastos.ForeColor = System.Drawing.Color.Wheat;
+            this.TxtGastos.Icon = ((System.Drawing.Image)(resources.GetObject("TxtGastos.Icon")));
+            this.TxtGastos.Location = new System.Drawing.Point(217, 553);
+            this.TxtGastos.Name = "TxtGastos";
+            this.TxtGastos.Size = new System.Drawing.Size(200, 26);
+            this.TxtGastos.TabIndex = 53;
+            this.TxtGastos.text = "";
+            // 
+            // TxtGanancia
+            // 
+            this.TxtGanancia.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TxtGanancia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtGanancia.BackgroundImage")));
+            this.TxtGanancia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtGanancia.ForeColor = System.Drawing.Color.Wheat;
+            this.TxtGanancia.Icon = ((System.Drawing.Image)(resources.GetObject("TxtGanancia.Icon")));
+            this.TxtGanancia.Location = new System.Drawing.Point(217, 593);
+            this.TxtGanancia.Name = "TxtGanancia";
+            this.TxtGanancia.Size = new System.Drawing.Size(200, 26);
+            this.TxtGanancia.TabIndex = 52;
+            this.TxtGanancia.text = "";
+            // 
+            // TxtIngresos
+            // 
+            this.TxtIngresos.BackColor = System.Drawing.Color.White;
+            this.TxtIngresos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIngresos.BackgroundImage")));
+            this.TxtIngresos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtIngresos.ForeColor = System.Drawing.Color.Black;
+            this.TxtIngresos.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIngresos.Icon")));
+            this.TxtIngresos.Location = new System.Drawing.Point(217, 513);
+            this.TxtIngresos.Name = "TxtIngresos";
+            this.TxtIngresos.Size = new System.Drawing.Size(200, 26);
+            this.TxtIngresos.TabIndex = 51;
+            this.TxtIngresos.text = "";
             // 
             // bunifuCustomLabel1
             // 
@@ -167,14 +203,14 @@ namespace PresentacionGUI
             this.bunifuSeparator3.Transparency = 255;
             this.bunifuSeparator3.Vertical = false;
             // 
-            // dataGridView1
+            // DtgGastosRegistrados
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(491, 177);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(426, 297);
-            this.dataGridView1.TabIndex = 48;
+            this.DtgGastosRegistrados.BackgroundColor = System.Drawing.Color.White;
+            this.DtgGastosRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgGastosRegistrados.Location = new System.Drawing.Point(491, 177);
+            this.DtgGastosRegistrados.Name = "DtgGastosRegistrados";
+            this.DtgGastosRegistrados.Size = new System.Drawing.Size(426, 297);
+            this.DtgGastosRegistrados.TabIndex = 48;
             // 
             // bunifuCustomLabel7
             // 
@@ -488,14 +524,14 @@ namespace PresentacionGUI
             this.CheckboxPlaca.Size = new System.Drawing.Size(20, 20);
             this.CheckboxPlaca.TabIndex = 28;
             // 
-            // DtgDetallesRegistrados
+            // DtgIngresosRegistrados
             // 
-            this.DtgDetallesRegistrados.BackgroundColor = System.Drawing.Color.White;
-            this.DtgDetallesRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgDetallesRegistrados.Location = new System.Drawing.Point(12, 177);
-            this.DtgDetallesRegistrados.Name = "DtgDetallesRegistrados";
-            this.DtgDetallesRegistrados.Size = new System.Drawing.Size(426, 297);
-            this.DtgDetallesRegistrados.TabIndex = 1;
+            this.DtgIngresosRegistrados.BackgroundColor = System.Drawing.Color.White;
+            this.DtgIngresosRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgIngresosRegistrados.Location = new System.Drawing.Point(12, 177);
+            this.DtgIngresosRegistrados.Name = "DtgIngresosRegistrados";
+            this.DtgIngresosRegistrados.Size = new System.Drawing.Size(426, 297);
+            this.DtgIngresosRegistrados.TabIndex = 1;
             // 
             // nn
             // 
@@ -512,64 +548,28 @@ namespace PresentacionGUI
             this.nn.Text = "REPORTES";
             this.nn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(20, 513);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 22);
-            this.label8.TabIndex = 54;
-            this.label8.Text = "Igresos totales ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(20, 555);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(153, 22);
-            this.label9.TabIndex = 55;
-            this.label9.Text = "Gastos totales ";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(20, 597);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(185, 22);
-            this.label10.TabIndex = 56;
-            this.label10.Text = "Ganancias totales ";
-            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1190, 701);
-            this.Controls.Add(this.PnlConsultaDetalle);
+            this.Controls.Add(this.PnlReporte);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmReportes";
             this.Text = "FrmReportes";
-            this.PnlConsultaDetalle.ResumeLayout(false);
-            this.PnlConsultaDetalle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.PnlReporte.ResumeLayout(false);
+            this.PnlReporte.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgGastosRegistrados)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgIngresosRegistrados)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuGradientPanel PnlConsultaDetalle;
+        private Bunifu.Framework.UI.BunifuGradientPanel PnlReporte;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
@@ -583,19 +583,19 @@ namespace PresentacionGUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuCheckbox CheckboxPlaca;
-        private System.Windows.Forms.DataGridView DtgDetallesRegistrados;
+        private System.Windows.Forms.DataGridView DtgIngresosRegistrados;
         private Bunifu.Framework.UI.BunifuCustomLabel nn;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DtgGastosRegistrados;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox3;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox2;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private Bunifu.Framework.UI.BunifuTextbox TxtGastos;
+        private Bunifu.Framework.UI.BunifuTextbox TxtGanancia;
+        private Bunifu.Framework.UI.BunifuTextbox TxtIngresos;
         private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker2;
         private System.Windows.Forms.Label label6;

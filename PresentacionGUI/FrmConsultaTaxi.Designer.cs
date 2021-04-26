@@ -1,7 +1,7 @@
 ﻿
 namespace PresentacionGUI
 {
-    partial class FrmConsultaDetalle
+    partial class FrmConsultaTaxi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,52 +29,50 @@ namespace PresentacionGUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultaDetalle));
-            this.PnlConsultaDetalle = new Bunifu.Framework.UI.BunifuGradientPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultaTaxi));
+            this.PnlConsultaTaxi = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.TxtIdentificacionPropietario = new Bunifu.Framework.UI.BunifuTextbox();
+            this.label1 = new System.Windows.Forms.Label();
             this.BtnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.CheckboxCalendar = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CheckboxIDPropietario = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtPlaca = new Bunifu.Framework.UI.BunifuTextbox();
             this.TxtIdentificacionConductor = new Bunifu.Framework.UI.BunifuTextbox();
-            this.CheckboxID = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CheckboxIDConductor = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.CheckboxPlaca = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
+            this.DtgTaxisRegistrados = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.PnlConsultaDetalle.SuspendLayout();
+            this.PnlConsultaTaxi.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgTaxisRegistrados)).BeginInit();
             this.SuspendLayout();
             // 
-            // PnlConsultaDetalle
+            // PnlConsultaTaxi
             // 
-            this.PnlConsultaDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlConsultaDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlConsultaDetalle.BackgroundImage")));
-            this.PnlConsultaDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuCustomLabel7);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuSeparator1);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuSeparator2);
-            this.PnlConsultaDetalle.Controls.Add(this.bunifuGradientPanel1);
-            this.PnlConsultaDetalle.Controls.Add(this.DtgDetallesRegistrados);
-            this.PnlConsultaDetalle.Controls.Add(this.REGISTRO);
-            this.PnlConsultaDetalle.GradientBottomLeft = System.Drawing.Color.Aqua;
-            this.PnlConsultaDetalle.GradientBottomRight = System.Drawing.Color.Honeydew;
-            this.PnlConsultaDetalle.GradientTopLeft = System.Drawing.Color.Maroon;
-            this.PnlConsultaDetalle.GradientTopRight = System.Drawing.Color.MistyRose;
-            this.PnlConsultaDetalle.Location = new System.Drawing.Point(0, 0);
-            this.PnlConsultaDetalle.Name = "PnlConsultaDetalle";
-            this.PnlConsultaDetalle.Quality = 10;
-            this.PnlConsultaDetalle.Size = new System.Drawing.Size(925, 611);
-            this.PnlConsultaDetalle.TabIndex = 21;
+            this.PnlConsultaTaxi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlConsultaTaxi.BackgroundImage")));
+            this.PnlConsultaTaxi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlConsultaTaxi.Controls.Add(this.bunifuCustomLabel7);
+            this.PnlConsultaTaxi.Controls.Add(this.bunifuSeparator1);
+            this.PnlConsultaTaxi.Controls.Add(this.bunifuSeparator2);
+            this.PnlConsultaTaxi.Controls.Add(this.bunifuGradientPanel1);
+            this.PnlConsultaTaxi.Controls.Add(this.DtgTaxisRegistrados);
+            this.PnlConsultaTaxi.Controls.Add(this.REGISTRO);
+            this.PnlConsultaTaxi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlConsultaTaxi.GradientBottomLeft = System.Drawing.Color.Aqua;
+            this.PnlConsultaTaxi.GradientBottomRight = System.Drawing.Color.Honeydew;
+            this.PnlConsultaTaxi.GradientTopLeft = System.Drawing.Color.Maroon;
+            this.PnlConsultaTaxi.GradientTopRight = System.Drawing.Color.MistyRose;
+            this.PnlConsultaTaxi.Location = new System.Drawing.Point(0, 0);
+            this.PnlConsultaTaxi.Name = "PnlConsultaTaxi";
+            this.PnlConsultaTaxi.Quality = 10;
+            this.PnlConsultaTaxi.Size = new System.Drawing.Size(909, 572);
+            this.PnlConsultaTaxi.TabIndex = 22;
             // 
             // bunifuCustomLabel7
             // 
@@ -84,7 +82,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(180, 146);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(172, 146);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(108, 24);
             this.bunifuCustomLabel7.TabIndex = 47;
@@ -110,9 +108,9 @@ namespace PresentacionGUI
             this.bunifuSeparator2.ForeColor = System.Drawing.Color.White;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(271, 77);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(287, 95);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(333, 10);
+            this.bunifuSeparator2.Size = new System.Drawing.Size(290, 10);
             this.bunifuSeparator2.TabIndex = 45;
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
@@ -121,14 +119,14 @@ namespace PresentacionGUI
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel5);
-            this.bunifuGradientPanel1.Controls.Add(this.CalendarFecha);
+            this.bunifuGradientPanel1.Controls.Add(this.TxtIdentificacionPropietario);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.BtnGuardar);
-            this.bunifuGradientPanel1.Controls.Add(this.CheckboxCalendar);
+            this.bunifuGradientPanel1.Controls.Add(this.CheckboxIDPropietario);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
             this.bunifuGradientPanel1.Controls.Add(this.TxtPlaca);
             this.bunifuGradientPanel1.Controls.Add(this.TxtIdentificacionConductor);
-            this.bunifuGradientPanel1.Controls.Add(this.CheckboxID);
+            this.bunifuGradientPanel1.Controls.Add(this.CheckboxIDConductor);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
             this.bunifuGradientPanel1.Controls.Add(this.label5);
             this.bunifuGradientPanel1.Controls.Add(this.CheckboxPlaca);
@@ -143,30 +141,30 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(370, 354);
             this.bunifuGradientPanel1.TabIndex = 44;
             // 
-            // bunifuCustomLabel5
+            // TxtIdentificacionPropietario
             // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Georgia", 12F);
-            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(79, 145);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(50, 18);
-            this.bunifuCustomLabel5.TabIndex = 35;
-            this.bunifuCustomLabel5.Text = "Fecha";
+            this.TxtIdentificacionPropietario.BackColor = System.Drawing.Color.White;
+            this.TxtIdentificacionPropietario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionPropietario.BackgroundImage")));
+            this.TxtIdentificacionPropietario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtIdentificacionPropietario.ForeColor = System.Drawing.Color.White;
+            this.TxtIdentificacionPropietario.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionPropietario.Icon")));
+            this.TxtIdentificacionPropietario.Location = new System.Drawing.Point(197, 145);
+            this.TxtIdentificacionPropietario.Name = "TxtIdentificacionPropietario";
+            this.TxtIdentificacionPropietario.Size = new System.Drawing.Size(130, 18);
+            this.TxtIdentificacionPropietario.TabIndex = 36;
+            this.TxtIdentificacionPropietario.text = "";
             // 
-            // CalendarFecha
+            // label1
             // 
-            this.CalendarFecha.BackColor = System.Drawing.Color.Transparent;
-            this.CalendarFecha.BorderRadius = 0;
-            this.CalendarFecha.ForeColor = System.Drawing.Color.White;
-            this.CalendarFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.CalendarFecha.FormatCustom = null;
-            this.CalendarFecha.Location = new System.Drawing.Point(53, 171);
-            this.CalendarFecha.Name = "CalendarFecha";
-            this.CalendarFecha.Size = new System.Drawing.Size(274, 20);
-            this.CalendarFecha.TabIndex = 30;
-            this.CalendarFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(79, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 18);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "ID Propietario";
             // 
             // BtnGuardar
             // 
@@ -203,17 +201,17 @@ namespace PresentacionGUI
             this.BtnGuardar.Textcolor = System.Drawing.Color.White;
             this.BtnGuardar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // CheckboxCalendar
+            // CheckboxIDPropietario
             // 
-            this.CheckboxCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxCalendar.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CheckboxCalendar.Checked = true;
-            this.CheckboxCalendar.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxCalendar.ForeColor = System.Drawing.Color.White;
-            this.CheckboxCalendar.Location = new System.Drawing.Point(53, 145);
-            this.CheckboxCalendar.Name = "CheckboxCalendar";
-            this.CheckboxCalendar.Size = new System.Drawing.Size(20, 20);
-            this.CheckboxCalendar.TabIndex = 31;
+            this.CheckboxIDPropietario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxIDPropietario.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxIDPropietario.Checked = true;
+            this.CheckboxIDPropietario.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxIDPropietario.ForeColor = System.Drawing.Color.White;
+            this.CheckboxIDPropietario.Location = new System.Drawing.Point(53, 145);
+            this.CheckboxIDPropietario.Name = "CheckboxIDPropietario";
+            this.CheckboxIDPropietario.Size = new System.Drawing.Size(20, 20);
+            this.CheckboxIDPropietario.TabIndex = 31;
             // 
             // bunifuCustomLabel2
             // 
@@ -256,17 +254,17 @@ namespace PresentacionGUI
             this.TxtIdentificacionConductor.TabIndex = 27;
             this.TxtIdentificacionConductor.text = "";
             // 
-            // CheckboxID
+            // CheckboxIDConductor
             // 
-            this.CheckboxID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxID.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CheckboxID.Checked = true;
-            this.CheckboxID.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxID.ForeColor = System.Drawing.Color.White;
-            this.CheckboxID.Location = new System.Drawing.Point(53, 106);
-            this.CheckboxID.Name = "CheckboxID";
-            this.CheckboxID.Size = new System.Drawing.Size(20, 20);
-            this.CheckboxID.TabIndex = 29;
+            this.CheckboxIDConductor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxIDConductor.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxIDConductor.Checked = true;
+            this.CheckboxIDConductor.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxIDConductor.ForeColor = System.Drawing.Color.White;
+            this.CheckboxIDConductor.Location = new System.Drawing.Point(53, 106);
+            this.CheckboxIDConductor.Name = "CheckboxIDConductor";
+            this.CheckboxIDConductor.Size = new System.Drawing.Size(20, 20);
+            this.CheckboxIDConductor.TabIndex = 29;
             // 
             // label3
             // 
@@ -304,14 +302,14 @@ namespace PresentacionGUI
             this.CheckboxPlaca.Size = new System.Drawing.Size(20, 20);
             this.CheckboxPlaca.TabIndex = 28;
             // 
-            // DtgDetallesRegistrados
+            // DtgTaxisRegistrados
             // 
-            this.DtgDetallesRegistrados.BackgroundColor = System.Drawing.Color.White;
-            this.DtgDetallesRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgDetallesRegistrados.Location = new System.Drawing.Point(22, 178);
-            this.DtgDetallesRegistrados.Name = "DtgDetallesRegistrados";
-            this.DtgDetallesRegistrados.Size = new System.Drawing.Size(462, 189);
-            this.DtgDetallesRegistrados.TabIndex = 1;
+            this.DtgTaxisRegistrados.BackgroundColor = System.Drawing.Color.White;
+            this.DtgTaxisRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgTaxisRegistrados.Location = new System.Drawing.Point(22, 178);
+            this.DtgTaxisRegistrados.Name = "DtgTaxisRegistrados";
+            this.DtgTaxisRegistrados.Size = new System.Drawing.Size(462, 189);
+            this.DtgTaxisRegistrados.TabIndex = 1;
             // 
             // REGISTRO
             // 
@@ -321,51 +319,50 @@ namespace PresentacionGUI
             this.REGISTRO.BackColor = System.Drawing.Color.Transparent;
             this.REGISTRO.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.REGISTRO.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.REGISTRO.Location = new System.Drawing.Point(352, 36);
+            this.REGISTRO.Location = new System.Drawing.Point(346, 54);
             this.REGISTRO.Name = "REGISTRO";
             this.REGISTRO.Size = new System.Drawing.Size(199, 38);
             this.REGISTRO.TabIndex = 0;
             this.REGISTRO.Text = "CONSULTA";
             this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // FrmConsultaDetalle
+            // FrmConsultaTaxi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 611);
-            this.Controls.Add(this.PnlConsultaDetalle);
+            this.ClientSize = new System.Drawing.Size(909, 572);
+            this.Controls.Add(this.PnlConsultaTaxi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmConsultaDetalle";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmTarifaRegistrar";
-            this.PnlConsultaDetalle.ResumeLayout(false);
-            this.PnlConsultaDetalle.PerformLayout();
+            this.Name = "FrmConsultaTaxi";
+            this.Text = "FrmConsultaTaxi";
+            this.PnlConsultaTaxi.ResumeLayout(false);
+            this.PnlConsultaTaxi.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgTaxisRegistrados)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuGradientPanel PnlConsultaDetalle;
-        private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacionConductor;
-        private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
-        private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuTextbox TxtPlaca;
-        private System.Windows.Forms.DataGridView DtgDetallesRegistrados;
-        private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxID;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxPlaca;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxCalendar;
-        private Bunifu.Framework.UI.BunifuDatepicker CalendarFecha;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
+        private Bunifu.Framework.UI.BunifuGradientPanel PnlConsultaTaxi;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
+        private Bunifu.Framework.UI.BunifuCheckbox CheckboxIDPropietario;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuTextbox TxtPlaca;
+        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacionConductor;
+        private Bunifu.Framework.UI.BunifuCheckbox CheckboxIDConductor;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuCheckbox CheckboxPlaca;
+        private System.Windows.Forms.DataGridView DtgTaxisRegistrados;
+        private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
+        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacionPropietario;
+        private System.Windows.Forms.Label label1;
     }
 }
