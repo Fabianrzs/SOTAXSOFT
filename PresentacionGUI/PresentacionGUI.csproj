@@ -63,6 +63,12 @@
     <Compile Include="FrmConsultaPersona.Designer.cs">
       <DependentUpon>FrmConsultaPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEliminarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarPersona.Designer.cs">
+      <DependentUpon>FrmEliminarPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmModificaDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,10 +105,19 @@
     <Compile Include="FrmRegistroPersona.Designer.cs">
       <DependentUpon>FrmRegistroPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmConsultaPersona.resx">
       <DependentUpon>FrmConsultaPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarPersona.resx">
+      <DependentUpon>FrmEliminarPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificaDetalle.resx">
       <DependentUpon>FrmModificaDetalle.cs</DependentUpon>
@@ -121,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroPersona.resx">
       <DependentUpon>FrmRegistroPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

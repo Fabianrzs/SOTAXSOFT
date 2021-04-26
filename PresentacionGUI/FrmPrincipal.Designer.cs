@@ -30,9 +30,9 @@ namespace PresentacionGUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.PnlTitulo = new System.Windows.Forms.Panel();
             this.PctRestaurar = new System.Windows.Forms.PictureBox();
             this.PctMinimizar = new System.Windows.Forms.PictureBox();
@@ -77,7 +77,6 @@ namespace PresentacionGUI
             this.ElpMenu = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.TrnIda = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.TrnRegreso = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.PnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).BeginInit();
@@ -237,10 +236,10 @@ namespace PresentacionGUI
             this.BnfMenu.GradientBottomRight = System.Drawing.Color.Bisque;
             this.BnfMenu.GradientTopLeft = System.Drawing.Color.SlateGray;
             this.BnfMenu.GradientTopRight = System.Drawing.Color.IndianRed;
-            this.BnfMenu.Location = new System.Drawing.Point(12, 19);
+            this.BnfMenu.Location = new System.Drawing.Point(12, 0);
             this.BnfMenu.Name = "BnfMenu";
             this.BnfMenu.Quality = 10;
-            this.BnfMenu.Size = new System.Drawing.Size(222, 656);
+            this.BnfMenu.Size = new System.Drawing.Size(222, 675);
             this.BnfMenu.TabIndex = 0;
             // 
             // PnlMenuPropietarios
@@ -1255,50 +1254,43 @@ namespace PresentacionGUI
             // 
             this.TrnIda.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.TrnIda.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.TrnIda.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.TrnIda.DefaultAnimation = animation4;
             // 
             // TrnRegreso
             // 
             this.TrnRegreso.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.TrnRegreso.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 1F;
-            this.TrnRegreso.DefaultAnimation = animation2;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.PnlTitulo;
-            this.bunifuDragControl1.Vertical = true;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.TrnRegreso.DefaultAnimation = animation3;
             // 
             // FrmPrincipal
             // 
@@ -1311,6 +1303,8 @@ namespace PresentacionGUI
             this.TrnRegreso.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.TrnIda.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1414, 827);
+            this.MinimumSize = new System.Drawing.Size(1314, 727);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -1380,7 +1374,6 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuFlatButton BtnModificarCondutor;
         private Bunifu.Framework.UI.BunifuFlatButton BtnConsultarCondutor;
         private Bunifu.Framework.UI.BunifuFlatButton BtnRegistrarCondutor;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
 

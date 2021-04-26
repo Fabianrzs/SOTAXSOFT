@@ -8,6 +8,6 @@ namespace Entity
 {
     public class Propietario : Persona
     {
-        public double CodPropietario { get; set; }
+       
     }
 }

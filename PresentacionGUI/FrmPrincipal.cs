@@ -17,6 +17,19 @@ namespace PresentacionGUI
             InitializeComponent();
             InicializarMenuPrincipal();
         }
+        
+        private void AbrirFromHijo(object frmHijo)
+        {
+            if (this.PnlCentral.Controls.Count > 0)
+                this.PnlCentral.Controls.RemoveAt(0);
+
+            Form pnlHijo = frmHijo as Form;
+            pnlHijo.TopLevel = false;
+            pnlHijo.Dock = DockStyle.Fill;
+            this.PnlCentral.Controls.Add(pnlHijo);
+            this.PnlCentral.Tag = pnlHijo;
+            pnlHijo.Show();
+        }
 
         private void InicializarMenuPrincipal()
         {
@@ -76,18 +89,18 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                PnlMenuTarifas.Visible = true;
-                PnlMenuTarifas.Location = new Point(44, 163);
-                PnlMenuGatos.Visible = false;
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuTaxis.Visible = false;
-
                 BtnTarifa.Location = new Point(10, 117);
                 BtnGastos.Location = new Point(10, 286);
                 BtnReportes.Location = new Point(10, 340);
                 BtnTaxis.Location = new Point(10, 394);
                 BtnConductores.Location = new Point(10, 448);
                 BtnPropietarios.Location = new Point(10, 502);
+
+                PnlMenuTarifas.Visible = true;
+                PnlMenuTarifas.Location = new Point(44, 163);
+                PnlMenuGatos.Visible = false;
+                PnlMenuPropietarios.Visible = false;
+                PnlMenuTaxis.Visible = false;
             }
         }
 
@@ -95,6 +108,7 @@ namespace PresentacionGUI
         {
             PnlMenuTarifas.Visible = false;
             InicializarMenuPrincipal();
+            AbrirFromHijo(new FrmRegistraDetalle());
         }
 
         private void BtnConsultarTarifa_Click(object sender, EventArgs e)
@@ -113,18 +127,19 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                PnlMenuGatos.Visible = true;
-                PnlMenuGatos.Location = new Point(44,208);
-                PnlMenuTarifas.Visible = false;
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuTaxis.Visible = false;
-                PnlMenuConductores.Visible = false;
                 BtnTarifa.Location = new Point(10, 117);
                 BtnGastos.Location = new Point(10, 171);
                 BtnReportes.Location = new Point(10, 340);
                 BtnTaxis.Location = new Point(10, 394);
                 BtnConductores.Location = new Point(10, 448);
                 BtnPropietarios.Location = new Point(10, 502);
+
+                PnlMenuGatos.Visible = true;
+                PnlMenuGatos.Location = new Point(44, 208);
+                PnlMenuTarifas.Visible = false;
+                PnlMenuPropietarios.Visible = false;
+                PnlMenuTaxis.Visible = false;
+                PnlMenuConductores.Visible = false;
             }
         }
 
@@ -150,12 +165,12 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
+                InicializarMenuPrincipal();
                 PnlMenuTaxis.Visible = false;
                 PnlMenuPropietarios.Visible = false;
                 PnlMenuGatos.Visible = false;
                 PnlMenuTarifas.Visible = false;
                 PnlMenuConductores.Visible = false;
-                InicializarMenuPrincipal();
             }
         }
 
@@ -163,18 +178,19 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                PnlMenuTaxis.Visible = true;
-                PnlMenuTaxis.Location = new Point(44, 315);
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuGatos.Visible = false;
-                PnlMenuTarifas.Visible = false;
-                PnlMenuConductores.Visible = false;
                 BtnTarifa.Location = new Point(10, 117);
                 BtnGastos.Location = new Point(10, 171);
                 BtnReportes.Location = new Point(10, 225);
                 BtnTaxis.Location = new Point(10, 279);
                 BtnConductores.Location = new Point(10, 480);
                 BtnPropietarios.Location = new Point(10, 534);
+
+                PnlMenuTaxis.Visible = true;
+                PnlMenuTaxis.Location = new Point(44, 315);
+                PnlMenuPropietarios.Visible = false;
+                PnlMenuGatos.Visible = false;
+                PnlMenuTarifas.Visible = false;
+                PnlMenuConductores.Visible = false;
             }
         }
 
@@ -206,18 +222,19 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
-                PnlMenuConductores.Visible = true;
-                PnlMenuConductores.Location = new Point(44, 375);
-                PnlMenuTaxis.Visible = false;
-                PnlMenuPropietarios.Visible = false;
-                PnlMenuGatos.Visible = false;
-                PnlMenuTarifas.Visible = false;
                 BtnTarifa.Location = new Point(10, 117);
                 BtnGastos.Location = new Point(10, 171);
                 BtnReportes.Location = new Point(10, 225);
                 BtnTaxis.Location = new Point(10, 279);
                 BtnConductores.Location = new Point(10, 333);
                 BtnPropietarios.Location = new Point(10, 534);
+
+                PnlMenuConductores.Visible = true;
+                PnlMenuConductores.Location = new Point(44, 375);
+                PnlMenuTaxis.Visible = false;
+                PnlMenuPropietarios.Visible = false;
+                PnlMenuGatos.Visible = false;
+                PnlMenuTarifas.Visible = false;
             }
         }
 
@@ -249,13 +266,13 @@ namespace PresentacionGUI
         {
             if (BnfMenu.Width == 222)
             {
+                InicializarMenuPrincipal();
                 PnlMenuPropietarios.Visible = true;
                 PnlMenuPropietarios.Location = new Point(44, 430);
                 PnlMenuGatos.Visible = false;
                 PnlMenuTarifas.Visible = false;
                 PnlMenuTaxis.Visible = false;
                 PnlMenuConductores.Visible = false;
-                InicializarMenuPrincipal();
             }
         }
 
