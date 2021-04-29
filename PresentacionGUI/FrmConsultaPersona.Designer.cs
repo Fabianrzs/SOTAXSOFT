@@ -33,7 +33,7 @@ namespace PresentacionGUI
             this.PnlConsultaPersona = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.TxtIdentificacionr = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TxtIdentificacion = new Bunifu.Framework.UI.BunifuTextbox();
             this.BtnConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
             this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
@@ -48,7 +48,7 @@ namespace PresentacionGUI
             this.PnlConsultaPersona.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PnlConsultaPersona.Controls.Add(this.bunifuSeparator1);
             this.PnlConsultaPersona.Controls.Add(this.bunifuSeparator2);
-            this.PnlConsultaPersona.Controls.Add(this.TxtIdentificacionr);
+            this.PnlConsultaPersona.Controls.Add(this.TxtIdentificacion);
             this.PnlConsultaPersona.Controls.Add(this.BtnConsultar);
             this.PnlConsultaPersona.Controls.Add(this.label2);
             this.PnlConsultaPersona.Controls.Add(this.DtgDetallesRegistrados);
@@ -90,18 +90,18 @@ namespace PresentacionGUI
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
             // 
-            // TxtIdentificacionr
+            // TxtIdentificacion
             // 
-            this.TxtIdentificacionr.BackColor = System.Drawing.Color.White;
-            this.TxtIdentificacionr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionr.BackgroundImage")));
-            this.TxtIdentificacionr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtIdentificacionr.ForeColor = System.Drawing.Color.White;
-            this.TxtIdentificacionr.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionr.Icon")));
-            this.TxtIdentificacionr.Location = new System.Drawing.Point(521, 171);
-            this.TxtIdentificacionr.Name = "TxtIdentificacionr";
-            this.TxtIdentificacionr.Size = new System.Drawing.Size(231, 18);
-            this.TxtIdentificacionr.TabIndex = 36;
-            this.TxtIdentificacionr.text = "";
+            this.TxtIdentificacion.BackColor = System.Drawing.Color.White;
+            this.TxtIdentificacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.BackgroundImage")));
+            this.TxtIdentificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtIdentificacion.ForeColor = System.Drawing.Color.White;
+            this.TxtIdentificacion.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.Icon")));
+            this.TxtIdentificacion.Location = new System.Drawing.Point(521, 171);
+            this.TxtIdentificacion.Name = "TxtIdentificacion";
+            this.TxtIdentificacion.Size = new System.Drawing.Size(231, 18);
+            this.TxtIdentificacion.TabIndex = 36;
+            this.TxtIdentificacion.text = "";
             // 
             // BtnConsultar
             // 
@@ -125,13 +125,13 @@ namespace PresentacionGUI
             this.BtnConsultar.IconVisible = true;
             this.BtnConsultar.IconZoom = 50D;
             this.BtnConsultar.IsTab = false;
-            this.BtnConsultar.Location = new System.Drawing.Point(797, 171);
+            this.BtnConsultar.Location = new System.Drawing.Point(797, 161);
             this.BtnConsultar.Name = "BtnConsultar";
             this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
             this.BtnConsultar.OnHoverTextColor = System.Drawing.Color.Transparent;
             this.BtnConsultar.selected = false;
-            this.BtnConsultar.Size = new System.Drawing.Size(120, 26);
+            this.BtnConsultar.Size = new System.Drawing.Size(120, 36);
             this.BtnConsultar.TabIndex = 25;
             this.BtnConsultar.Text = "    CONSULTAR";
             this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,7 +195,7 @@ namespace PresentacionGUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView DtgDetallesRegistrados;
         private Bunifu.Framework.UI.BunifuCustomLabel consulta;
-        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacionr;
+        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacion;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
     }

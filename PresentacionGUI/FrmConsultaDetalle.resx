@@ -142,7 +142,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuTextbox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtIDConductor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAB/CAYAAABYHaUHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS8SURBVHhe7dhBbhtZEAVB3f/SM5CdgGG42GyCktgsRCyl
@@ -168,7 +168,7 @@
         AABwQWX71+v7AADABZTp369/DwAAeIGy/DX6GwAAgG9Ufj/h4+N/2OMcU7pzxTUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextbox1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TxtIDConductor.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKySURBVHhe7dBBkhpBDARA/v9pO4JIHxyrnhHQDBKrPEKp

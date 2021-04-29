@@ -21,23 +21,13 @@ namespace Entity
         }
         public void CalcularGastoTotal()
         {
-            foreach (var i in DetallesTaxis)
-            {
-                if (i.TipoDetalle.Equals("Reparacion"))
-                {
-                    GastoTotal += i.ValorDetalle;
-                }
-            }
+            var gastos = from detalle in DetallesTaxis where detalle.TipoDetalle.Equals("REPARACION") select detalle;
+            GastoTotal = gastos.Sum(X => X.ValorDetalle);
         }
         public void CalcularIngresoTotal()
         {
-            foreach (var i in DetallesTaxis)
-            {
-                if (i.TipoDetalle.Equals("Tarifa"))
-                {
-                    IngresoTotal += i.ValorDetalle;
-                }
-            }
+            var ingresos = from detalle in DetallesTaxis where detalle.TipoDetalle.Equals("TARIFA") select detalle;
+            IngresoTotal = ingresos.Sum(X => X.ValorDetalle);
         }
         public void CalcularGananciaTotal()
         {

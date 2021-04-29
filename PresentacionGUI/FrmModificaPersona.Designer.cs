@@ -46,27 +46,31 @@ namespace PresentacionGUI
             this.TxtSegundoNombre = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtIdentificacionPersona = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TxtIdentificacion = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label2 = new System.Windows.Forms.Label();
-            this.DtgPersonasRegistrados = new System.Windows.Forms.DataGridView();
+            this.DtgPersonaRegistrada = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.BtnConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.PnlRegisroPersona.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonasRegistrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonaRegistrada)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlRegisroPersona
             // 
             this.PnlRegisroPersona.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlRegisroPersona.BackgroundImage")));
             this.PnlRegisroPersona.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlRegisroPersona.Controls.Add(this.bunifuSeparator3);
+            this.PnlRegisroPersona.Controls.Add(this.BtnConsultar);
             this.PnlRegisroPersona.Controls.Add(this.bunifuSeparator2);
             this.PnlRegisroPersona.Controls.Add(this.bunifuCustomLabel7);
             this.PnlRegisroPersona.Controls.Add(this.bunifuGradientPanel1);
-            this.PnlRegisroPersona.Controls.Add(this.TxtIdentificacionPersona);
+            this.PnlRegisroPersona.Controls.Add(this.TxtIdentificacion);
             this.PnlRegisroPersona.Controls.Add(this.bunifuSeparator1);
             this.PnlRegisroPersona.Controls.Add(this.label2);
-            this.PnlRegisroPersona.Controls.Add(this.DtgPersonasRegistrados);
+            this.PnlRegisroPersona.Controls.Add(this.DtgPersonaRegistrada);
             this.PnlRegisroPersona.Controls.Add(this.REGISTRO);
             this.PnlRegisroPersona.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlRegisroPersona.GradientBottomLeft = System.Drawing.Color.Aqua;
@@ -284,18 +288,18 @@ namespace PresentacionGUI
             this.bunifuCustomLabel6.TabIndex = 31;
             this.bunifuCustomLabel6.Text = "Segundo Apellido";
             // 
-            // TxtIdentificacionPersona
+            // TxtIdentificacion
             // 
-            this.TxtIdentificacionPersona.BackColor = System.Drawing.Color.White;
-            this.TxtIdentificacionPersona.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionPersona.BackgroundImage")));
-            this.TxtIdentificacionPersona.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtIdentificacionPersona.ForeColor = System.Drawing.Color.White;
-            this.TxtIdentificacionPersona.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacionPersona.Icon")));
-            this.TxtIdentificacionPersona.Location = new System.Drawing.Point(353, 406);
-            this.TxtIdentificacionPersona.Name = "TxtIdentificacionPersona";
-            this.TxtIdentificacionPersona.Size = new System.Drawing.Size(231, 18);
-            this.TxtIdentificacionPersona.TabIndex = 37;
-            this.TxtIdentificacionPersona.text = "";
+            this.TxtIdentificacion.BackColor = System.Drawing.Color.White;
+            this.TxtIdentificacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.BackgroundImage")));
+            this.TxtIdentificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtIdentificacion.ForeColor = System.Drawing.Color.White;
+            this.TxtIdentificacion.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.Icon")));
+            this.TxtIdentificacion.Location = new System.Drawing.Point(288, 406);
+            this.TxtIdentificacion.Name = "TxtIdentificacion";
+            this.TxtIdentificacion.Size = new System.Drawing.Size(231, 18);
+            this.TxtIdentificacion.TabIndex = 37;
+            this.TxtIdentificacion.text = "";
             // 
             // bunifuSeparator1
             // 
@@ -316,20 +320,20 @@ namespace PresentacionGUI
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(227, 406);
+            this.label2.Location = new System.Drawing.Point(143, 406);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 18);
             this.label2.TabIndex = 21;
             this.label2.Text = "Identificacion";
             // 
-            // DtgPersonasRegistrados
+            // DtgPersonaRegistrada
             // 
-            this.DtgPersonasRegistrados.BackgroundColor = System.Drawing.Color.White;
-            this.DtgPersonasRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgPersonasRegistrados.Location = new System.Drawing.Point(58, 186);
-            this.DtgPersonasRegistrados.Name = "DtgPersonasRegistrados";
-            this.DtgPersonasRegistrados.Size = new System.Drawing.Size(739, 187);
-            this.DtgPersonasRegistrados.TabIndex = 1;
+            this.DtgPersonaRegistrada.BackgroundColor = System.Drawing.Color.White;
+            this.DtgPersonaRegistrada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgPersonaRegistrada.Location = new System.Drawing.Point(58, 186);
+            this.DtgPersonaRegistrada.Name = "DtgPersonaRegistrada";
+            this.DtgPersonaRegistrada.Size = new System.Drawing.Size(739, 187);
+            this.DtgPersonaRegistrada.TabIndex = 1;
             // 
             // REGISTRO
             // 
@@ -344,6 +348,54 @@ namespace PresentacionGUI
             this.REGISTRO.Text = "MODIFICA";
             this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // BtnConsultar
+            // 
+            this.BtnConsultar.Activecolor = System.Drawing.Color.DarkRed;
+            this.BtnConsultar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnConsultar.BorderRadius = 0;
+            this.BtnConsultar.ButtonText = "    CONSULTAR";
+            this.BtnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnConsultar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnConsultar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtnConsultar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.Iconimage = global::PresentacionGUI.Properties.Resources.consulta;
+            this.BtnConsultar.Iconimage_right = null;
+            this.BtnConsultar.Iconimage_right_Selected = null;
+            this.BtnConsultar.Iconimage_Selected = null;
+            this.BtnConsultar.IconMarginLeft = 0;
+            this.BtnConsultar.IconMarginRight = 0;
+            this.BtnConsultar.IconRightVisible = true;
+            this.BtnConsultar.IconRightZoom = 0D;
+            this.BtnConsultar.IconVisible = true;
+            this.BtnConsultar.IconZoom = 50D;
+            this.BtnConsultar.IsTab = false;
+            this.BtnConsultar.Location = new System.Drawing.Point(574, 398);
+            this.BtnConsultar.Name = "BtnConsultar";
+            this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.selected = false;
+            this.BtnConsultar.Size = new System.Drawing.Size(120, 26);
+            this.BtnConsultar.TabIndex = 40;
+            this.BtnConsultar.Text = "    CONSULTAR";
+            this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConsultar.Textcolor = System.Drawing.Color.Black;
+            this.BtnConsultar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.ForeColor = System.Drawing.Color.White;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(133, 430);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(587, 14);
+            this.bunifuSeparator3.TabIndex = 41;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = false;
+            // 
             // FrmModificaPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,7 +409,7 @@ namespace PresentacionGUI
             this.PnlRegisroPersona.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonasRegistrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonaRegistrada)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,13 +429,15 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView DtgPersonasRegistrados;
+        private System.Windows.Forms.DataGridView DtgPersonaRegistrada;
         private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
-        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacionPersona;
+        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacion;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnConsultar;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
     }
 }

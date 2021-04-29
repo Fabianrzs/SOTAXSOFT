@@ -49,11 +49,11 @@ namespace PresentacionGUI
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.DtgPersonasRegistrados = new System.Windows.Forms.DataGridView();
+            this.DtgPersonasRegistradas = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PnlRegisroPersona.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonasRegistrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonasRegistradas)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlRegisroPersona
@@ -64,7 +64,7 @@ namespace PresentacionGUI
             this.PnlRegisroPersona.Controls.Add(this.bunifuCustomLabel7);
             this.PnlRegisroPersona.Controls.Add(this.bunifuSeparator2);
             this.PnlRegisroPersona.Controls.Add(this.bunifuSeparator1);
-            this.PnlRegisroPersona.Controls.Add(this.DtgPersonasRegistrados);
+            this.PnlRegisroPersona.Controls.Add(this.DtgPersonasRegistradas);
             this.PnlRegisroPersona.Controls.Add(this.REGISTRO);
             this.PnlRegisroPersona.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlRegisroPersona.GradientBottomLeft = System.Drawing.Color.Aqua;
@@ -108,7 +108,7 @@ namespace PresentacionGUI
             // TxtPrimerNombre
             // 
             this.TxtPrimerNombre.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtPrimerNombre.Location = new System.Drawing.Point(237, 140);
+            this.TxtPrimerNombre.Location = new System.Drawing.Point(237, 135);
             this.TxtPrimerNombre.Name = "TxtPrimerNombre";
             this.TxtPrimerNombre.Size = new System.Drawing.Size(109, 20);
             this.TxtPrimerNombre.TabIndex = 27;
@@ -131,7 +131,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Georgia", 12F);
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(69, 140);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(69, 135);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(120, 18);
             this.bunifuCustomLabel1.TabIndex = 23;
@@ -140,7 +140,7 @@ namespace PresentacionGUI
             // TxtNumeroContacto
             // 
             this.TxtNumeroContacto.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtNumeroContacto.Location = new System.Drawing.Point(237, 355);
+            this.TxtNumeroContacto.Location = new System.Drawing.Point(237, 351);
             this.TxtNumeroContacto.Name = "TxtNumeroContacto";
             this.TxtNumeroContacto.Size = new System.Drawing.Size(109, 20);
             this.TxtNumeroContacto.TabIndex = 35;
@@ -204,7 +204,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Georgia", 12F);
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(59, 194);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(59, 189);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(130, 18);
             this.bunifuCustomLabel3.TabIndex = 26;
@@ -228,7 +228,7 @@ namespace PresentacionGUI
             // TxtPrimerApellido
             // 
             this.TxtPrimerApellido.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtPrimerApellido.Location = new System.Drawing.Point(237, 244);
+            this.TxtPrimerApellido.Location = new System.Drawing.Point(237, 243);
             this.TxtPrimerApellido.Name = "TxtPrimerApellido";
             this.TxtPrimerApellido.Size = new System.Drawing.Size(109, 20);
             this.TxtPrimerApellido.TabIndex = 33;
@@ -239,7 +239,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Georgia", 12F);
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(70, 244);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(70, 243);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(119, 18);
             this.bunifuCustomLabel4.TabIndex = 28;
@@ -248,7 +248,7 @@ namespace PresentacionGUI
             // TxtSegundoNombre
             // 
             this.TxtSegundoNombre.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtSegundoNombre.Location = new System.Drawing.Point(237, 194);
+            this.TxtSegundoNombre.Location = new System.Drawing.Point(237, 189);
             this.TxtSegundoNombre.Name = "TxtSegundoNombre";
             this.TxtSegundoNombre.Size = new System.Drawing.Size(109, 20);
             this.TxtSegundoNombre.TabIndex = 32;
@@ -259,7 +259,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Georgia", 12F);
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(36, 352);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(36, 351);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(153, 18);
             this.bunifuCustomLabel5.TabIndex = 30;
@@ -316,14 +316,14 @@ namespace PresentacionGUI
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // DtgPersonasRegistrados
+            // DtgPersonasRegistradas
             // 
-            this.DtgPersonasRegistrados.BackgroundColor = System.Drawing.Color.White;
-            this.DtgPersonasRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgPersonasRegistrados.Location = new System.Drawing.Point(20, 192);
-            this.DtgPersonasRegistrados.Name = "DtgPersonasRegistrados";
-            this.DtgPersonasRegistrados.Size = new System.Drawing.Size(767, 223);
-            this.DtgPersonasRegistrados.TabIndex = 1;
+            this.DtgPersonasRegistradas.BackgroundColor = System.Drawing.Color.White;
+            this.DtgPersonasRegistradas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgPersonasRegistradas.Location = new System.Drawing.Point(20, 192);
+            this.DtgPersonasRegistradas.Name = "DtgPersonasRegistradas";
+            this.DtgPersonasRegistradas.Size = new System.Drawing.Size(767, 223);
+            this.DtgPersonasRegistradas.TabIndex = 1;
             // 
             // REGISTRO
             // 
@@ -350,7 +350,7 @@ namespace PresentacionGUI
             this.PnlRegisroPersona.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonasRegistrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonasRegistradas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -365,7 +365,7 @@ namespace PresentacionGUI
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtIdentificacion;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView DtgPersonasRegistrados;
+        private System.Windows.Forms.DataGridView DtgPersonasRegistradas;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;

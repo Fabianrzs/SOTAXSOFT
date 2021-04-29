@@ -40,11 +40,11 @@ namespace PresentacionGUI
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtPlaca = new Bunifu.Framework.UI.BunifuTextbox();
             this.BtnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.TxtDetalleDescripcion = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.TxtDescripcionDescripcion = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtDetalleSaldo = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.TxtValorDetalle = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.DtpFecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PnlRegistroDetalle.SuspendLayout();
@@ -122,11 +122,11 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel4);
             this.bunifuGradientPanel1.Controls.Add(this.TxtPlaca);
             this.bunifuGradientPanel1.Controls.Add(this.BtnGuardar);
-            this.bunifuGradientPanel1.Controls.Add(this.TxtDetalleDescripcion);
+            this.bunifuGradientPanel1.Controls.Add(this.TxtDescripcionDescripcion);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel3);
-            this.bunifuGradientPanel1.Controls.Add(this.TxtDetalleSaldo);
-            this.bunifuGradientPanel1.Controls.Add(this.CalendarFecha);
+            this.bunifuGradientPanel1.Controls.Add(this.TxtValorDetalle);
+            this.bunifuGradientPanel1.Controls.Add(this.DtpFecha);
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Maroon;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkSlateGray;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Teal;
@@ -226,13 +226,13 @@ namespace PresentacionGUI
             this.BtnGuardar.Textcolor = System.Drawing.Color.White;
             this.BtnGuardar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // TxtDetalleDescripcion
+            // TxtDescripcionDescripcion
             // 
-            this.TxtDetalleDescripcion.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtDetalleDescripcion.Location = new System.Drawing.Point(206, 181);
-            this.TxtDetalleDescripcion.Name = "TxtDetalleDescripcion";
-            this.TxtDetalleDescripcion.Size = new System.Drawing.Size(110, 20);
-            this.TxtDetalleDescripcion.TabIndex = 27;
+            this.TxtDescripcionDescripcion.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtDescripcionDescripcion.Location = new System.Drawing.Point(206, 181);
+            this.TxtDescripcionDescripcion.Name = "TxtDescripcionDescripcion";
+            this.TxtDescripcionDescripcion.Size = new System.Drawing.Size(110, 20);
+            this.TxtDescripcionDescripcion.TabIndex = 27;
             // 
             // label2
             // 
@@ -258,26 +258,26 @@ namespace PresentacionGUI
             this.bunifuCustomLabel3.TabIndex = 26;
             this.bunifuCustomLabel3.Text = "Monto";
             // 
-            // TxtDetalleSaldo
+            // TxtValorDetalle
             // 
-            this.TxtDetalleSaldo.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtDetalleSaldo.Location = new System.Drawing.Point(206, 128);
-            this.TxtDetalleSaldo.Name = "TxtDetalleSaldo";
-            this.TxtDetalleSaldo.Size = new System.Drawing.Size(110, 20);
-            this.TxtDetalleSaldo.TabIndex = 24;
+            this.TxtValorDetalle.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtValorDetalle.Location = new System.Drawing.Point(206, 128);
+            this.TxtValorDetalle.Name = "TxtValorDetalle";
+            this.TxtValorDetalle.Size = new System.Drawing.Size(110, 20);
+            this.TxtValorDetalle.TabIndex = 24;
             // 
-            // CalendarFecha
+            // DtpFecha
             // 
-            this.CalendarFecha.BackColor = System.Drawing.Color.Transparent;
-            this.CalendarFecha.BorderRadius = 0;
-            this.CalendarFecha.ForeColor = System.Drawing.Color.White;
-            this.CalendarFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.CalendarFecha.FormatCustom = null;
-            this.CalendarFecha.Location = new System.Drawing.Point(63, 258);
-            this.CalendarFecha.Name = "CalendarFecha";
-            this.CalendarFecha.Size = new System.Drawing.Size(253, 30);
-            this.CalendarFecha.TabIndex = 2;
-            this.CalendarFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
+            this.DtpFecha.BackColor = System.Drawing.Color.Transparent;
+            this.DtpFecha.BorderRadius = 0;
+            this.DtpFecha.ForeColor = System.Drawing.Color.White;
+            this.DtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DtpFecha.FormatCustom = null;
+            this.DtpFecha.Location = new System.Drawing.Point(63, 258);
+            this.DtpFecha.Name = "DtpFecha";
+            this.DtpFecha.Size = new System.Drawing.Size(253, 30);
+            this.DtpFecha.TabIndex = 2;
+            this.DtpFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
             // 
             // DtgDetallesRegistrados
             // 
@@ -325,15 +325,15 @@ namespace PresentacionGUI
 
         private Bunifu.Framework.UI.BunifuGradientPanel PnlRegistroDetalle;
         private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
-        private Bunifu.Framework.UI.BunifuDatepicker CalendarFecha;
+        private Bunifu.Framework.UI.BunifuDatepicker DtpFecha;
         private System.Windows.Forms.DataGridView DtgDetallesRegistrados;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuTextbox TxtPlaca;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtDetalleSaldo;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtValorDetalle;
         private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtDetalleDescripcion;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtDescripcionDescripcion;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;

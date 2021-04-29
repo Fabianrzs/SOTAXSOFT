@@ -30,13 +30,13 @@ namespace PresentacionGUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportes));
+            Bunifu.Framework.UI.BunifuTextbox TxtIngresos;
             this.PnlReporte = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.TxtGastos = new Bunifu.Framework.UI.BunifuTextbox();
             this.TxtGanancia = new Bunifu.Framework.UI.BunifuTextbox();
-            this.TxtIngresos = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.DtgGastosRegistrados = new System.Windows.Forms.DataGridView();
@@ -45,25 +45,26 @@ namespace PresentacionGUI
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.bunifuDatepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.DtpPersonalizadoHasta = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.DtpPersonalizadoDesde = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CmbMensualAyo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbMensualMes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.DtpFechaDiario = new Bunifu.Framework.UI.BunifuDatepicker();
             this.BtnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.CheckboxCalendar = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.ChbPersonalidado = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.CheckboxID = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.ChbMensual = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.CheckboxPlaca = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.ChbDiario = new Bunifu.Framework.UI.BunifuCheckbox();
             this.DtgIngresosRegistrados = new System.Windows.Forms.DataGridView();
             this.nn = new Bunifu.Framework.UI.BunifuCustomLabel();
+            TxtIngresos = new Bunifu.Framework.UI.BunifuTextbox();
             this.PnlReporte.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgGastosRegistrados)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -79,7 +80,7 @@ namespace PresentacionGUI
             this.PnlReporte.Controls.Add(this.label8);
             this.PnlReporte.Controls.Add(this.TxtGastos);
             this.PnlReporte.Controls.Add(this.TxtGanancia);
-            this.PnlReporte.Controls.Add(this.TxtIngresos);
+            this.PnlReporte.Controls.Add(TxtIngresos);
             this.PnlReporte.Controls.Add(this.bunifuCustomLabel1);
             this.PnlReporte.Controls.Add(this.bunifuSeparator3);
             this.PnlReporte.Controls.Add(this.DtgGastosRegistrados);
@@ -116,7 +117,7 @@ namespace PresentacionGUI
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(32, 555);
+            this.label9.Location = new System.Drawing.Point(64, 555);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(153, 22);
             this.label9.TabIndex = 55;
@@ -127,7 +128,7 @@ namespace PresentacionGUI
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(32, 513);
+            this.label8.Location = new System.Drawing.Point(59, 513);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(158, 22);
             this.label8.TabIndex = 54;
@@ -135,10 +136,10 @@ namespace PresentacionGUI
             // 
             // TxtGastos
             // 
-            this.TxtGastos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TxtGastos.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.TxtGastos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtGastos.BackgroundImage")));
             this.TxtGastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtGastos.ForeColor = System.Drawing.Color.Wheat;
+            this.TxtGastos.ForeColor = System.Drawing.Color.Black;
             this.TxtGastos.Icon = ((System.Drawing.Image)(resources.GetObject("TxtGastos.Icon")));
             this.TxtGastos.Location = new System.Drawing.Point(229, 553);
             this.TxtGastos.Name = "TxtGastos";
@@ -148,10 +149,10 @@ namespace PresentacionGUI
             // 
             // TxtGanancia
             // 
-            this.TxtGanancia.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TxtGanancia.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.TxtGanancia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtGanancia.BackgroundImage")));
             this.TxtGanancia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtGanancia.ForeColor = System.Drawing.Color.Wheat;
+            this.TxtGanancia.ForeColor = System.Drawing.Color.Black;
             this.TxtGanancia.Icon = ((System.Drawing.Image)(resources.GetObject("TxtGanancia.Icon")));
             this.TxtGanancia.Location = new System.Drawing.Point(229, 593);
             this.TxtGanancia.Name = "TxtGanancia";
@@ -161,16 +162,16 @@ namespace PresentacionGUI
             // 
             // TxtIngresos
             // 
-            this.TxtIngresos.BackColor = System.Drawing.Color.White;
-            this.TxtIngresos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIngresos.BackgroundImage")));
-            this.TxtIngresos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtIngresos.ForeColor = System.Drawing.Color.Black;
-            this.TxtIngresos.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIngresos.Icon")));
-            this.TxtIngresos.Location = new System.Drawing.Point(229, 513);
-            this.TxtIngresos.Name = "TxtIngresos";
-            this.TxtIngresos.Size = new System.Drawing.Size(200, 26);
-            this.TxtIngresos.TabIndex = 51;
-            this.TxtIngresos.text = "";
+            TxtIngresos.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            TxtIngresos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIngresos.BackgroundImage")));
+            TxtIngresos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            TxtIngresos.ForeColor = System.Drawing.Color.Black;
+            TxtIngresos.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIngresos.Icon")));
+            TxtIngresos.Location = new System.Drawing.Point(229, 513);
+            TxtIngresos.Name = "TxtIngresos";
+            TxtIngresos.Size = new System.Drawing.Size(200, 26);
+            TxtIngresos.TabIndex = 51;
+            TxtIngresos.text = "";
             // 
             // bunifuCustomLabel1
             // 
@@ -251,23 +252,23 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.Controls.Add(this.label7);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuDatepicker2);
+            this.bunifuGradientPanel1.Controls.Add(this.DtpPersonalizadoHasta);
             this.bunifuGradientPanel1.Controls.Add(this.label6);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuDatepicker1);
+            this.bunifuGradientPanel1.Controls.Add(this.DtpPersonalizadoDesde);
             this.bunifuGradientPanel1.Controls.Add(this.label4);
-            this.bunifuGradientPanel1.Controls.Add(this.comboBox2);
+            this.bunifuGradientPanel1.Controls.Add(this.CmbMensualAyo);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
-            this.bunifuGradientPanel1.Controls.Add(this.comboBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.CmbMensualMes);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel5);
-            this.bunifuGradientPanel1.Controls.Add(this.CalendarFecha);
+            this.bunifuGradientPanel1.Controls.Add(this.DtpFechaDiario);
             this.bunifuGradientPanel1.Controls.Add(this.BtnGuardar);
-            this.bunifuGradientPanel1.Controls.Add(this.CheckboxCalendar);
+            this.bunifuGradientPanel1.Controls.Add(this.ChbPersonalidado);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
-            this.bunifuGradientPanel1.Controls.Add(this.CheckboxID);
+            this.bunifuGradientPanel1.Controls.Add(this.ChbMensual);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
             this.bunifuGradientPanel1.Controls.Add(this.label5);
-            this.bunifuGradientPanel1.Controls.Add(this.CheckboxPlaca);
+            this.bunifuGradientPanel1.Controls.Add(this.ChbDiario);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuGradientPanel1.ForeColor = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Maroon;
@@ -292,18 +293,18 @@ namespace PresentacionGUI
             this.label7.TabIndex = 44;
             this.label7.Text = "Hasta";
             // 
-            // bunifuDatepicker2
+            // DtpPersonalizadoHasta
             // 
-            this.bunifuDatepicker2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDatepicker2.BorderRadius = 0;
-            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker2.FormatCustom = null;
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(16, 553);
-            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(199, 37);
-            this.bunifuDatepicker2.TabIndex = 43;
-            this.bunifuDatepicker2.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
+            this.DtpPersonalizadoHasta.BackColor = System.Drawing.Color.Transparent;
+            this.DtpPersonalizadoHasta.BorderRadius = 0;
+            this.DtpPersonalizadoHasta.ForeColor = System.Drawing.Color.White;
+            this.DtpPersonalizadoHasta.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DtpPersonalizadoHasta.FormatCustom = null;
+            this.DtpPersonalizadoHasta.Location = new System.Drawing.Point(16, 553);
+            this.DtpPersonalizadoHasta.Name = "DtpPersonalizadoHasta";
+            this.DtpPersonalizadoHasta.Size = new System.Drawing.Size(199, 37);
+            this.DtpPersonalizadoHasta.TabIndex = 43;
+            this.DtpPersonalizadoHasta.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
             // 
             // label6
             // 
@@ -317,18 +318,18 @@ namespace PresentacionGUI
             this.label6.TabIndex = 42;
             this.label6.Text = "Desde";
             // 
-            // bunifuDatepicker1
+            // DtpPersonalizadoDesde
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(16, 495);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(199, 34);
-            this.bunifuDatepicker1.TabIndex = 41;
-            this.bunifuDatepicker1.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
+            this.DtpPersonalizadoDesde.BackColor = System.Drawing.Color.Transparent;
+            this.DtpPersonalizadoDesde.BorderRadius = 0;
+            this.DtpPersonalizadoDesde.ForeColor = System.Drawing.Color.White;
+            this.DtpPersonalizadoDesde.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DtpPersonalizadoDesde.FormatCustom = null;
+            this.DtpPersonalizadoDesde.Location = new System.Drawing.Point(16, 495);
+            this.DtpPersonalizadoDesde.Name = "DtpPersonalizadoDesde";
+            this.DtpPersonalizadoDesde.Size = new System.Drawing.Size(199, 34);
+            this.DtpPersonalizadoDesde.TabIndex = 41;
+            this.DtpPersonalizadoDesde.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
             // 
             // label4
             // 
@@ -342,13 +343,13 @@ namespace PresentacionGUI
             this.label4.TabIndex = 40;
             this.label4.Text = "Año";
             // 
-            // comboBox2
+            // CmbMensualAyo
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(131, 339);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(95, 21);
-            this.comboBox2.TabIndex = 39;
+            this.CmbMensualAyo.FormattingEnabled = true;
+            this.CmbMensualAyo.Location = new System.Drawing.Point(131, 339);
+            this.CmbMensualAyo.Name = "CmbMensualAyo";
+            this.CmbMensualAyo.Size = new System.Drawing.Size(95, 21);
+            this.CmbMensualAyo.TabIndex = 39;
             // 
             // label2
             // 
@@ -362,13 +363,13 @@ namespace PresentacionGUI
             this.label2.TabIndex = 38;
             this.label2.Text = "Mes";
             // 
-            // comboBox1
+            // CmbMensualMes
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(14, 339);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(95, 21);
-            this.comboBox1.TabIndex = 37;
+            this.CmbMensualMes.FormattingEnabled = true;
+            this.CmbMensualMes.Location = new System.Drawing.Point(14, 339);
+            this.CmbMensualMes.Name = "CmbMensualMes";
+            this.CmbMensualMes.Size = new System.Drawing.Size(95, 21);
+            this.CmbMensualMes.TabIndex = 37;
             // 
             // label1
             // 
@@ -394,18 +395,18 @@ namespace PresentacionGUI
             this.bunifuCustomLabel5.TabIndex = 35;
             this.bunifuCustomLabel5.Text = "Personalizado";
             // 
-            // CalendarFecha
+            // DtpFechaDiario
             // 
-            this.CalendarFecha.BackColor = System.Drawing.Color.Transparent;
-            this.CalendarFecha.BorderRadius = 0;
-            this.CalendarFecha.ForeColor = System.Drawing.Color.White;
-            this.CalendarFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.CalendarFecha.FormatCustom = null;
-            this.CalendarFecha.Location = new System.Drawing.Point(27, 176);
-            this.CalendarFecha.Name = "CalendarFecha";
-            this.CalendarFecha.Size = new System.Drawing.Size(199, 29);
-            this.CalendarFecha.TabIndex = 30;
-            this.CalendarFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
+            this.DtpFechaDiario.BackColor = System.Drawing.Color.Transparent;
+            this.DtpFechaDiario.BorderRadius = 0;
+            this.DtpFechaDiario.ForeColor = System.Drawing.Color.White;
+            this.DtpFechaDiario.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DtpFechaDiario.FormatCustom = null;
+            this.DtpFechaDiario.Location = new System.Drawing.Point(27, 176);
+            this.DtpFechaDiario.Name = "DtpFechaDiario";
+            this.DtpFechaDiario.Size = new System.Drawing.Size(199, 29);
+            this.DtpFechaDiario.TabIndex = 30;
+            this.DtpFechaDiario.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
             // 
             // BtnGuardar
             // 
@@ -442,17 +443,17 @@ namespace PresentacionGUI
             this.BtnGuardar.Textcolor = System.Drawing.Color.White;
             this.BtnGuardar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // CheckboxCalendar
+            // ChbPersonalidado
             // 
-            this.CheckboxCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxCalendar.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CheckboxCalendar.Checked = true;
-            this.CheckboxCalendar.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxCalendar.ForeColor = System.Drawing.Color.White;
-            this.CheckboxCalendar.Location = new System.Drawing.Point(60, 437);
-            this.CheckboxCalendar.Name = "CheckboxCalendar";
-            this.CheckboxCalendar.Size = new System.Drawing.Size(20, 20);
-            this.CheckboxCalendar.TabIndex = 31;
+            this.ChbPersonalidado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbPersonalidado.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ChbPersonalidado.Checked = true;
+            this.ChbPersonalidado.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbPersonalidado.ForeColor = System.Drawing.Color.White;
+            this.ChbPersonalidado.Location = new System.Drawing.Point(60, 437);
+            this.ChbPersonalidado.Name = "ChbPersonalidado";
+            this.ChbPersonalidado.Size = new System.Drawing.Size(20, 20);
+            this.ChbPersonalidado.TabIndex = 31;
             // 
             // bunifuCustomLabel2
             // 
@@ -469,17 +470,17 @@ namespace PresentacionGUI
             this.bunifuCustomLabel2.Text = "TIPOS DE  REPORTES ";
             this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // CheckboxID
+            // ChbMensual
             // 
-            this.CheckboxID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxID.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CheckboxID.Checked = true;
-            this.CheckboxID.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxID.ForeColor = System.Drawing.Color.White;
-            this.CheckboxID.Location = new System.Drawing.Point(80, 275);
-            this.CheckboxID.Name = "CheckboxID";
-            this.CheckboxID.Size = new System.Drawing.Size(20, 20);
-            this.CheckboxID.TabIndex = 29;
+            this.ChbMensual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbMensual.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ChbMensual.Checked = true;
+            this.ChbMensual.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbMensual.ForeColor = System.Drawing.Color.White;
+            this.ChbMensual.Location = new System.Drawing.Point(80, 275);
+            this.ChbMensual.Name = "ChbMensual";
+            this.ChbMensual.Size = new System.Drawing.Size(20, 20);
+            this.ChbMensual.TabIndex = 29;
             // 
             // label3
             // 
@@ -505,17 +506,17 @@ namespace PresentacionGUI
             this.label5.TabIndex = 26;
             this.label5.Text = "Mensual";
             // 
-            // CheckboxPlaca
+            // ChbDiario
             // 
-            this.CheckboxPlaca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxPlaca.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CheckboxPlaca.Checked = true;
-            this.CheckboxPlaca.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxPlaca.ForeColor = System.Drawing.Color.White;
-            this.CheckboxPlaca.Location = new System.Drawing.Point(89, 121);
-            this.CheckboxPlaca.Name = "CheckboxPlaca";
-            this.CheckboxPlaca.Size = new System.Drawing.Size(20, 20);
-            this.CheckboxPlaca.TabIndex = 28;
+            this.ChbDiario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbDiario.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ChbDiario.Checked = true;
+            this.ChbDiario.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbDiario.ForeColor = System.Drawing.Color.White;
+            this.ChbDiario.Location = new System.Drawing.Point(89, 121);
+            this.ChbDiario.Name = "ChbDiario";
+            this.ChbDiario.Size = new System.Drawing.Size(20, 20);
+            this.ChbDiario.TabIndex = 28;
             // 
             // DtgIngresosRegistrados
             // 
@@ -565,31 +566,30 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Bunifu.Framework.UI.BunifuDatepicker CalendarFecha;
+        private Bunifu.Framework.UI.BunifuDatepicker DtpFechaDiario;
         private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxCalendar;
+        private Bunifu.Framework.UI.BunifuCheckbox ChbPersonalidado;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxID;
+        private Bunifu.Framework.UI.BunifuCheckbox ChbMensual;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxPlaca;
+        private Bunifu.Framework.UI.BunifuCheckbox ChbDiario;
         private System.Windows.Forms.DataGridView DtgIngresosRegistrados;
         private Bunifu.Framework.UI.BunifuCustomLabel nn;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
         private System.Windows.Forms.DataGridView DtgGastosRegistrados;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CmbMensualAyo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbMensualMes;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuTextbox TxtGastos;
         private Bunifu.Framework.UI.BunifuTextbox TxtGanancia;
-        private Bunifu.Framework.UI.BunifuTextbox TxtIngresos;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker2;
+        private Bunifu.Framework.UI.BunifuDatepicker DtpPersonalizadoHasta;
         private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        private Bunifu.Framework.UI.BunifuDatepicker DtpPersonalizadoDesde;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;

@@ -35,19 +35,19 @@ namespace PresentacionGUI
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TxtIDConductor = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.CalendarFecha = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.BtnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.CheckboxCalendar = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.DtpFecha = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.BtnConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ChbFecha = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtPlaca = new Bunifu.Framework.UI.BunifuTextbox();
-            this.CheckboxID = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.ChbIDConductor = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.CheckboxPlaca = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.ChbPlaca = new Bunifu.Framework.UI.BunifuCheckbox();
             this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
-            this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.consultar = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PnlConsultaDetalle.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).BeginInit();
@@ -62,7 +62,7 @@ namespace PresentacionGUI
             this.PnlConsultaDetalle.Controls.Add(this.bunifuSeparator2);
             this.PnlConsultaDetalle.Controls.Add(this.bunifuGradientPanel1);
             this.PnlConsultaDetalle.Controls.Add(this.DtgDetallesRegistrados);
-            this.PnlConsultaDetalle.Controls.Add(this.REGISTRO);
+            this.PnlConsultaDetalle.Controls.Add(this.consultar);
             this.PnlConsultaDetalle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlConsultaDetalle.GradientBottomLeft = System.Drawing.Color.Aqua;
             this.PnlConsultaDetalle.GradientBottomRight = System.Drawing.Color.Honeydew;
@@ -117,17 +117,17 @@ namespace PresentacionGUI
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuTextbox1);
+            this.bunifuGradientPanel1.Controls.Add(this.TxtIDConductor);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel5);
-            this.bunifuGradientPanel1.Controls.Add(this.CalendarFecha);
-            this.bunifuGradientPanel1.Controls.Add(this.BtnGuardar);
-            this.bunifuGradientPanel1.Controls.Add(this.CheckboxCalendar);
+            this.bunifuGradientPanel1.Controls.Add(this.DtpFecha);
+            this.bunifuGradientPanel1.Controls.Add(this.BtnConsultar);
+            this.bunifuGradientPanel1.Controls.Add(this.ChbFecha);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
             this.bunifuGradientPanel1.Controls.Add(this.TxtPlaca);
-            this.bunifuGradientPanel1.Controls.Add(this.CheckboxID);
+            this.bunifuGradientPanel1.Controls.Add(this.ChbIDConductor);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
             this.bunifuGradientPanel1.Controls.Add(this.label5);
-            this.bunifuGradientPanel1.Controls.Add(this.CheckboxPlaca);
+            this.bunifuGradientPanel1.Controls.Add(this.ChbPlaca);
             this.bunifuGradientPanel1.ForeColor = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Maroon;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkSlateGray;
@@ -139,18 +139,18 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(370, 450);
             this.bunifuGradientPanel1.TabIndex = 44;
             // 
-            // bunifuTextbox1
+            // TxtIDConductor
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.White;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(197, 135);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(130, 18);
-            this.bunifuTextbox1.TabIndex = 36;
-            this.bunifuTextbox1.text = "";
+            this.TxtIDConductor.BackColor = System.Drawing.Color.White;
+            this.TxtIDConductor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIDConductor.BackgroundImage")));
+            this.TxtIDConductor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TxtIDConductor.ForeColor = System.Drawing.Color.White;
+            this.TxtIDConductor.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIDConductor.Icon")));
+            this.TxtIDConductor.Location = new System.Drawing.Point(197, 135);
+            this.TxtIDConductor.Name = "TxtIDConductor";
+            this.TxtIDConductor.Size = new System.Drawing.Size(130, 18);
+            this.TxtIDConductor.TabIndex = 36;
+            this.TxtIDConductor.text = "";
             // 
             // bunifuCustomLabel5
             // 
@@ -164,65 +164,65 @@ namespace PresentacionGUI
             this.bunifuCustomLabel5.TabIndex = 35;
             this.bunifuCustomLabel5.Text = "Fecha";
             // 
-            // CalendarFecha
+            // DtpFecha
             // 
-            this.CalendarFecha.BackColor = System.Drawing.Color.Transparent;
-            this.CalendarFecha.BorderRadius = 0;
-            this.CalendarFecha.ForeColor = System.Drawing.Color.White;
-            this.CalendarFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.CalendarFecha.FormatCustom = null;
-            this.CalendarFecha.Location = new System.Drawing.Point(53, 210);
-            this.CalendarFecha.Name = "CalendarFecha";
-            this.CalendarFecha.Size = new System.Drawing.Size(274, 20);
-            this.CalendarFecha.TabIndex = 30;
-            this.CalendarFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
+            this.DtpFecha.BackColor = System.Drawing.Color.Transparent;
+            this.DtpFecha.BorderRadius = 0;
+            this.DtpFecha.ForeColor = System.Drawing.Color.White;
+            this.DtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DtpFecha.FormatCustom = null;
+            this.DtpFecha.Location = new System.Drawing.Point(53, 210);
+            this.DtpFecha.Name = "DtpFecha";
+            this.DtpFecha.Size = new System.Drawing.Size(274, 20);
+            this.DtpFecha.TabIndex = 30;
+            this.DtpFecha.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
             // 
-            // BtnGuardar
+            // BtnConsultar
             // 
-            this.BtnGuardar.Activecolor = System.Drawing.Color.DarkRed;
-            this.BtnGuardar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnGuardar.BorderRadius = 0;
-            this.BtnGuardar.ButtonText = "    CONSULTAR";
-            this.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnGuardar.DisabledColor = System.Drawing.Color.Gray;
-            this.BtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardar.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtnGuardar.Iconimage = global::PresentacionGUI.Properties.Resources.consulta;
-            this.BtnGuardar.Iconimage_right = null;
-            this.BtnGuardar.Iconimage_right_Selected = null;
-            this.BtnGuardar.Iconimage_Selected = null;
-            this.BtnGuardar.IconMarginLeft = 0;
-            this.BtnGuardar.IconMarginRight = 0;
-            this.BtnGuardar.IconRightVisible = true;
-            this.BtnGuardar.IconRightZoom = 0D;
-            this.BtnGuardar.IconVisible = true;
-            this.BtnGuardar.IconZoom = 50D;
-            this.BtnGuardar.IsTab = false;
-            this.BtnGuardar.Location = new System.Drawing.Point(127, 306);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtnGuardar.OnHovercolor = System.Drawing.Color.Transparent;
-            this.BtnGuardar.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.BtnGuardar.selected = false;
-            this.BtnGuardar.Size = new System.Drawing.Size(120, 26);
-            this.BtnGuardar.TabIndex = 25;
-            this.BtnGuardar.Text = "    CONSULTAR";
-            this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardar.Textcolor = System.Drawing.Color.White;
-            this.BtnGuardar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConsultar.Activecolor = System.Drawing.Color.DarkRed;
+            this.BtnConsultar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnConsultar.BorderRadius = 0;
+            this.BtnConsultar.ButtonText = "    CONSULTAR";
+            this.BtnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnConsultar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnConsultar.ForeColor = System.Drawing.Color.White;
+            this.BtnConsultar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.Iconimage = global::PresentacionGUI.Properties.Resources.consulta;
+            this.BtnConsultar.Iconimage_right = null;
+            this.BtnConsultar.Iconimage_right_Selected = null;
+            this.BtnConsultar.Iconimage_Selected = null;
+            this.BtnConsultar.IconMarginLeft = 0;
+            this.BtnConsultar.IconMarginRight = 0;
+            this.BtnConsultar.IconRightVisible = true;
+            this.BtnConsultar.IconRightZoom = 0D;
+            this.BtnConsultar.IconVisible = true;
+            this.BtnConsultar.IconZoom = 50D;
+            this.BtnConsultar.IsTab = false;
+            this.BtnConsultar.Location = new System.Drawing.Point(127, 306);
+            this.BtnConsultar.Name = "BtnConsultar";
+            this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.selected = false;
+            this.BtnConsultar.Size = new System.Drawing.Size(120, 26);
+            this.BtnConsultar.TabIndex = 25;
+            this.BtnConsultar.Text = "    CONSULTAR";
+            this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConsultar.Textcolor = System.Drawing.Color.White;
+            this.BtnConsultar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // CheckboxCalendar
+            // ChbFecha
             // 
-            this.CheckboxCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxCalendar.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CheckboxCalendar.Checked = true;
-            this.CheckboxCalendar.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxCalendar.ForeColor = System.Drawing.Color.White;
-            this.CheckboxCalendar.Location = new System.Drawing.Point(53, 184);
-            this.CheckboxCalendar.Name = "CheckboxCalendar";
-            this.CheckboxCalendar.Size = new System.Drawing.Size(20, 20);
-            this.CheckboxCalendar.TabIndex = 31;
+            this.ChbFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbFecha.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ChbFecha.Checked = true;
+            this.ChbFecha.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbFecha.ForeColor = System.Drawing.Color.White;
+            this.ChbFecha.Location = new System.Drawing.Point(53, 184);
+            this.ChbFecha.Name = "ChbFecha";
+            this.ChbFecha.Size = new System.Drawing.Size(20, 20);
+            this.ChbFecha.TabIndex = 31;
             // 
             // bunifuCustomLabel2
             // 
@@ -252,17 +252,17 @@ namespace PresentacionGUI
             this.TxtPlaca.TabIndex = 22;
             this.TxtPlaca.text = "";
             // 
-            // CheckboxID
+            // ChbIDConductor
             // 
-            this.CheckboxID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxID.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CheckboxID.Checked = true;
-            this.CheckboxID.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxID.ForeColor = System.Drawing.Color.White;
-            this.CheckboxID.Location = new System.Drawing.Point(53, 133);
-            this.CheckboxID.Name = "CheckboxID";
-            this.CheckboxID.Size = new System.Drawing.Size(20, 20);
-            this.CheckboxID.TabIndex = 29;
+            this.ChbIDConductor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbIDConductor.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ChbIDConductor.Checked = true;
+            this.ChbIDConductor.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbIDConductor.ForeColor = System.Drawing.Color.White;
+            this.ChbIDConductor.Location = new System.Drawing.Point(53, 133);
+            this.ChbIDConductor.Name = "ChbIDConductor";
+            this.ChbIDConductor.Size = new System.Drawing.Size(20, 20);
+            this.ChbIDConductor.TabIndex = 29;
             // 
             // label3
             // 
@@ -288,17 +288,17 @@ namespace PresentacionGUI
             this.label5.TabIndex = 26;
             this.label5.Text = "ID Conductor ";
             // 
-            // CheckboxPlaca
+            // ChbPlaca
             // 
-            this.CheckboxPlaca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxPlaca.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.CheckboxPlaca.Checked = true;
-            this.CheckboxPlaca.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.CheckboxPlaca.ForeColor = System.Drawing.Color.White;
-            this.CheckboxPlaca.Location = new System.Drawing.Point(53, 85);
-            this.CheckboxPlaca.Name = "CheckboxPlaca";
-            this.CheckboxPlaca.Size = new System.Drawing.Size(20, 20);
-            this.CheckboxPlaca.TabIndex = 28;
+            this.ChbPlaca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbPlaca.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ChbPlaca.Checked = true;
+            this.ChbPlaca.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.ChbPlaca.ForeColor = System.Drawing.Color.White;
+            this.ChbPlaca.Location = new System.Drawing.Point(53, 85);
+            this.ChbPlaca.Name = "ChbPlaca";
+            this.ChbPlaca.Size = new System.Drawing.Size(20, 20);
+            this.ChbPlaca.TabIndex = 28;
             // 
             // DtgDetallesRegistrados
             // 
@@ -309,18 +309,18 @@ namespace PresentacionGUI
             this.DtgDetallesRegistrados.Size = new System.Drawing.Size(736, 250);
             this.DtgDetallesRegistrados.TabIndex = 1;
             // 
-            // REGISTRO
+            // consultar
             // 
-            this.REGISTRO.AccessibleName = "";
-            this.REGISTRO.BackColor = System.Drawing.Color.Transparent;
-            this.REGISTRO.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.REGISTRO.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.REGISTRO.Location = new System.Drawing.Point(550, 36);
-            this.REGISTRO.Name = "REGISTRO";
-            this.REGISTRO.Size = new System.Drawing.Size(199, 38);
-            this.REGISTRO.TabIndex = 0;
-            this.REGISTRO.Text = "CONSULTA";
-            this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.consultar.AccessibleName = "";
+            this.consultar.BackColor = System.Drawing.Color.Transparent;
+            this.consultar.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consultar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.consultar.Location = new System.Drawing.Point(550, 36);
+            this.consultar.Name = "consultar";
+            this.consultar.Size = new System.Drawing.Size(199, 38);
+            this.consultar.TabIndex = 0;
+            this.consultar.Text = "CONSULTA";
+            this.consultar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FrmConsultaDetalle
             // 
@@ -344,21 +344,21 @@ namespace PresentacionGUI
 
         private Bunifu.Framework.UI.BunifuGradientPanel PnlConsultaDetalle;
         private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnConsultar;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuTextbox TxtPlaca;
         private System.Windows.Forms.DataGridView DtgDetallesRegistrados;
-        private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxID;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxPlaca;
-        private Bunifu.Framework.UI.BunifuCheckbox CheckboxCalendar;
-        private Bunifu.Framework.UI.BunifuDatepicker CalendarFecha;
+        private Bunifu.Framework.UI.BunifuCustomLabel consultar;
+        private Bunifu.Framework.UI.BunifuCheckbox ChbIDConductor;
+        private Bunifu.Framework.UI.BunifuCheckbox ChbPlaca;
+        private Bunifu.Framework.UI.BunifuCheckbox ChbFecha;
+        private Bunifu.Framework.UI.BunifuDatepicker DtpFecha;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private Bunifu.Framework.UI.BunifuTextbox TxtIDConductor;
     }
 }

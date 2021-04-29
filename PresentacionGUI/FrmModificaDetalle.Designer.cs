@@ -39,7 +39,7 @@ namespace PresentacionGUI
             this.BtnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtDescripcionDetalle = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.CalendarFechaDetalle = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.DtpFechaDetalle = new Bunifu.Framework.UI.BunifuDatepicker();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtSaldoDetalle = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -49,6 +49,8 @@ namespace PresentacionGUI
             this.label3 = new System.Windows.Forms.Label();
             this.TxtPlaca = new Bunifu.Framework.UI.BunifuTextbox();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.BtnConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.PnlModificaDetalle.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).BeginInit();
@@ -58,6 +60,8 @@ namespace PresentacionGUI
             // 
             this.PnlModificaDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlModificaDetalle.BackgroundImage")));
             this.PnlModificaDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlModificaDetalle.Controls.Add(this.BtnConsultar);
+            this.PnlModificaDetalle.Controls.Add(this.bunifuSeparator3);
             this.PnlModificaDetalle.Controls.Add(this.bunifuSeparator2);
             this.PnlModificaDetalle.Controls.Add(this.bunifuGradientPanel1);
             this.PnlModificaDetalle.Controls.Add(this.bunifuCustomLabel7);
@@ -100,7 +104,7 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.Controls.Add(this.BtnGuardar);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
             this.bunifuGradientPanel1.Controls.Add(this.TxtDescripcionDetalle);
-            this.bunifuGradientPanel1.Controls.Add(this.CalendarFechaDetalle);
+            this.bunifuGradientPanel1.Controls.Add(this.DtpFechaDetalle);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel4);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel1);
             this.bunifuGradientPanel1.Controls.Add(this.TxtSaldoDetalle);
@@ -204,18 +208,18 @@ namespace PresentacionGUI
             this.TxtDescripcionDetalle.Size = new System.Drawing.Size(100, 20);
             this.TxtDescripcionDetalle.TabIndex = 32;
             // 
-            // CalendarFechaDetalle
+            // DtpFechaDetalle
             // 
-            this.CalendarFechaDetalle.BackColor = System.Drawing.Color.Transparent;
-            this.CalendarFechaDetalle.BorderRadius = 0;
-            this.CalendarFechaDetalle.ForeColor = System.Drawing.Color.White;
-            this.CalendarFechaDetalle.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.CalendarFechaDetalle.FormatCustom = null;
-            this.CalendarFechaDetalle.Location = new System.Drawing.Point(63, 252);
-            this.CalendarFechaDetalle.Name = "CalendarFechaDetalle";
-            this.CalendarFechaDetalle.Size = new System.Drawing.Size(260, 36);
-            this.CalendarFechaDetalle.TabIndex = 28;
-            this.CalendarFechaDetalle.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
+            this.DtpFechaDetalle.BackColor = System.Drawing.Color.Transparent;
+            this.DtpFechaDetalle.BorderRadius = 0;
+            this.DtpFechaDetalle.ForeColor = System.Drawing.Color.White;
+            this.DtpFechaDetalle.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DtpFechaDetalle.FormatCustom = null;
+            this.DtpFechaDetalle.Location = new System.Drawing.Point(63, 252);
+            this.DtpFechaDetalle.Name = "DtpFechaDetalle";
+            this.DtpFechaDetalle.Size = new System.Drawing.Size(260, 36);
+            this.DtpFechaDetalle.TabIndex = 28;
+            this.DtpFechaDetalle.Value = new System.DateTime(2021, 4, 23, 23, 33, 21, 664);
             // 
             // bunifuCustomLabel4
             // 
@@ -288,7 +292,7 @@ namespace PresentacionGUI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(332, 393);
+            this.label3.Location = new System.Drawing.Point(190, 395);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 18);
             this.label3.TabIndex = 21;
@@ -301,7 +305,7 @@ namespace PresentacionGUI
             this.TxtPlaca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TxtPlaca.ForeColor = System.Drawing.Color.White;
             this.TxtPlaca.Icon = ((System.Drawing.Image)(resources.GetObject("TxtPlaca.Icon")));
-            this.TxtPlaca.Location = new System.Drawing.Point(407, 393);
+            this.TxtPlaca.Location = new System.Drawing.Point(265, 395);
             this.TxtPlaca.Name = "TxtPlaca";
             this.TxtPlaca.Size = new System.Drawing.Size(110, 18);
             this.TxtPlaca.TabIndex = 22;
@@ -319,6 +323,54 @@ namespace PresentacionGUI
             this.REGISTRO.TabIndex = 0;
             this.REGISTRO.Text = "MODIFICAR";
             this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.ForeColor = System.Drawing.Color.White;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(145, 433);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(545, 10);
+            this.bunifuSeparator3.TabIndex = 47;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = false;
+            // 
+            // BtnConsultar
+            // 
+            this.BtnConsultar.Activecolor = System.Drawing.Color.DarkRed;
+            this.BtnConsultar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnConsultar.BorderRadius = 0;
+            this.BtnConsultar.ButtonText = "    CONSULTAR";
+            this.BtnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnConsultar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnConsultar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtnConsultar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.Iconimage = global::PresentacionGUI.Properties.Resources.consulta;
+            this.BtnConsultar.Iconimage_right = null;
+            this.BtnConsultar.Iconimage_right_Selected = null;
+            this.BtnConsultar.Iconimage_Selected = null;
+            this.BtnConsultar.IconMarginLeft = 0;
+            this.BtnConsultar.IconMarginRight = 0;
+            this.BtnConsultar.IconRightVisible = true;
+            this.BtnConsultar.IconRightZoom = 0D;
+            this.BtnConsultar.IconVisible = true;
+            this.BtnConsultar.IconZoom = 50D;
+            this.BtnConsultar.IsTab = false;
+            this.BtnConsultar.Location = new System.Drawing.Point(465, 395);
+            this.BtnConsultar.Name = "BtnConsultar";
+            this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.selected = false;
+            this.BtnConsultar.Size = new System.Drawing.Size(120, 26);
+            this.BtnConsultar.TabIndex = 48;
+            this.BtnConsultar.Text = "    CONSULTAR";
+            this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConsultar.Textcolor = System.Drawing.Color.Black;
+            this.BtnConsultar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // FrmModificaDetalle
             // 
@@ -343,7 +395,7 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
         private Bunifu.Framework.UI.BunifuTextbox TxtPlaca;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuDatepicker CalendarFechaDetalle;
+        private Bunifu.Framework.UI.BunifuDatepicker DtpFechaDetalle;
         private Bunifu.Framework.UI.BunifuGradientPanel PnlModificaDetalle;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtDescripcionDetalle;
@@ -359,5 +411,7 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuFlatButton BtnGuardar;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnConsultar;
     }
 }

@@ -10,7 +10,7 @@ namespace Entity
     {
         public DetalleTarifa(Taxi taxi)
         {
-            TipoDetalle = "Tarifa";
+            TipoDetalle = "TARIFA";
             Taxi = taxi;
         }
 

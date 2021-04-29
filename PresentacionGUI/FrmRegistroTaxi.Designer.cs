@@ -159,11 +159,11 @@ namespace PresentacionGUI
             this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Georgia", 12F);
             this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(66, 78);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(83, 78);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(126, 18);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(109, 18);
             this.bunifuCustomLabel7.TabIndex = 34;
-            this.bunifuCustomLabel7.Text = "No I. Propietario";
+            this.bunifuCustomLabel7.Text = "ID Propietario";
             // 
             // TxtPropietario
             // 
@@ -179,11 +179,11 @@ namespace PresentacionGUI
             this.bunifuCustomLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Georgia", 12F);
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(72, 299);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(89, 299);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(120, 18);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(103, 18);
             this.bunifuCustomLabel5.TabIndex = 32;
-            this.bunifuCustomLabel5.Text = "No I. Conductor";
+            this.bunifuCustomLabel5.Text = "ID Conductor";
             // 
             // TxtConductor
             // 

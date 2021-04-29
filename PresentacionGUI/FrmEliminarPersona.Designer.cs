@@ -31,7 +31,7 @@ namespace PresentacionGUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEliminarPersona));
             this.PnlEliminarPersona = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.BtnEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.TxtConfirmarID = new Bunifu.Framework.UI.BunifuTextbox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,17 +40,17 @@ namespace PresentacionGUI
             this.TxtIdentificacion = new Bunifu.Framework.UI.BunifuTextbox();
             this.BtnConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.DtgPersonaRegistrados = new System.Windows.Forms.DataGridView();
+            this.DtgPersonaRegistrada = new System.Windows.Forms.DataGridView();
             this.consulta = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PnlEliminarPersona.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonaRegistrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonaRegistrada)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlEliminarPersona
             // 
             this.PnlEliminarPersona.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlEliminarPersona.BackgroundImage")));
             this.PnlEliminarPersona.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PnlEliminarPersona.Controls.Add(this.bunifuFlatButton1);
+            this.PnlEliminarPersona.Controls.Add(this.BtnEliminar);
             this.PnlEliminarPersona.Controls.Add(this.bunifuSeparator3);
             this.PnlEliminarPersona.Controls.Add(this.TxtConfirmarID);
             this.PnlEliminarPersona.Controls.Add(this.label1);
@@ -59,7 +59,7 @@ namespace PresentacionGUI
             this.PnlEliminarPersona.Controls.Add(this.TxtIdentificacion);
             this.PnlEliminarPersona.Controls.Add(this.BtnConsultar);
             this.PnlEliminarPersona.Controls.Add(this.label2);
-            this.PnlEliminarPersona.Controls.Add(this.DtgPersonaRegistrados);
+            this.PnlEliminarPersona.Controls.Add(this.DtgPersonaRegistrada);
             this.PnlEliminarPersona.Controls.Add(this.consulta);
             this.PnlEliminarPersona.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlEliminarPersona.GradientBottomLeft = System.Drawing.Color.Aqua;
@@ -72,40 +72,40 @@ namespace PresentacionGUI
             this.PnlEliminarPersona.Size = new System.Drawing.Size(1300, 700);
             this.PnlEliminarPersona.TabIndex = 3;
             // 
-            // bunifuFlatButton1
+            // BtnEliminar
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.DarkRed;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "    ELIMINAR";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 50D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(850, 483);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(120, 26);
-            this.bunifuFlatButton1.TabIndex = 43;
-            this.bunifuFlatButton1.Text = "    ELIMINAR";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.Activecolor = System.Drawing.Color.DarkRed;
+            this.BtnEliminar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnEliminar.BorderRadius = 0;
+            this.BtnEliminar.ButtonText = "    ELIMINAR";
+            this.BtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEliminar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnEliminar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtnEliminar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Iconimage")));
+            this.BtnEliminar.Iconimage_right = null;
+            this.BtnEliminar.Iconimage_right_Selected = null;
+            this.BtnEliminar.Iconimage_Selected = null;
+            this.BtnEliminar.IconMarginLeft = 0;
+            this.BtnEliminar.IconMarginRight = 0;
+            this.BtnEliminar.IconRightVisible = true;
+            this.BtnEliminar.IconRightZoom = 0D;
+            this.BtnEliminar.IconVisible = true;
+            this.BtnEliminar.IconZoom = 50D;
+            this.BtnEliminar.IsTab = false;
+            this.BtnEliminar.Location = new System.Drawing.Point(850, 483);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnEliminar.OnHovercolor = System.Drawing.Color.Transparent;
+            this.BtnEliminar.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.BtnEliminar.selected = false;
+            this.BtnEliminar.Size = new System.Drawing.Size(120, 26);
+            this.BtnEliminar.TabIndex = 43;
+            this.BtnEliminar.Text = "    ELIMINAR";
+            this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEliminar.Textcolor = System.Drawing.Color.DarkSlateGray;
+            this.BtnEliminar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuSeparator3
             // 
@@ -231,14 +231,14 @@ namespace PresentacionGUI
             this.label2.TabIndex = 21;
             this.label2.Text = "Identificacion";
             // 
-            // DtgPersonaRegistrados
+            // DtgPersonaRegistrada
             // 
-            this.DtgPersonaRegistrados.BackgroundColor = System.Drawing.Color.White;
-            this.DtgPersonaRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgPersonaRegistrados.Location = new System.Drawing.Point(98, 194);
-            this.DtgPersonaRegistrados.Name = "DtgPersonaRegistrados";
-            this.DtgPersonaRegistrados.Size = new System.Drawing.Size(1061, 255);
-            this.DtgPersonaRegistrados.TabIndex = 1;
+            this.DtgPersonaRegistrada.BackgroundColor = System.Drawing.Color.White;
+            this.DtgPersonaRegistrada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgPersonaRegistrada.Location = new System.Drawing.Point(98, 194);
+            this.DtgPersonaRegistrada.Name = "DtgPersonaRegistrada";
+            this.DtgPersonaRegistrada.Size = new System.Drawing.Size(1061, 255);
+            this.DtgPersonaRegistrada.TabIndex = 1;
             // 
             // consulta
             // 
@@ -264,7 +264,7 @@ namespace PresentacionGUI
             this.Text = "FrmEliminarPersona";
             this.PnlEliminarPersona.ResumeLayout(false);
             this.PnlEliminarPersona.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonaRegistrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgPersonaRegistrada)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -277,9 +277,9 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacion;
         private Bunifu.Framework.UI.BunifuFlatButton BtnConsultar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView DtgPersonaRegistrados;
+        private System.Windows.Forms.DataGridView DtgPersonaRegistrada;
         private Bunifu.Framework.UI.BunifuCustomLabel consulta;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnEliminar;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
         private Bunifu.Framework.UI.BunifuTextbox TxtConfirmarID;
         private System.Windows.Forms.Label label1;

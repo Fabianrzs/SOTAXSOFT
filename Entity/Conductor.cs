@@ -8,6 +8,6 @@ namespace Entity
 {
     public class Conductor : Persona
     {
-        
+       
     }
 }
