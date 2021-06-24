@@ -57,9 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionManager.cs" />
-    <Compile Include="RepositoryDetalle.cs" />
-    <Compile Include="RepositoryPersona.cs" />
-    <Compile Include="RepositoryTaxi.cs" />
+    <Compile Include="DetalleRepository.cs" />
+    <Compile Include="PersonaRepository.cs" />
+    <Compile Include="TaxiRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,15 +67,6 @@
       <Project>{48fd6133-71ca-4161-b66c-e20ce6f8a803}</Project>
       <Name>Entity</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="BDSotaxsoft.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="BDSotaxsoft_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>BDSotaxsoft.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

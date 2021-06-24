@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    class ServiceDetalle
+    class DetalleService
     {
         private readonly ConnectionManager connection;
-        private readonly RepositoryDetalle repository;
+        private readonly DetalleRepository repository;
 
-        public ServiceDetalle(string connectionString)
+        public DetalleService(string connectionString)
         {
             connection = new ConnectionManager(connectionString);
-            repository = new RepositoryDetalle(connection);
+            repository = new DetalleRepository(connection);
 
         }
 

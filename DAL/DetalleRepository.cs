@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class RepositoryDetalle
+    public class DetalleRepository
     {
         private SqlConnection _connection;
 
-        public RepositoryDetalle(ConnectionManager connection)
+        public DetalleRepository(ConnectionManager connection)
         {
             _connection = connection._connection;
         }

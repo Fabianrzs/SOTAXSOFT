@@ -41,10 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ServiceDetalle.cs" />
-    <Compile Include="ServicePersona.cs" />
+    <Compile Include="DetalleService.cs" />
+    <Compile Include="PersonaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceTaxi.cs" />
+    <Compile Include="TaxiService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
