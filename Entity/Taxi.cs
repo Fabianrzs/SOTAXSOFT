@@ -19,5 +19,10 @@ namespace Entity
             Propietario = propietario;
             Conductor = conductor;
         }
+        public Taxi(Propietario propietario)
+        {
+            Propietario = propietario;
+        }
+
     }
 }

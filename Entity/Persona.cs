@@ -14,6 +14,6 @@ namespace Entity
         public string PrimeroApellido { get; set; }
         public string SegundoApellido { get; set; }
         public string Identificacion { get; set; }
-        public double NumeroContacto { get; set; }
+        public string NumeroContacto { get; set; }
     }
 }
