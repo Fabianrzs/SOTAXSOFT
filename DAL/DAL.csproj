@@ -57,7 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionManager.cs" />
-    <Compile Include="Repository.cs" />
+    <Compile Include="RepositoryDetalle.cs" />
+    <Compile Include="RepositoryPersona.cs" />
+    <Compile Include="RepositoryTaxi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
