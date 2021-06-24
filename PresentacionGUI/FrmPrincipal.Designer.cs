@@ -110,7 +110,7 @@ namespace PresentacionGUI
             this.PnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlTitulo.Location = new System.Drawing.Point(0, 0);
             this.PnlTitulo.Name = "PnlTitulo";
-            this.PnlTitulo.Size = new System.Drawing.Size(1550, 40);
+            this.PnlTitulo.Size = new System.Drawing.Size(1386, 40);
             this.PnlTitulo.TabIndex = 0;
             // 
             // PctRestaurar
@@ -120,7 +120,7 @@ namespace PresentacionGUI
             this.TrnIda.SetDecoration(this.PctRestaurar, BunifuAnimatorNS.DecorationType.None);
             this.TrnRegreso.SetDecoration(this.PctRestaurar, BunifuAnimatorNS.DecorationType.None);
             this.PctRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("PctRestaurar.Image")));
-            this.PctRestaurar.Location = new System.Drawing.Point(1488, 9);
+            this.PctRestaurar.Location = new System.Drawing.Point(1324, 9);
             this.PctRestaurar.Name = "PctRestaurar";
             this.PctRestaurar.Size = new System.Drawing.Size(22, 22);
             this.PctRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -136,7 +136,7 @@ namespace PresentacionGUI
             this.TrnIda.SetDecoration(this.PctMinimizar, BunifuAnimatorNS.DecorationType.None);
             this.TrnRegreso.SetDecoration(this.PctMinimizar, BunifuAnimatorNS.DecorationType.None);
             this.PctMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("PctMinimizar.Image")));
-            this.PctMinimizar.Location = new System.Drawing.Point(1460, 9);
+            this.PctMinimizar.Location = new System.Drawing.Point(1296, 9);
             this.PctMinimizar.Name = "PctMinimizar";
             this.PctMinimizar.Size = new System.Drawing.Size(22, 22);
             this.PctMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -151,7 +151,7 @@ namespace PresentacionGUI
             this.TrnIda.SetDecoration(this.PctMaximizar, BunifuAnimatorNS.DecorationType.None);
             this.TrnRegreso.SetDecoration(this.PctMaximizar, BunifuAnimatorNS.DecorationType.None);
             this.PctMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("PctMaximizar.Image")));
-            this.PctMaximizar.Location = new System.Drawing.Point(1488, 9);
+            this.PctMaximizar.Location = new System.Drawing.Point(1324, 9);
             this.PctMaximizar.Name = "PctMaximizar";
             this.PctMaximizar.Size = new System.Drawing.Size(22, 22);
             this.PctMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,7 +166,7 @@ namespace PresentacionGUI
             this.TrnIda.SetDecoration(this.PctSalir, BunifuAnimatorNS.DecorationType.None);
             this.TrnRegreso.SetDecoration(this.PctSalir, BunifuAnimatorNS.DecorationType.None);
             this.PctSalir.Image = ((System.Drawing.Image)(resources.GetObject("PctSalir.Image")));
-            this.PctSalir.Location = new System.Drawing.Point(1516, 9);
+            this.PctSalir.Location = new System.Drawing.Point(1352, 9);
             this.PctSalir.Name = "PctSalir";
             this.PctSalir.Size = new System.Drawing.Size(22, 22);
             this.PctSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1244,7 +1244,7 @@ namespace PresentacionGUI
             this.PnlCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlCentral.Location = new System.Drawing.Point(250, 40);
             this.PnlCentral.Name = "PnlCentral";
-            this.PnlCentral.Size = new System.Drawing.Size(1300, 700);
+            this.PnlCentral.Size = new System.Drawing.Size(1136, 700);
             this.PnlCentral.TabIndex = 2;
             // 
             // PctLogo
@@ -1255,7 +1255,7 @@ namespace PresentacionGUI
             this.TrnIda.SetDecoration(this.PctLogo, BunifuAnimatorNS.DecorationType.None);
             this.TrnRegreso.SetDecoration(this.PctLogo, BunifuAnimatorNS.DecorationType.None);
             this.PctLogo.Image = ((System.Drawing.Image)(resources.GetObject("PctLogo.Image")));
-            this.PctLogo.Location = new System.Drawing.Point(320, 82);
+            this.PctLogo.Location = new System.Drawing.Point(238, 82);
             this.PctLogo.Name = "PctLogo";
             this.PctLogo.Size = new System.Drawing.Size(827, 463);
             this.PctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1313,7 +1313,7 @@ namespace PresentacionGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1550, 740);
+            this.ClientSize = new System.Drawing.Size(1386, 740);
             this.Controls.Add(this.PnlCentral);
             this.Controls.Add(this.PnlIzquierdo);
             this.Controls.Add(this.PnlTitulo);
