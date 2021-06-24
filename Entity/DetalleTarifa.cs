@@ -8,10 +8,10 @@ namespace Entity
 {
     public class DetalleTarifa : Detalle
     {
-        public DetalleTarifa(Taxi taxi)
+        public DetalleTarifa(string placa)
         {
             TipoDetalle = "TARIFA";
-            Taxi = taxi;
+            Placa = placa;
         }
 
         public override void GenerarCodigoDetalle()

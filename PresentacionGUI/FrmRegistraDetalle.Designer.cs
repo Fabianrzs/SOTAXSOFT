@@ -143,7 +143,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Georgia", 12F);
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(60, 237);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(94, 237);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(50, 18);
             this.bunifuCustomLabel5.TabIndex = 29;
