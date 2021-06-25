@@ -45,7 +45,7 @@ namespace PresentacionGUI
             }
             else
             {
-                bool succes = int.TryParse(numero, out int result);
+                bool succes = double.TryParse(numero, out double result);
                 if (!succes)
                 {
                     mensaje = "No se admiten letras en un campo numerico";

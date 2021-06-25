@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Persona
+    public abstract class Persona
     {
         public string Rol { get; set; }
         public string PrimerNombre { get; set; }

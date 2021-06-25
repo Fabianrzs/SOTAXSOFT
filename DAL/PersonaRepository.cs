@@ -24,7 +24,7 @@ namespace DAL
             using (var command = _connection.CreateCommand())
             {
                 command.CommandText = "INSERT INTO Personas (Identificacion, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, NumeroContacto, Rol)" +
-                    "Values (@Identificacion, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @NumeroContacto,@Rol)";
+                    "Values (@Identificacion, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @NumeroContacto, @Rol)";
                 command.Parameters.Add("@Identificacion", SqlDbType.VarChar).Value = persona.Identificacion;
                 command.Parameters.Add("@PrimerNombre", SqlDbType.VarChar).Value = persona.PrimerNombre;
                 command.Parameters.Add("@SegundoNombre", SqlDbType.VarChar).Value = persona.SegundoNombre;

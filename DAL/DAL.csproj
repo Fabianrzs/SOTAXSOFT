@@ -81,12 +81,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DBSotaxsoftmdf.mdf">
+    <Content Include="DBSotaxsoft.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DBSotaxsoftmdf_log.ldf">
+    <Content Include="DBSotaxsoft_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DBSotaxsoftmdf.mdf</DependentUpon>
+      <DependentUpon>DBSotaxsoft.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
