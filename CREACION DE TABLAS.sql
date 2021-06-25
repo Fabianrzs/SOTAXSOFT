@@ -8,7 +8,8 @@
     NumeroContacto VARCHAR
 );
 
-select table_name from USER_TABLES;
+
+
 
 CREATE TABLE Taxis (
     Placa VARCHAR PRIMARY KEY NOT NULL,
@@ -20,12 +21,13 @@ CREATE TABLE Taxis (
     CONSTRAINT fk_Persona_IdConductor FOREIGN KEY (IdConductor) REFERENCES Personas (Identificacion)
 );
 
+
 CREATE TABLE Detalles (
     CodigoDetalle VARCHAR PRIMARY KEY NOT NULL,
     TipoDetalle VARCHAR,
     FechaDetalle DATETIME,
     ValorDetalle DECIMAL,
     Descripcion VARCHAR,
-    Placa VARCHAR
+    Placa VARCHAR,
     CONSTRAINT fk_Detalles_Placa FOREIGN KEY (Placa) REFERENCES Taxis (Placa)
 );

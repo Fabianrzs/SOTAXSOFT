@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,9 +15,27 @@ namespace PresentacionGUI
     {
         public FrmPrincipal()
         {
+            Probar();
             InitializeComponent();
             InicializarMenuPrincipal();
             RecogerDashboard();
+        }
+        
+        private void Probar()
+        {
+            SqlConnection _connection =  new SqlConnection(ConfigConnection.connectionString);
+
+            try
+            {
+                _connection.Open();
+                MessageBox.Show("CONECTADO");
+            }
+            catch (Exception i) { MessageBox.Show(i.Message); }
+            finally
+            {
+                _connection.Close();
+            }
+
         }
 
         private Form frmActual = null;

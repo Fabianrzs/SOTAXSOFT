@@ -160,7 +160,8 @@ namespace PresentacionGUI
                 SegundoNombre = TxtSegundoNombre.ToString(),
                 PrimerApellido = TxtPrimerApellido.ToString(),
                 SegundoApellido = TxtSegundoApellido.ToString(),
-                NumeroContacto = TxtNumeroContacto.ToString()
+                NumeroContacto = TxtNumeroContacto.ToString(),
+                Rol = "PROPIETARIO"
             };
             MessageBox.Show(personaService.Guardar(propietario), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -175,7 +176,8 @@ namespace PresentacionGUI
                 SegundoNombre = TxtSegundoNombre.ToString(),
                 PrimerApellido = TxtPrimerApellido.ToString(),
                 SegundoApellido = TxtSegundoApellido.ToString(),
-                NumeroContacto = TxtNumeroContacto.ToString()
+                NumeroContacto = TxtNumeroContacto.ToString(),
+                Rol = "CONDUCTOR"
             };
             MessageBox.Show(personaService.Guardar(conductor), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
