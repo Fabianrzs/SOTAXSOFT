@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class DetalleTarifa : Detalle
+    public class DetalleGasto : Detalle
     {
-        public DetalleTarifa(Taxi taxi)
+        public DetalleGasto(Taxi taxi)
         {
-            TipoDetalle = "TARIFA";
-            Taxi = taxi;
+            TipoDetalle = "REPARACION";
+            Taxi = taxi; 
         }
 
         public override void GenerarCodigoDetalle()
         {
             var seed = Environment.TickCount;
             var random = new Random(seed);
-            CodigoDetalle = random.Next(2000, 2999);
+            CodigoDetalle = random.Next(1000, 1999);
         }
     }
 }
