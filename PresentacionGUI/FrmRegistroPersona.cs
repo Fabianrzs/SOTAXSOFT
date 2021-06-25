@@ -155,12 +155,12 @@ namespace PresentacionGUI
             PersonaService personaService = new PersonaService(ConfigConnection.connectionString);
             Propietario propietario = new Propietario()
             {
-                Identificacion = TxtIdentificacion.Text,
-                PrimerNombre = TxtPrimerNombre.Text,
-                SegundoNombre = TxtSegundoNombre.Text,
-                PrimerApellido = TxtPrimerApellido.Text,
-                SegundoApellido = TxtSegundoApellido.Text,
-                NumeroContacto = TxtNumeroContacto.Text
+                Identificacion = TxtIdentificacion.ToString(),
+                PrimerNombre = TxtPrimerNombre.ToString(),
+                SegundoNombre = TxtSegundoNombre.ToString(),
+                PrimerApellido = TxtPrimerApellido.ToString(),
+                SegundoApellido = TxtSegundoApellido.ToString(),
+                NumeroContacto = TxtNumeroContacto.ToString()
             };
             MessageBox.Show(personaService.Guardar(propietario), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -170,12 +170,12 @@ namespace PresentacionGUI
             PersonaService personaService = new PersonaService(ConfigConnection.connectionString);
             Conductor conductor = new Conductor()
             {
-                Identificacion = TxtIdentificacion.Text,
-                PrimerNombre = TxtPrimerNombre.Text,
-                SegundoNombre = TxtSegundoNombre.Text,
-                PrimerApellido = TxtPrimerApellido.Text,
-                SegundoApellido = TxtSegundoApellido.Text,
-                NumeroContacto = TxtNumeroContacto.Text
+                Identificacion = TxtIdentificacion.ToString(),
+                PrimerNombre = TxtPrimerNombre.ToString(),
+                SegundoNombre = TxtSegundoNombre.ToString(),
+                PrimerApellido = TxtPrimerApellido.ToString(),
+                SegundoApellido = TxtSegundoApellido.ToString(),
+                NumeroContacto = TxtNumeroContacto.ToString()
             };
             MessageBox.Show(personaService.Guardar(conductor), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
