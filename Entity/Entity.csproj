@@ -43,8 +43,8 @@
   <ItemGroup>
     <Compile Include="Conductor.cs" />
     <Compile Include="Detalle.cs" />
-    <Compile Include="DetalleReparacion.cs" />
-    <Compile Include="DetalleTarifa.cs" />
+    <Compile Include="DetalleGasto.cs" />
+    <Compile Include="DetalleIngreso.cs" />
     <Compile Include="InformeGeneral.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
