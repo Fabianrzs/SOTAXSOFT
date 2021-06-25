@@ -18,52 +18,48 @@ namespace DAL
             _connection = connection._connection;
         }
 
-        public void GuardarDetalle(Detalle detalle)
+        public void Guardar (Detalle detalle)
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "INSERT INTO DETALLES (CodDetalle, TipoDetalle, FechaDetalle, " +
-                    "ValorDetalle, DescripcionDetalle, PlacaDetalle)" +
-                    "Values (@CodDetalle,@TipoDetalle,@FechaDetalle,@ValorDetalle,@DescripcionDetalle,@PlacaDetalle)";
-
-                command.Parameters.Add("@CodDetalle", SqlDbType.Decimal).Value = detalle.CodigoDetalle;
+                command.CommandText = "INSERT INTO Detalles (CodigoDetalle, TipoDetalle, FechaDetalle, ValorDetalle, Descripcion, Placa)" +
+                    "Values (@CodDetalle, @TipoDetalle, @FechaDetalle, @ValorDetalle, @Descripcion, @Placae)";
+                command.Parameters.Add("@CodigoDetalle", SqlDbType.VarChar).Value = detalle.CodigoDetalle;
                 command.Parameters.Add("@TipoDetalle", SqlDbType.VarChar).Value = detalle.TipoDetalle;
                 command.Parameters.Add("@FechaDetalle", SqlDbType.DateTime).Value = detalle.FechaDetalle;
                 command.Parameters.Add("@ValorDetalle", SqlDbType.Decimal).Value = detalle.ValorDetalle;
-                command.Parameters.Add("@DescripcionDetalle", SqlDbType.VarChar).Value = detalle.Descripcion;
-                command.Parameters.Add("@PlacaDetalle", SqlDbType.VarChar).Value = detalle.Placa;
-
+                command.Parameters.Add("@Descripcion", SqlDbType.VarChar).Value = detalle.Descripcion;
+                command.Parameters.Add("@Placa", SqlDbType.VarChar).Value = detalle.Taxi.Placa;
                 command.ExecuteNonQuery();
             }
-
         }
 
-        public Detalle ExistenCodigoDetalle(double codigoDetalle)
-        {
-            SqlDataReader dataReader;
+        //public Detalle ExistenCodigoDetalle(double codigoDetalle)
+        //{
+        //    SqlDataReader dataReader;
 
-            using(var command = _connection.CreateCommand())
-            {
-                command.Parameters.Add("@CodDetalle", SqlDbType.Decimal).Value = codigoDetalle;
-                command.CommandText = "SELECT * FROM DETALLE WHERE COIDIGODETALLE = @CodDetalle";
-                dataReader = command.ExecuteReader();
-                dataReader.Read();
-                Detalle detalle = DataReaderMapToDetalle(dataReader);
+        //    using(var command = _connection.CreateCommand())
+        //    {
+        //        command.Parameters.Add("@CodDetalle", SqlDbType.Decimal).Value = codigoDetalle;
+        //        command.CommandText = "SELECT * FROM DETALLE WHERE COIDIGODETALLE = @CodDetalle";
+        //        dataReader = command.ExecuteReader();
+        //        dataReader.Read();
+        //        Detalle detalle = DataReaderMapToDetalle(dataReader);
 
-                return detalle;
+        //        return detalle;
 
 
-            }
-        }
+        //    }
+        //}
 
-        private Detalle DataReaderMapToDetalle(SqlDataReader dataReader)
-        {
-            if (!dataReader.HasRows) return null;
+        //private Detalle DataReaderMapToDetalle(SqlDataReader dataReader)
+        //{
+        //    if (!dataReader.HasRows) return null;
 
-            Detalle detalle = null;
+        //    Detalle detalle = null;
 
-            return detalle;
+        //    return detalle;
 
-        }
+        //}
     }
 }

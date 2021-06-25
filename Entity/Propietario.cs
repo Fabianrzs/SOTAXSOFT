@@ -8,6 +8,9 @@ namespace Entity
 {
     public class Propietario : Persona
     {
-       
+        public Propietario()
+        {
+            Rol = "propietario";
+        }
     }
 }

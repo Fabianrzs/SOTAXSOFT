@@ -20,24 +20,22 @@ namespace BLL
 
         }
 
-        public string RegistrarDetalle(Detalle detalle)
+        public string Guardar (Detalle detalle)
         {
             try
             {
                 connection.Open();
-
-                do{
-                    detalle.GenerarCodigoDetalle();
-                }while (repository.ExistenCodigoDetalle(detalle.CodigoDetalle) != null) ;
-
-                repository.GuardarDetalle(detalle);
-
-                return $"SE REGISTRO SACTISFACTORIAMENTE";
-
+                repository.Guardar (detalle);
+                return $"Registro guardado satisfactoriamente";
             }
-            catch (Exception e) { return $"ERROR DE LA APLICACION: {e.Message}"; }
+            catch (Exception e) 
+            { 
+                return $"Se preseto la siguiente Excepción: {e.Message}"; 
+            }
             finally
-            { connection.Close(); }
+            { 
+                connection.Close(); 
+            }
 
         }
 

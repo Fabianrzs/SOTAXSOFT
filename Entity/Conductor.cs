@@ -8,6 +8,9 @@ namespace Entity
 {
     public class Conductor : Persona
     {
-       
+        public Conductor()
+        {
+            Rol = "conductor";
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace Entity
         public DateTime FechaDetalle { get; set; }
         public double ValorDetalle { get; set; }
         public string Descripcion { get; set; }
-        public string Placa { get; set; }
+        public Taxi Taxi { get; set; }
 
         public abstract void GenerarCodigoDetalle();
     }

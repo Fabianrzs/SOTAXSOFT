@@ -29,6 +29,7 @@ namespace PresentacionGUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistraDetalle));
             this.PnlRegistroDetalle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -47,9 +48,11 @@ namespace PresentacionGUI
             this.DtpFecha = new Bunifu.Framework.UI.BunifuDatepicker();
             this.DtgDetallesRegistrados = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.PnlRegistroDetalle.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlRegistroDetalle
@@ -301,6 +304,10 @@ namespace PresentacionGUI
             this.REGISTRO.Text = "REGISTRO";
             this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // FrmRegistraDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +323,7 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetallesRegistrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,5 +348,6 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

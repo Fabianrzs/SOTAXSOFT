@@ -1,6 +1,7 @@
 ﻿using Entity;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -18,26 +19,22 @@ namespace DAL
             _connection = connection._connection;
         }
 
-        //public void GuardarPersona(Persona persona)
-        //{
-        //    using (var command = _connection.CreateCommand())
-        //    {
-        //        command.CommandText = "INSERT INTO PERSONAS (Identificacion, PrimeroNombre, SegundoNombre, " +
-        //            "PrimeroApellido, SegundoApellido, NumeroContacto, Rol)" +
-        //            "Values (@Identificacion,@PrimeroNombre,@SegundoNombre,@PrimeroApellido,@SegundoApellido,@NumeroContacto,@Rol)";
-
-        //        command.Parameters.Add("@Identificacion", SqlDbType.VarChar).Value = persona.Identificacion;
-        //        command.Parameters.Add("@PrimeroNombre", SqlDbType.VarChar).Value = persona.PrimerNombre;
-        //        command.Parameters.Add("@SegundoNombre", SqlDbType.VarChar).Value = persona.SegundoNombre;
-        //        command.Parameters.Add("@PrimeroApellido", SqlDbType.VarChar).Value = persona.PrimeroApellido;
-        //        command.Parameters.Add("@SegundoApellido", SqlDbType.VarChar).Value = persona.SegundoApellido;
-        //        command.Parameters.Add("@NumeroContacto", SqlDbType.VarChar).Value = persona.NumeroContacto;
-        //        command.Parameters.Add("@Rol", SqlDbType.VarChar).Value = persona.Rol;
-
-        //        command.ExecuteNonQuery();
-
-        //    }
-        //}
+        public void Guardar (Persona persona)
+        {
+            using (var command = _connection.CreateCommand())
+            {
+                command.CommandText = "INSERT INTO Personas (Identificacion, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, NumeroContacto, Rol)" +
+                    "Values (@Identificacion, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, @NumeroContacto,@Rol)";
+                command.Parameters.Add("@Identificacion", SqlDbType.VarChar).Value = persona.Identificacion;
+                command.Parameters.Add("@PrimerNombre", SqlDbType.VarChar).Value = persona.PrimerNombre;
+                command.Parameters.Add("@SegundoNombre", SqlDbType.VarChar).Value = persona.SegundoNombre;
+                command.Parameters.Add("@PrimerApellido", SqlDbType.VarChar).Value = persona.PrimerApellido;
+                command.Parameters.Add("@SegundoApellido", SqlDbType.VarChar).Value = persona.SegundoApellido;
+                command.Parameters.Add("@NumeroContacto", SqlDbType.VarChar).Value = persona.NumeroContacto;
+                command.Parameters.Add("@Rol", SqlDbType.VarChar).Value = persona.Rol;
+                command.ExecuteNonQuery();
+            }
+        }
 
     }
 }

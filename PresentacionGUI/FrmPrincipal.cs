@@ -307,7 +307,7 @@ namespace PresentacionGUI
         {
             PnlMenuConductores.Visible = false;
             InicializarMenuPrincipal();
-            AbrirFromHijo(new FrmRegistroPersona());
+            AbrirFromHijo(new FrmRegistroPersona("conductor"));
         }
 
         private void BtnConsultarCondutor_Click(object sender, EventArgs e)
@@ -356,7 +356,7 @@ namespace PresentacionGUI
         {
             PnlMenuPropietarios.Visible = false;
             InicializarMenuPrincipal();
-            AbrirFromHijo(new FrmRegistroPersona());
+            AbrirFromHijo(new FrmRegistroPersona("propietario"));
         }
 
         private void BtnConsultarPropietario_Click(object sender, EventArgs e)

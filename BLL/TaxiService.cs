@@ -20,22 +20,22 @@ namespace BLL
 
         }
 
-        //public string RegistrarTaxi(Taxi taxi)
-        //{
-        //    try
-        //    {
-        //        if (repository.PlacaExistente(taxi.Placa) == null)
-        //        {
-        //            repository.GuardarTaxi(taxi);
+        public string Guardar (Taxi taxi)
+        {
+            try
+            {   
+                repository.GuardarTaxi(taxi);
+                return $"Registro guardado satisfactoriamente";
+            }
+            catch (Exception e) 
+            {
+                return $"Se preseto la siguiente Excepción: {e.Message}"; 
+            }
+            finally
+            { 
+                connection.Close(); 
+            }
 
-        //            return $"SE REGISTRO SACTISFACTORIAMENTE";
-        //        }
-        //        return $"NO SE PUDO REALIZAR EL REGISTRO, ESTA PLACA YA SE ENCUENTRA REGISTRADA";
-        //    }
-        //    catch (Exception e) { return $"ERROR DE LA APLICACION: {e.Message}"; }
-        //    finally
-        //    { connection.Close(); }
-
-        //}
+        }
     }
 }

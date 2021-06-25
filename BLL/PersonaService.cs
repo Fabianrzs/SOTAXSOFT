@@ -20,21 +20,22 @@ namespace BLL
 
         }
 
-        //public string RegistrarPersona(Persona persona)
-        //{
-        //    try
-        //    {
-        //        connection.Open();
-        //        if (repository.IdentificacionExistente(persona.Identificacion) == null)
-        //        {
-        //            repository.GuardarPersona(persona); 
-        //            return $"SE REGISTRO SACTISFACTORIAMENTE {persona.PrimerNombre}";
-        //        }
-        //        return $"NO SE PUDO REALIZAR EL REGISTRO, ESTA PERSONA YA SE ENCUENTRA REGISTRADA";
-        //    }
-        //    catch (Exception e){ return $"ERROR DE LA APLICACION: {e.Message}"; }
-        //    finally
-        //    { connection.Close(); }
-        //}
+        public string Guardar (Persona persona)
+        {
+            try
+            {
+                connection.Open();
+                repository.Guardar (persona);
+                return $"Registro guardado satisfactoriamente";
+            }
+            catch (Exception e) 
+            { 
+                return $"Se preseto la siguiente Excepción: {e.Message}"; 
+            }
+            finally
+            { 
+                connection.Close();
+            }
+        }
     }
 }
