@@ -1,15 +1,12 @@
 ﻿CREATE TABLE Personas (
-    Identificacion VARCHAR PRIMARY KEY NOT NULL,
-    Rol VARCHAR,
-    PrimerNombre VARCHAR,
-    SegundoNombre VARCHAR,
-    PrimerApellido VARCHAR,
-    SegundoApellido VARCHAR,
-    NumeroContacto VARCHAR
+    Identificacion VARCHAR(12)  PRIMARY KEY NOT NULL,
+    Rol VARCHAR(12),
+    PrimerNombre VARCHAR(20),
+    SegundoNombre VARCHAR (20),
+    PrimerApellido VARCHAR(20),
+    SegundoApellido VARCHAR(20),
+    NumeroContacto VARCHAR(10)
 );
-
-
-
 
 CREATE TABLE Taxis (
     Placa VARCHAR(15) PRIMARY KEY NOT NULL,

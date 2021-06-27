@@ -333,21 +333,21 @@ namespace PresentacionGUI
         {
             PnlMenuConductores.Visible = false;
             InicializarMenuPrincipal();
-            AbrirFromHijo(new FrmConsultaPersona());
+            AbrirFromHijo(new FrmConsultaPersona("conductor"));
         }
 
         private void BtnModificarCondutor_Click(object sender, EventArgs e)
         {
             PnlMenuConductores.Visible = false;
             InicializarMenuPrincipal();
-            AbrirFromHijo(new FrmModificaPersona());
+            AbrirFromHijo(new FrmModificaPersona("conductor"));
         }
 
         private void BtnEliminarCondutor_Click(object sender, EventArgs e)
         {
             PnlMenuConductores.Visible = false;
             InicializarMenuPrincipal();
-            AbrirFromHijo(new FrmEliminarPersona());
+            AbrirFromHijo(new FrmEliminarPersona("conductor"));
         }
 
         private void BtnPropietarios_Click(object sender, EventArgs e)
@@ -382,21 +382,21 @@ namespace PresentacionGUI
         {
             PnlMenuPropietarios.Visible = false;
             InicializarMenuPrincipal();
-            AbrirFromHijo(new FrmConsultaPersona());
+            AbrirFromHijo(new FrmConsultaPersona("propietario"));
         }
 
         private void BtnModificarPropietario_Click(object sender, EventArgs e)
         {
             PnlMenuPropietarios.Visible = false;
             InicializarMenuPrincipal();
-            AbrirFromHijo(new FrmModificaPersona());
+            AbrirFromHijo(new FrmModificaPersona("propietario"));
         }
 
         private void BtnEliminarPropietario_Click(object sender, EventArgs e)
         {
             PnlMenuPropietarios.Visible = false;
             InicializarMenuPrincipal();
-            AbrirFromHijo(new FrmEliminarPersona());
+            AbrirFromHijo(new FrmEliminarPersona("propietario"));
         }
 
         private void PctLogo1_Click(object sender, EventArgs e)

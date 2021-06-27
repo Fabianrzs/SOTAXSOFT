@@ -106,6 +106,7 @@ namespace PresentacionGUI
             this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEliminar.Textcolor = System.Drawing.Color.DarkSlateGray;
             this.BtnEliminar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // bunifuSeparator3
             // 
@@ -176,7 +177,7 @@ namespace PresentacionGUI
             this.TxtIdentificacion.BackColor = System.Drawing.Color.White;
             this.TxtIdentificacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.BackgroundImage")));
             this.TxtIdentificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtIdentificacion.ForeColor = System.Drawing.Color.White;
+            this.TxtIdentificacion.ForeColor = System.Drawing.Color.Black;
             this.TxtIdentificacion.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.Icon")));
             this.TxtIdentificacion.Location = new System.Drawing.Point(490, 141);
             this.TxtIdentificacion.Name = "TxtIdentificacion";
@@ -218,6 +219,7 @@ namespace PresentacionGUI
             this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnConsultar.Textcolor = System.Drawing.Color.Black;
             this.BtnConsultar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
             // label2
             // 
@@ -239,6 +241,7 @@ namespace PresentacionGUI
             this.DtgPersonaRegistrada.Name = "DtgPersonaRegistrada";
             this.DtgPersonaRegistrada.Size = new System.Drawing.Size(1061, 255);
             this.DtgPersonaRegistrada.TabIndex = 1;
+            this.DtgPersonaRegistrada.DoubleClick += new System.EventHandler(this.DtgPersonaRegistrada_DoubleClick);
             // 
             // consulta
             // 

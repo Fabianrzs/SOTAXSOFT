@@ -9,16 +9,35 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entity;
 using BLL;
+using static BLL.PersonaService;
 
 namespace PresentacionGUI
 {
     public partial class FrmRegistroPersona : Form
     {
         private string tipoDetalle;
+        private PersonaService service;
         public FrmRegistroPersona(string tipoDetalle)
         {
             InitializeComponent();
             this.tipoDetalle = tipoDetalle;
+            service = new PersonaService(ConfigConnection.connectionString);           
+            LoaderTablet();
+        }
+
+        private void LoaderTablet()
+        {
+            ConsultaResponse response = service.Consultar(tipoDetalle);
+
+            if (!response.Error)
+            {
+                DtgPersonasRegistradas.DataSource = response.Personas;
+            }
+            else
+            {
+                MessageBox.Show(response.Mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         private void TxtIdentificacion_Validated(object sender, EventArgs e)
@@ -144,15 +163,21 @@ namespace PresentacionGUI
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            if (tipoDetalle.Equals("propietario"))
-                GuardarPropietario();
-            else if (tipoDetalle.Equals("conductor"))
-                GuardarConductor();
+            if (ValidateChildren())
+            {
+                if (tipoDetalle.Equals("propietario"))
+                    GuardarPropietario();
+                else if (tipoDetalle.Equals("conductor"))
+                    GuardarConductor();
+            }
+            else
+            {
+                MessageBox.Show("Verifique los campos", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void GuardarPropietario()
         {
-            PersonaService personaService = new PersonaService(ConfigConnection.connectionString);
             Propietario propietario = new Propietario()
             {
                 Identificacion = TxtIdentificacion.Text,
@@ -162,12 +187,18 @@ namespace PresentacionGUI
                 SegundoApellido = TxtSegundoApellido.Text,
                 NumeroContacto = TxtNumeroContacto.Text,
             };
-            MessageBox.Show(personaService.Guardar(propietario), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            string mensaje = service.Guardar(propietario);
+
+            MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            if (mensaje.Equals("Registro guardado satisfactoriamente")) LimpiarCampos(this); LoaderTablet();
+
         }
 
         private void GuardarConductor()
         {
-            PersonaService personaService = new PersonaService(ConfigConnection.connectionString);
+            
             Conductor conductor = new Conductor()
             {
                 Identificacion = TxtIdentificacion.Text,
@@ -177,8 +208,31 @@ namespace PresentacionGUI
                 SegundoApellido = TxtSegundoApellido.Text,
                 NumeroContacto = TxtNumeroContacto.Text,
             };
-            MessageBox.Show(personaService.Guardar(conductor), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            string mensaje = service.Guardar(conductor);
+
+            MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            if (mensaje.Equals("Registro guardado satisfactoriamente")) LimpiarCampos(this); LoaderTablet();
 
         }
+
+        private void LimpiarCampos(Control parent)
+        {
+
+            foreach (Control c in parent.Controls)
+            {
+                if (c is TextBox)
+                {
+                    c.Text = "";
+                }
+                if (c.Controls.Count > 0)
+                {
+                    LimpiarCampos(c);
+                }
+            }
+
+            TxtIdentificacion.Focus();
+        }
+
     }
 }
