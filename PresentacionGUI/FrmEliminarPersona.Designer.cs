@@ -32,12 +32,12 @@ namespace PresentacionGUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEliminarPersona));
             this.PnlEliminarPersona = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtnEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TxtConfirmarID = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.TxtIdentificacion = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.TxtConfirmarID = new Bunifu.Framework.UI.BunifuTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.TxtIdentificacion = new Bunifu.Framework.UI.BunifuTextbox();
             this.BtnConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
             this.DtgPersonaRegistrada = new System.Windows.Forms.DataGridView();
@@ -51,12 +51,12 @@ namespace PresentacionGUI
             this.PnlEliminarPersona.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlEliminarPersona.BackgroundImage")));
             this.PnlEliminarPersona.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PnlEliminarPersona.Controls.Add(this.BtnEliminar);
-            this.PnlEliminarPersona.Controls.Add(this.bunifuSeparator3);
             this.PnlEliminarPersona.Controls.Add(this.TxtConfirmarID);
+            this.PnlEliminarPersona.Controls.Add(this.TxtIdentificacion);
+            this.PnlEliminarPersona.Controls.Add(this.bunifuSeparator3);
             this.PnlEliminarPersona.Controls.Add(this.label1);
             this.PnlEliminarPersona.Controls.Add(this.bunifuSeparator1);
             this.PnlEliminarPersona.Controls.Add(this.bunifuSeparator2);
-            this.PnlEliminarPersona.Controls.Add(this.TxtIdentificacion);
             this.PnlEliminarPersona.Controls.Add(this.BtnConsultar);
             this.PnlEliminarPersona.Controls.Add(this.label2);
             this.PnlEliminarPersona.Controls.Add(this.DtgPersonaRegistrada);
@@ -94,19 +94,35 @@ namespace PresentacionGUI
             this.BtnEliminar.IconVisible = true;
             this.BtnEliminar.IconZoom = 50D;
             this.BtnEliminar.IsTab = false;
-            this.BtnEliminar.Location = new System.Drawing.Point(850, 483);
+            this.BtnEliminar.Location = new System.Drawing.Point(870, 478);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtnEliminar.OnHovercolor = System.Drawing.Color.Transparent;
             this.BtnEliminar.OnHoverTextColor = System.Drawing.Color.Transparent;
             this.BtnEliminar.selected = false;
             this.BtnEliminar.Size = new System.Drawing.Size(120, 26);
-            this.BtnEliminar.TabIndex = 43;
+            this.BtnEliminar.TabIndex = 45;
             this.BtnEliminar.Text = "    ELIMINAR";
             this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEliminar.Textcolor = System.Drawing.Color.DarkSlateGray;
             this.BtnEliminar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // TxtConfirmarID
+            // 
+            this.TxtConfirmarID.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtConfirmarID.Location = new System.Drawing.Point(634, 484);
+            this.TxtConfirmarID.Name = "TxtConfirmarID";
+            this.TxtConfirmarID.Size = new System.Drawing.Size(158, 20);
+            this.TxtConfirmarID.TabIndex = 44;
+            // 
+            // TxtIdentificacion
+            // 
+            this.TxtIdentificacion.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtIdentificacion.Location = new System.Drawing.Point(523, 142);
+            this.TxtIdentificacion.Name = "TxtIdentificacion";
+            this.TxtIdentificacion.Size = new System.Drawing.Size(158, 20);
+            this.TxtIdentificacion.TabIndex = 43;
             // 
             // bunifuSeparator3
             // 
@@ -120,19 +136,6 @@ namespace PresentacionGUI
             this.bunifuSeparator3.TabIndex = 42;
             this.bunifuSeparator3.Transparency = 255;
             this.bunifuSeparator3.Vertical = false;
-            // 
-            // TxtConfirmarID
-            // 
-            this.TxtConfirmarID.BackColor = System.Drawing.Color.White;
-            this.TxtConfirmarID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtConfirmarID.BackgroundImage")));
-            this.TxtConfirmarID.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtConfirmarID.ForeColor = System.Drawing.Color.White;
-            this.TxtConfirmarID.Icon = ((System.Drawing.Image)(resources.GetObject("TxtConfirmarID.Icon")));
-            this.TxtConfirmarID.Location = new System.Drawing.Point(612, 483);
-            this.TxtConfirmarID.Name = "TxtConfirmarID";
-            this.TxtConfirmarID.Size = new System.Drawing.Size(182, 18);
-            this.TxtConfirmarID.TabIndex = 41;
-            this.TxtConfirmarID.text = "";
             // 
             // label1
             // 
@@ -171,19 +174,6 @@ namespace PresentacionGUI
             this.bunifuSeparator2.TabIndex = 38;
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
-            // 
-            // TxtIdentificacion
-            // 
-            this.TxtIdentificacion.BackColor = System.Drawing.Color.White;
-            this.TxtIdentificacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.BackgroundImage")));
-            this.TxtIdentificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtIdentificacion.ForeColor = System.Drawing.Color.Black;
-            this.TxtIdentificacion.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.Icon")));
-            this.TxtIdentificacion.Location = new System.Drawing.Point(490, 141);
-            this.TxtIdentificacion.Name = "TxtIdentificacion";
-            this.TxtIdentificacion.Size = new System.Drawing.Size(231, 18);
-            this.TxtIdentificacion.TabIndex = 36;
-            this.TxtIdentificacion.text = "";
             // 
             // BtnConsultar
             // 
@@ -277,14 +267,14 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuGradientPanel PnlEliminarPersona;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
-        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacion;
         private Bunifu.Framework.UI.BunifuFlatButton BtnConsultar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView DtgPersonaRegistrada;
         private Bunifu.Framework.UI.BunifuCustomLabel consulta;
-        private Bunifu.Framework.UI.BunifuFlatButton BtnEliminar;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
-        private Bunifu.Framework.UI.BunifuTextbox TxtConfirmarID;
         private System.Windows.Forms.Label label1;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtConfirmarID;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtIdentificacion;
+        private Bunifu.Framework.UI.BunifuFlatButton BtnEliminar;
     }
 }

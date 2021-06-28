@@ -45,18 +45,18 @@ namespace PresentacionGUI
             if (tipoDetalle.Equals("propietario"))
             {
                 Propietario propietario = (Propietario)DtgPersonaRegistrada.CurrentRow.DataBoundItem;
-                TxtIdentificacion.text = propietario.Identificacion;
+                TxtIdentificacion.Text = propietario.Identificacion;
             }
             else if (tipoDetalle.Equals("conductor"))
             {
                 Conductor conductor = (Conductor)DtgPersonaRegistrada.CurrentRow.DataBoundItem;
-                TxtIdentificacion.text = conductor.Identificacion;
+                TxtIdentificacion.Text = conductor.Identificacion;
             }
         }
 
         private void BtnConsultar_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtIdentificacion.text))
+            if (!String.IsNullOrEmpty(TxtIdentificacion.Text))
             {
                 RegistroResponse response = service.Registro(TxtIdentificacion.text);
 

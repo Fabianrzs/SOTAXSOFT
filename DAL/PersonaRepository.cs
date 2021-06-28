@@ -51,8 +51,26 @@ namespace DAL
                 dataReader.Read();
 
                 return DataReaderMapToPerson(dataReader);
-            }
+            } 
         }
+
+        //public Persona BuscarPersona(string identificacion, string rol)
+        //{
+
+        //    using (var command = _connection.CreateCommand())
+        //    {
+        //        command.Parameters.Add("@Identificacion", SqlDbType.VarChar).Value = identificacion;
+        //        command.Parameters.Add("@Rol", SqlDbType.VarChar).Value = rol;
+        //        command.CommandText = "select Identificacion, PrimerNombre, SegundoNombre, PrimerApellido, " +
+        //            "SegundoApellido, NumeroContacto, Rol from personas" +
+        //            " where Identificacion=@Identificacion and Rol = @Rol";
+
+        //        var dataReader = command.ExecuteReader();
+        //        dataReader.Read();
+
+        //        return DataReaderMapToPerson(dataReader);
+        //    }
+        //}
 
         public List<Persona> ConsultarRol(string rol)
         {

@@ -42,9 +42,9 @@ namespace PresentacionGUI
 
         private void BtnConsultar_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtIdentificacion.text))
+            if (!String.IsNullOrEmpty(TxtIdentificacion.Text))
             {
-                RegistroResponse response = service.Registro(TxtIdentificacion.text);
+                RegistroResponse response = service.Registro(TxtIdentificacion.Text);
 
                 if (!response.Error)
                 {
@@ -65,12 +65,12 @@ namespace PresentacionGUI
             if (tipoDetalle.Equals("propietario"))
             {
                 Propietario propietario = (Propietario)DtgPersonaRegistrada.CurrentRow.DataBoundItem;
-                TxtIdentificacion.text = propietario.Identificacion;
+                TxtIdentificacion.Text = propietario.Identificacion;
             }
             else if (tipoDetalle.Equals("conductor"))
             {
                 Conductor conductor = (Conductor)DtgPersonaRegistrada.CurrentRow.DataBoundItem;
-                TxtIdentificacion.text = conductor.Identificacion;
+                TxtIdentificacion.Text = conductor.Identificacion;
             }
         }
 
@@ -78,7 +78,7 @@ namespace PresentacionGUI
         {
             if (ValidateChildren())
             {
-                MessageBox.Show(service.Eliminar(TxtIdentificacion.text), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information); LoaderTablet();
+                MessageBox.Show(service.Eliminar(TxtIdentificacion.Text), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information); LoaderTablet();
             }
         }
     }

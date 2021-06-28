@@ -193,6 +193,7 @@ namespace PresentacionGUI
             this.TxtConductor.Name = "TxtConductor";
             this.TxtConductor.Size = new System.Drawing.Size(110, 20);
             this.TxtConductor.TabIndex = 31;
+            this.TxtConductor.Text = "77182708";
             // 
             // bunifuCustomLabel6
             // 
@@ -277,6 +278,7 @@ namespace PresentacionGUI
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGuardar.Textcolor = System.Drawing.Color.White;
             this.BtnGuardar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // TxtPlaca
             // 

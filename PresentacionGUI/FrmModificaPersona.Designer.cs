@@ -54,7 +54,7 @@ namespace PresentacionGUI
             this.DtgPersonaRegistrada = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Error = new System.Windows.Forms.ErrorProvider(this.components);
-            this.TxtIdentificacion = new Bunifu.Framework.UI.BunifuTextbox();
+            this.TxtIdentificacion = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.PnlRegisroPersona.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgPersonaRegistrada)).BeginInit();
@@ -395,16 +395,11 @@ namespace PresentacionGUI
             // 
             // TxtIdentificacion
             // 
-            this.TxtIdentificacion.BackColor = System.Drawing.Color.White;
-            this.TxtIdentificacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.BackgroundImage")));
-            this.TxtIdentificacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtIdentificacion.ForeColor = System.Drawing.Color.Black;
-            this.TxtIdentificacion.Icon = ((System.Drawing.Image)(resources.GetObject("TxtIdentificacion.Icon")));
-            this.TxtIdentificacion.Location = new System.Drawing.Point(284, 406);
+            this.TxtIdentificacion.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtIdentificacion.Location = new System.Drawing.Point(297, 404);
             this.TxtIdentificacion.Name = "TxtIdentificacion";
-            this.TxtIdentificacion.Size = new System.Drawing.Size(231, 18);
-            this.TxtIdentificacion.TabIndex = 43;
-            this.TxtIdentificacion.text = "";
+            this.TxtIdentificacion.Size = new System.Drawing.Size(158, 20);
+            this.TxtIdentificacion.TabIndex = 41;
             // 
             // FrmModificaPersona
             // 
@@ -450,6 +445,6 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuFlatButton BtnConsultar;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
         private System.Windows.Forms.ErrorProvider Error;
-        private Bunifu.Framework.UI.BunifuTextbox TxtIdentificacion;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtIdentificacion;
     }
 }

@@ -218,19 +218,11 @@ namespace PresentacionGUI
 
         private void LimpiarCampos(Control parent)
         {
-
             foreach (Control c in parent.Controls)
             {
-                if (c is TextBox)
-                {
-                    c.Text = "";
-                }
-                if (c.Controls.Count > 0)
-                {
-                    LimpiarCampos(c);
-                }
+                if (c is TextBox) c.Text = "";
+                if (c.Controls.Count > 0) LimpiarCampos(c);
             }
-
             TxtIdentificacion.Focus();
         }
 
