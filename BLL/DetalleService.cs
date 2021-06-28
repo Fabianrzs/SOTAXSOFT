@@ -12,11 +12,13 @@ namespace BLL
     {
         private readonly ConnectionManager connection;
         private readonly DetalleRepository repository;
+        private readonly TaxiRepository _repository;
 
         public DetalleService(string connectionString)
         {
             connection = new ConnectionManager(connectionString);
             repository = new DetalleRepository(connection);
+            _repository = new TaxiRepository(connection);
 
         }
 

@@ -34,32 +34,32 @@ namespace DAL
             }
         }
 
-        //public Detalle ExistenCodigoDetalle(double codigoDetalle)
-        //{
-        //    SqlDataReader dataReader;
+        public Detalle BuscarPorCodigoDetalle(double codigoDetalle)
+        {
+            SqlDataReader dataReader;
 
-        //    using(var command = _connection.CreateCommand())
-        //    {
-        //        command.Parameters.Add("@CodDetalle", SqlDbType.Decimal).Value = codigoDetalle;
-        //        command.CommandText = "SELECT * FROM DETALLE WHERE COIDIGODETALLE = @CodDetalle";
-        //        dataReader = command.ExecuteReader();
-        //        dataReader.Read();
-        //        Detalle detalle = DataReaderMapToDetalle(dataReader);
+            using (var command = _connection.CreateCommand())
+            {
+                command.Parameters.Add("@CodDetalle", SqlDbType.Decimal).Value = codigoDetalle;
+                command.CommandText = "";
+                dataReader = command.ExecuteReader();
+                dataReader.Read();
+                Detalle detalle = DataReaderMapToDetalle(dataReader);
 
-        //        return detalle;
+                return detalle;
 
 
-        //    }
-        //}
+            }
+        }
 
-        //private Detalle DataReaderMapToDetalle(SqlDataReader dataReader)
-        //{
-        //    if (!dataReader.HasRows) return null;
+        private Detalle DataReaderMapToDetalle(SqlDataReader dataReader)
+        {
+            if (!dataReader.HasRows) return null;
 
-        //    Detalle detalle = null;
+            Detalle detalle = null;
 
-        //    return detalle;
+            return detalle;
 
-        //}
+        }
     }
 }
