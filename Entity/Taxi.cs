@@ -10,7 +10,7 @@ namespace Entity
     {
         public string Placa { get; set; }
         public string Modelo { get; set; }
-        public double Kilometraje { get; set; }
+        public string Kilometraje { get; set; }
         public Propietario Propietario { get; set; }
         public Conductor Conductor { get; set; }
 

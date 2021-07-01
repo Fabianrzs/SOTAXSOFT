@@ -22,24 +22,152 @@ namespace BLL
 
         }
 
-        public string Guardar (Detalle detalle)
+        public string GuardarDetalle(Detalle detalle, string placaTaxi)
         {
             try
             {
                 connection.Open();
-                repository.Guardar (detalle);
-                return $"Registro guardado satisfactoriamente";
+                detalle.Taxi = _repository.BuscarPorPlaca(placaTaxi);
+
+                if (detalle.Taxi != null)
+                {
+                    if(repository.BuscarPorCodigoDetalle(detalle.CodigoDetalle) == null)
+                    {
+                        repository.GuardarDetalle(detalle);
+                        return $"Registro guardado satisfactoriamente";
+                    }
+                    else { detalle.GenerarCodigoDetalle(); }
+
+                }
+                return $"El Taxi no se encuentra registrado";
             }
-            catch (Exception e) 
-            { 
-                return $"Se preseto la siguiente Excepción: {e.Message}"; 
+            catch (Exception e)
+            {
+                return $"Se preseto la siguiente Excepción: {e.Message}";
             }
             finally
-            { 
-                connection.Close(); 
+            {
+                connection.Close();
             }
 
         }
 
+        public string ModificarDetalle(Detalle detalle, double codigoDetalle, string placaTaxi)
+        {
+            try
+            {
+                connection.Open();
+
+                detalle.Taxi = _repository.BuscarPorPlaca(placaTaxi);
+
+                if (detalle.Taxi != null)
+                {
+                    if (repository.BuscarPorCodigoDetalle(codigoDetalle) != null)
+                    {
+                        repository.GuardarDetalle(detalle);
+                        return $"Registro modificado satisfactoriamente";
+                    }
+                    return $"El codigo del detalle no puede ser cambiado";
+
+                }
+                return $"El Detalle no se encuentra registrado";
+
+            }
+            catch (Exception e) { return $"Se preseto la siguiente Excepción: {e.Message}"; }
+            finally
+            {
+                connection.Close();
+            }
+
+
+        }
+
+        public string EliminarDetalle(double codigoDetalle)
+        {
+            try
+            {
+                connection.Open();
+                if (repository.BuscarPorCodigoDetalle(codigoDetalle) != null)
+                {
+                    repository.Eliminar(codigoDetalle);
+                    return $"Registro eliminado satisfactoriamente";
+                }
+                return $"Registro no encontrado";
+            }
+            catch (Exception e) { return $"Se preseto la siguiente Excepción: {e.Message}"; }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public ConsultaResponseDetalle ConsultarDetalles()
+        {
+            try
+            {
+                connection.Open();
+                return new ConsultaResponseDetalle(repository.ConsultarDetalles());
+            }
+            catch (Exception e) { return new ConsultaResponseDetalle($"Se preseto la siguiente Excepción: {e.Message}"); }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+        public RegistroResponseDetalle RegistroDetalle(double codigoDetalle)
+        {
+            try
+            {
+                connection.Open();
+                return new RegistroResponseDetalle(repository.BuscarPorCodigoDetalle(codigoDetalle));
+            }
+            catch (Exception e) { return new RegistroResponseDetalle($"Se preseto la siguiente Excepción: {e.Message}"); }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public class ConsultaResponseDetalle
+        {
+            public List<Detalle> Detalles { get; set; }
+            public string Mensaje { get; set; }
+            public bool Error { get; set; }
+
+            public ConsultaResponseDetalle(List<Detalle> detalles)
+            {
+                Detalles = detalles;
+                Error = false;
+            }
+
+            public ConsultaResponseDetalle(string mensaje)
+            {
+                Mensaje = mensaje;
+                Error = true;
+            }
+        }
+
+        public class RegistroResponseDetalle
+        {
+            public Detalle Detalle { get; set; }
+            public string Mensaje { get; set; }
+            public bool Error { get; set; }
+
+            public RegistroResponseDetalle(Detalle detalle)
+            {
+                Detalle = detalle;
+                Error = false;
+            }
+
+            public RegistroResponseDetalle(string mensaje)
+            {
+                Mensaje = mensaje;
+                Error = true;
+            }
+        }
     }
+
 }
+

@@ -39,7 +39,6 @@ namespace PresentacionGUI
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtPropietario = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TxtConductor = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtKilometraje = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -49,6 +48,7 @@ namespace PresentacionGUI
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TxtModelo = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.DtgTaxisRegistrados = new System.Windows.Forms.DataGridView();
+            this.TxtConductor = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.PnlRegistroTaxi.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgTaxisRegistrados)).BeginInit();
@@ -131,10 +131,10 @@ namespace PresentacionGUI
             this.bunifuGradientPanel1.AutoSize = true;
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.TxtConductor);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel7);
             this.bunifuGradientPanel1.Controls.Add(this.TxtPropietario);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel5);
-            this.bunifuGradientPanel1.Controls.Add(this.TxtConductor);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel6);
             this.bunifuGradientPanel1.Controls.Add(this.TxtKilometraje);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
@@ -184,16 +184,6 @@ namespace PresentacionGUI
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(103, 18);
             this.bunifuCustomLabel5.TabIndex = 32;
             this.bunifuCustomLabel5.Text = "ID Conductor";
-            // 
-            // TxtConductor
-            // 
-            this.TxtConductor.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TxtConductor.Enabled = false;
-            this.TxtConductor.Location = new System.Drawing.Point(212, 300);
-            this.TxtConductor.Name = "TxtConductor";
-            this.TxtConductor.Size = new System.Drawing.Size(110, 20);
-            this.TxtConductor.TabIndex = 31;
-            this.TxtConductor.Text = "77182708";
             // 
             // bunifuCustomLabel6
             // 
@@ -317,6 +307,14 @@ namespace PresentacionGUI
             this.DtgTaxisRegistrados.Size = new System.Drawing.Size(689, 267);
             this.DtgTaxisRegistrados.TabIndex = 1;
             // 
+            // TxtConductor
+            // 
+            this.TxtConductor.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtConductor.Location = new System.Drawing.Point(212, 300);
+            this.TxtConductor.Name = "TxtConductor";
+            this.TxtConductor.Size = new System.Drawing.Size(110, 20);
+            this.TxtConductor.TabIndex = 35;
+            // 
             // FrmRegistroTaxi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,10 +349,10 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtPropietario;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtConductor;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtKilometraje;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtConductor;
     }
 }

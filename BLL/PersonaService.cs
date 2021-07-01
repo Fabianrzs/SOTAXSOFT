@@ -20,7 +20,7 @@ namespace BLL
 
         }
 
-        public string Guardar (Persona persona)
+        public string GuardarPersona (Persona persona)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace BLL
             }
         }
 
-        public string Modificar(Persona persona, string identificacion)
+        public string ModificarPersona(Persona persona, string identificacion)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace BLL
 
         }
 
-        public string Eliminar(string identicacion)
+        public string EliminarPersona(string identicacion)
         {
             try
             {
@@ -81,14 +81,14 @@ namespace BLL
             }
         }
 
-        public ConsultaResponse Consultar(string tipo)
+        public ConsultaResponsePersona ConsultarPersonas(string tipo)
         {
             try
             {
                 connection.Open();
-                return new ConsultaResponse(repository.ConsultarRol(tipo));
+                return new ConsultaResponsePersona(repository.ConsultarRol(tipo));
             }
-            catch (Exception e) { return new ConsultaResponse($"Se preseto la siguiente Excepción: {e.Message}"); }
+            catch (Exception e) { return new ConsultaResponsePersona($"Se preseto la siguiente Excepción: {e.Message}"); }
             finally
             {
                 connection.Close();
@@ -96,52 +96,52 @@ namespace BLL
 
         }
 
-        public RegistroResponse Registro(string identificacion)
+        public RegistroResponsePersona RegistroPersona(string identificacion)
         {
             try
             {
                 connection.Open();
-                return new RegistroResponse(repository.BuscarPorIdentificacion(identificacion));
+                return new RegistroResponsePersona(repository.BuscarPorIdentificacion(identificacion));
             }
-            catch (Exception e) { return new RegistroResponse($"Se preseto la siguiente Excepción: {e.Message}"); }
+            catch (Exception e) { return new RegistroResponsePersona($"Se preseto la siguiente Excepción: {e.Message}"); }
             finally
             {
                 connection.Close();
             }
         }
 
-        public class ConsultaResponse
+        public class ConsultaResponsePersona
         {
             public List<Persona> Personas { get; set; }
             public string Mensaje { get; set; }
             public bool Error { get; set; }
 
-            public ConsultaResponse(List<Persona> personas)
+            public ConsultaResponsePersona(List<Persona> personas)
             {
                 Personas = personas;
                 Error = false;   
             }
 
-            public ConsultaResponse(string mensaje)
+            public ConsultaResponsePersona(string mensaje)
             {
                 Mensaje = mensaje;
                 Error = true;
             }
         }
 
-        public class RegistroResponse
+        public class RegistroResponsePersona
         {
             public Persona Persona { get; set; }
             public string Mensaje { get; set; }
             public bool Error { get; set; }
 
-            public RegistroResponse(Persona persona)
+            public RegistroResponsePersona(Persona persona)
             {
                 Persona = persona;
                 Error = false;
             }
 
-            public RegistroResponse(string mensaje)
+            public RegistroResponsePersona(string mensaje)
             {
                 Mensaje = mensaje;
                 Error = true;

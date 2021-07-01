@@ -31,6 +31,8 @@ namespace PresentacionGUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificaTaxi));
             this.PnlModificaTaxi = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.BtnConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -47,10 +49,8 @@ namespace PresentacionGUI
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.DtgTaxisRegistrados = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtPlaca = new Bunifu.Framework.UI.BunifuTextbox();
             this.REGISTRO = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.BtnConsultar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.TxtPlaca = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.PnlModificaTaxi.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgTaxisRegistrados)).BeginInit();
@@ -60,6 +60,7 @@ namespace PresentacionGUI
             // 
             this.PnlModificaTaxi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlModificaTaxi.BackgroundImage")));
             this.PnlModificaTaxi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlModificaTaxi.Controls.Add(this.TxtPlaca);
             this.PnlModificaTaxi.Controls.Add(this.bunifuSeparator3);
             this.PnlModificaTaxi.Controls.Add(this.BtnConsultar);
             this.PnlModificaTaxi.Controls.Add(this.bunifuSeparator2);
@@ -68,7 +69,6 @@ namespace PresentacionGUI
             this.PnlModificaTaxi.Controls.Add(this.bunifuSeparator1);
             this.PnlModificaTaxi.Controls.Add(this.DtgTaxisRegistrados);
             this.PnlModificaTaxi.Controls.Add(this.label3);
-            this.PnlModificaTaxi.Controls.Add(this.TxtPlaca);
             this.PnlModificaTaxi.Controls.Add(this.REGISTRO);
             this.PnlModificaTaxi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlModificaTaxi.GradientBottomLeft = System.Drawing.Color.Aqua;
@@ -80,6 +80,55 @@ namespace PresentacionGUI
             this.PnlModificaTaxi.Quality = 10;
             this.PnlModificaTaxi.Size = new System.Drawing.Size(1300, 700);
             this.PnlModificaTaxi.TabIndex = 23;
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.ForeColor = System.Drawing.Color.White;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(135, 418);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(510, 14);
+            this.bunifuSeparator3.TabIndex = 46;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = false;
+            // 
+            // BtnConsultar
+            // 
+            this.BtnConsultar.Activecolor = System.Drawing.Color.DarkRed;
+            this.BtnConsultar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnConsultar.BorderRadius = 0;
+            this.BtnConsultar.ButtonText = "    CONSULTAR";
+            this.BtnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnConsultar.DisabledColor = System.Drawing.Color.Gray;
+            this.BtnConsultar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtnConsultar.Iconcolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.Iconimage = global::PresentacionGUI.Properties.Resources.consulta;
+            this.BtnConsultar.Iconimage_right = null;
+            this.BtnConsultar.Iconimage_right_Selected = null;
+            this.BtnConsultar.Iconimage_Selected = null;
+            this.BtnConsultar.IconMarginLeft = 0;
+            this.BtnConsultar.IconMarginRight = 0;
+            this.BtnConsultar.IconRightVisible = true;
+            this.BtnConsultar.IconRightZoom = 0D;
+            this.BtnConsultar.IconVisible = true;
+            this.BtnConsultar.IconZoom = 50D;
+            this.BtnConsultar.IsTab = false;
+            this.BtnConsultar.Location = new System.Drawing.Point(473, 390);
+            this.BtnConsultar.Name = "BtnConsultar";
+            this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.BtnConsultar.selected = false;
+            this.BtnConsultar.Size = new System.Drawing.Size(120, 26);
+            this.BtnConsultar.TabIndex = 45;
+            this.BtnConsultar.Text = "    CONSULTAR";
+            this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConsultar.Textcolor = System.Drawing.Color.Black;
+            this.BtnConsultar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
             // bunifuSeparator2
             // 
@@ -193,6 +242,7 @@ namespace PresentacionGUI
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGuardar.Textcolor = System.Drawing.Color.White;
             this.BtnGuardar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // bunifuCustomLabel2
             // 
@@ -294,19 +344,6 @@ namespace PresentacionGUI
             this.label3.TabIndex = 21;
             this.label3.Text = "Placa";
             // 
-            // TxtPlaca
-            // 
-            this.TxtPlaca.BackColor = System.Drawing.Color.White;
-            this.TxtPlaca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TxtPlaca.BackgroundImage")));
-            this.TxtPlaca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TxtPlaca.ForeColor = System.Drawing.Color.White;
-            this.TxtPlaca.Icon = ((System.Drawing.Image)(resources.GetObject("TxtPlaca.Icon")));
-            this.TxtPlaca.Location = new System.Drawing.Point(264, 394);
-            this.TxtPlaca.Name = "TxtPlaca";
-            this.TxtPlaca.Size = new System.Drawing.Size(110, 18);
-            this.TxtPlaca.TabIndex = 22;
-            this.TxtPlaca.text = "";
-            // 
             // REGISTRO
             // 
             this.REGISTRO.AccessibleName = "";
@@ -320,53 +357,13 @@ namespace PresentacionGUI
             this.REGISTRO.Text = "MODIFICAR";
             this.REGISTRO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // BtnConsultar
+            // TxtPlaca
             // 
-            this.BtnConsultar.Activecolor = System.Drawing.Color.DarkRed;
-            this.BtnConsultar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnConsultar.BorderRadius = 0;
-            this.BtnConsultar.ButtonText = "    CONSULTAR";
-            this.BtnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnConsultar.DisabledColor = System.Drawing.Color.Gray;
-            this.BtnConsultar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnConsultar.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtnConsultar.Iconimage = global::PresentacionGUI.Properties.Resources.consulta;
-            this.BtnConsultar.Iconimage_right = null;
-            this.BtnConsultar.Iconimage_right_Selected = null;
-            this.BtnConsultar.Iconimage_Selected = null;
-            this.BtnConsultar.IconMarginLeft = 0;
-            this.BtnConsultar.IconMarginRight = 0;
-            this.BtnConsultar.IconRightVisible = true;
-            this.BtnConsultar.IconRightZoom = 0D;
-            this.BtnConsultar.IconVisible = true;
-            this.BtnConsultar.IconZoom = 50D;
-            this.BtnConsultar.IsTab = false;
-            this.BtnConsultar.Location = new System.Drawing.Point(473, 390);
-            this.BtnConsultar.Name = "BtnConsultar";
-            this.BtnConsultar.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtnConsultar.OnHovercolor = System.Drawing.Color.Transparent;
-            this.BtnConsultar.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.BtnConsultar.selected = false;
-            this.BtnConsultar.Size = new System.Drawing.Size(120, 26);
-            this.BtnConsultar.TabIndex = 45;
-            this.BtnConsultar.Text = "    CONSULTAR";
-            this.BtnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnConsultar.Textcolor = System.Drawing.Color.Black;
-            this.BtnConsultar.TextFont = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator3.ForeColor = System.Drawing.Color.White;
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(135, 418);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(510, 14);
-            this.bunifuSeparator3.TabIndex = 46;
-            this.bunifuSeparator3.Transparency = 255;
-            this.bunifuSeparator3.Vertical = false;
+            this.TxtPlaca.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TxtPlaca.Location = new System.Drawing.Point(282, 395);
+            this.TxtPlaca.Name = "TxtPlaca";
+            this.TxtPlaca.Size = new System.Drawing.Size(100, 20);
+            this.TxtPlaca.TabIndex = 46;
             // 
             // FrmModificaTaxi
             // 
@@ -402,12 +399,12 @@ namespace PresentacionGUI
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.DataGridView DtgTaxisRegistrados;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuTextbox TxtPlaca;
         private Bunifu.Framework.UI.BunifuCustomLabel REGISTRO;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtModelo;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
         private Bunifu.Framework.UI.BunifuFlatButton BtnConsultar;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox TxtPlaca;
     }
 }

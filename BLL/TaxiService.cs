@@ -21,21 +21,21 @@ namespace BLL
             _repository = new PersonaRepository(connection);
         }
 
-        public string Guardar (Taxi taxi, string idPropietario, string idConducto)
+        public string GuardarTaxi (Taxi taxi, string idPropietario, string idConducto)
         {
             try
             {
                 connection.Open();
-                Propietario propietario = (Propietario)_repository.BuscarPorIdentificacion(idPropietario);
-                Conductor conductor = (Conductor)_repository.BuscarPorIdentificacion(idConducto);
-                if (propietario != null)
+
+                taxi.Conductor = (Conductor)_repository.BuscarPorIdentificacion(idConducto);
+                taxi.Propietario = (Propietario)_repository.BuscarPorIdentificacion(idPropietario);
+
+                if (taxi.Propietario != null)
                 {
-                    if (conductor != null)
+                    if (taxi.Conductor != null)
                     {
                         if (repository.BuscarPorPlaca(taxi.Placa) == null)
                         {
-                            taxi.Conductor = conductor;
-                            taxi.Propietario = propietario;
                             repository.GuardarTaxi(taxi);
                             return $"Registro guardado satisfactoriamente";
                         }
@@ -55,22 +55,22 @@ namespace BLL
 
         }
 
-        public string Modificar(Taxi taxi, string idPropietario, string idConducto)
+        public string ModificarTaxi(Taxi taxi, string idPropietario, string idConducto, string placa)
         {
             try
             {
                 connection.Open();
-                Propietario propietario = (Propietario)_repository.BuscarPorIdentificacion(idPropietario);
-                Conductor conductor = (Conductor)_repository.BuscarPorIdentificacion(idConducto);
-                if (propietario != null)
+
+                taxi.Conductor = (Conductor)_repository.BuscarPorIdentificacion(idConducto);
+                taxi.Propietario = (Propietario)_repository.BuscarPorIdentificacion(idPropietario);
+
+                if (taxi.Propietario != null)
                 {
-                    if (conductor != null)
+                    if (taxi.Conductor != null)
                     {
-                        if (repository.BuscarPorPlaca(taxi.Placa) == null)
-                        {
-                            taxi.Conductor = conductor;
-                            taxi.Propietario = propietario;
-                            repository.GuardarTaxi(taxi);
+                        if (repository.BuscarPorPlaca(placa) != null)
+                        {                 
+                            repository.Modificar(taxi);
                             return $"Registro modificado satisfactoriamente";
                         }
                         return $"La placa no puede ser cambiada";
@@ -89,7 +89,7 @@ namespace BLL
 
         }
 
-        public string Eliminar(string placa)
+        public string EliminarTaxi(string placa)
         {
             try
             {
@@ -108,14 +108,14 @@ namespace BLL
             }
         }
 
-        public ConsultaResponse Consultar()
+        public ConsultaResponseTaxi ConsultarTaxis()
         {
             try
             {
                 connection.Open();
-                return new ConsultaResponse(repository.ConsultarTaxis());
+                return new ConsultaResponseTaxi(repository.ConsultarTaxis());
             }
-            catch (Exception e) { return new ConsultaResponse($"Se preseto la siguiente Excepción: {e.Message}"); }
+            catch (Exception e) { return new ConsultaResponseTaxi($"Se preseto la siguiente Excepción: {e.Message}"); }
             finally
             {
                 connection.Close();
@@ -123,58 +123,56 @@ namespace BLL
 
         }
 
-        public RegistroResponse Registro(string placa)
+        public RegistroResponseTaxi RegistroTaxi(string placa)
         {
             try
             {
                 connection.Open();
-                return new RegistroResponse(repository.BuscarPorPlaca(placa));
+                return new RegistroResponseTaxi(repository.BuscarPorPlaca(placa));
             }
-            catch (Exception e) { return new RegistroResponse($"Se preseto la siguiente Excepción: {e.Message}"); }
+            catch (Exception e) { return new RegistroResponseTaxi($"Se preseto la siguiente Excepción: {e.Message}"); }
             finally
             {
                 connection.Close();
             }
         }
 
-        public class ConsultaResponse
+        public class ConsultaResponseTaxi
         {
             public List<Taxi> Taxis { get; set; }
             public string Mensaje { get; set; }
             public bool Error { get; set; }
 
-            public ConsultaResponse(List<Taxi> taxis)
+            public ConsultaResponseTaxi(List<Taxi> taxis)
             {
                 Taxis = taxis;
                 Error = false;
             }
 
-            public ConsultaResponse(string mensaje)
+            public ConsultaResponseTaxi(string mensaje)
             {
                 Mensaje = mensaje;
                 Error = true;
             }
         }
 
-        public class RegistroResponse
+        public class RegistroResponseTaxi
         {
             public Taxi Taxi { get; set; }
             public string Mensaje { get; set; }
             public bool Error { get; set; }
 
-            public RegistroResponse(Taxi taxi)
+            public RegistroResponseTaxi(Taxi taxi)
             {
                 Taxi = taxi;
                 Error = false;
             }
 
-            public RegistroResponse(string mensaje)
+            public RegistroResponseTaxi(string mensaje)
             {
                 Mensaje = mensaje;
                 Error = true;
             }
         }
-
-
     }
 }

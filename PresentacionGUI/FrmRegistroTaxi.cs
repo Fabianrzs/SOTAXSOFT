@@ -22,13 +22,39 @@ namespace PresentacionGUI
             service = new TaxiService(ConfigConnection.connectionString);
             LoaderTablet();
         }
+
+        private void addsColumnas()
+        {
+            DtgTaxisRegistrados.ColumnCount = 7;
+            DtgTaxisRegistrados.ColumnHeadersVisible = true;
+
+            DtgTaxisRegistrados.Columns[0].Name = "Placa";
+            DtgTaxisRegistrados.Columns[1].Name = "Modelo";
+            DtgTaxisRegistrados.Columns[2].Name = "Kilometraje";
+            DtgTaxisRegistrados.Columns[3].Name = "Identificacion Propietario";
+            DtgTaxisRegistrados.Columns[4].Name = "Propietario";
+            DtgTaxisRegistrados.Columns[5].Name = "Identificacion Conductor";
+            DtgTaxisRegistrados.Columns[6].Name = "Conductor";
+
+        }
+
         private void LoaderTablet()
         {
-            ConsultaResponse response = service.Consultar();
+            ConsultaResponseTaxi response = service.ConsultarTaxis();
 
             if (!response.Error)
             {
-                DtgTaxisRegistrados.DataSource = response.Taxis;
+                addsColumnas();
+                foreach (var item in response.Taxis)
+                {
+                    DtgTaxisRegistrados.Rows.Add(item.Placa, item.Modelo, item.Kilometraje,
+                        item.Propietario.Identificacion,
+                        $"{ item.Propietario.PrimerNombre} {item.Propietario.PrimerApellido}",
+                        item.Conductor.Identificacion,
+                        $"{ item.Conductor.PrimerNombre} {item.Conductor.PrimerApellido}");
+                }
+
+
             }
             else { MessageBox.Show(response.Mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
@@ -47,10 +73,10 @@ namespace PresentacionGUI
             {
                 Placa = TxtPlaca.Text,
                 Modelo = TxtModelo.Text,
-                Kilometraje = Convert.ToDouble(TxtKilometraje.Text)
+                Kilometraje = (TxtKilometraje.Text)
             };
 
-            string mensaje = service.Guardar(taxi, TxtPropietario.Text, TxtConductor.Text);
+            string mensaje = service.GuardarTaxi(taxi, TxtPropietario.Text, TxtConductor.Text);
             MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (mensaje.Equals("Registro guardado satisfactoriamente")) LimpiarCampos(this); LoaderTablet();
 
@@ -64,6 +90,7 @@ namespace PresentacionGUI
                 if (c.Controls.Count > 0) LimpiarCampos(c);
             } TxtPlaca.Focus();
         }
+
 
     }
 }

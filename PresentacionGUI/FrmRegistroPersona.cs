@@ -27,7 +27,7 @@ namespace PresentacionGUI
 
         private void LoaderTablet()
         {
-            ConsultaResponse response = service.Consultar(tipoDetalle);
+            ConsultaResponsePersona response = service.ConsultarPersonas(tipoDetalle);
 
             if (!response.Error)
             {
@@ -188,7 +188,7 @@ namespace PresentacionGUI
                 NumeroContacto = TxtNumeroContacto.Text,
             };
 
-            string mensaje = service.Guardar(propietario);
+            string mensaje = service.GuardarPersona(propietario);
 
             MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -208,7 +208,7 @@ namespace PresentacionGUI
                 SegundoApellido = TxtSegundoApellido.Text,
                 NumeroContacto = TxtNumeroContacto.Text,
             };
-            string mensaje = service.Guardar(conductor);
+            string mensaje = service.GuardarPersona(conductor);
 
             MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

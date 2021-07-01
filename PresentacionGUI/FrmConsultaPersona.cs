@@ -28,7 +28,7 @@ namespace PresentacionGUI
 
         private void LoaderTablet()
         {
-            ConsultaResponse response = service.Consultar(tipoDetalle);
+            ConsultaResponsePersona response = service.ConsultarPersonas(tipoDetalle);
 
             if (!response.Error)
             {
@@ -58,7 +58,7 @@ namespace PresentacionGUI
         {
             if (!String.IsNullOrEmpty(TxtIdentificacion.Text))
             {
-                RegistroResponse response = service.Registro(TxtIdentificacion.text);
+                RegistroResponsePersona response = service.RegistroPersona(TxtIdentificacion.text);
 
                 if (!response.Error)
                 {

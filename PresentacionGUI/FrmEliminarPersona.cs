@@ -28,7 +28,7 @@ namespace PresentacionGUI
 
         private void LoaderTablet()
         {
-            ConsultaResponse response = service.Consultar(tipoDetalle);
+            ConsultaResponsePersona response = service.ConsultarPersonas(tipoDetalle);
 
             if (!response.Error)
             {
@@ -44,7 +44,7 @@ namespace PresentacionGUI
         {
             if (!String.IsNullOrEmpty(TxtIdentificacion.Text))
             {
-                RegistroResponse response = service.Registro(TxtIdentificacion.Text);
+                RegistroResponsePersona response = service.RegistroPersona(TxtIdentificacion.Text);
 
                 if (!response.Error)
                 {
@@ -78,7 +78,7 @@ namespace PresentacionGUI
         {
             if (ValidateChildren())
             {
-                MessageBox.Show(service.Eliminar(TxtIdentificacion.Text), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information); LoaderTablet();
+                MessageBox.Show(service.EliminarPersona(TxtIdentificacion.Text), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information); LoaderTablet();
             }
         }
     }

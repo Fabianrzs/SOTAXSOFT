@@ -28,7 +28,7 @@ namespace PresentacionGUI
 
         private void LoaderTablet()
         {
-            ConsultaResponse response = service.Consultar(tipoDetalle);
+            ConsultaResponsePersona response = service.ConsultarPersonas(tipoDetalle);
 
             if (!response.Error)
             {
@@ -189,7 +189,7 @@ namespace PresentacionGUI
         {
             if (!String.IsNullOrEmpty(TxtIdentificacion.Text))
             {
-                RegistroResponse response = service.Registro(TxtIdentificacion.Text);
+                RegistroResponsePersona response = service.RegistroPersona(TxtIdentificacion.Text);
 
                 if (!response.Error)
                 {
@@ -239,7 +239,7 @@ namespace PresentacionGUI
                 NumeroContacto = TxtNumeroContacto.Text,
             };
 
-            string mensaje = service.Modificar(propietario, TxtIdentificacion.Text);
+            string mensaje = service.ModificarPersona(propietario, TxtIdentificacion.Text);
 
             MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -259,7 +259,7 @@ namespace PresentacionGUI
                 SegundoApellido = TxtSegundoApellido.Text,
                 NumeroContacto = TxtNumeroContacto.Text,
             };
-            string mensaje = service.Modificar(conductor, TxtIdentificacion.Text);
+            string mensaje = service.ModificarPersona(conductor, TxtIdentificacion.Text);
 
             MessageBox.Show(mensaje, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -269,19 +269,12 @@ namespace PresentacionGUI
 
         private void LimpiarCampos(Control parent)
         {
-
             foreach (Control c in parent.Controls)
             {
-                if (c is TextBox)
-                {
-                    c.Text = "";
-                }
-                if (c.Controls.Count > 0)
-                {
-                    LimpiarCampos(c);
-                }
-            }
+                if (c is TextBox) c.Text = "";
+                if (c.Controls.Count > 0) LimpiarCampos(c);
 
+            }
             TxtIdentificacion.Focus();
         }
 

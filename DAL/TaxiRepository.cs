@@ -27,8 +27,8 @@ namespace DAL
                 command.CommandText = "INSERT INTO Taxis (Placa, Modelo, Kilometraje, IdPropietario,IdConductor)" +
                     "Values (@Placa, @Modelo, @Kilometraje, @IdPropietario, @IdConductor)";
                 command.Parameters.Add("@Placa", SqlDbType.VarChar).Value = taxi.Placa;
-                command.Parameters.Add("@Modelo", SqlDbType.Decimal).Value = taxi.Modelo;
-                command.Parameters.Add("@Kilometraje", SqlDbType.Decimal).Value = taxi.Kilometraje;
+                command.Parameters.Add("@Modelo", SqlDbType.VarChar).Value = taxi.Modelo;
+                command.Parameters.Add("@Kilometraje", SqlDbType.VarChar).Value = taxi.Kilometraje;
                 command.Parameters.Add("@IdConductor", SqlDbType.VarChar).Value = taxi.Conductor.Identificacion;
                 command.Parameters.Add("@IdPropietario", SqlDbType.VarChar).Value = taxi.Propietario.Identificacion;
 
@@ -59,8 +59,7 @@ namespace DAL
             using (var command = _connection.CreateCommand())
             {
 
-                command.CommandText = "select Placa, Modelo, Kilometraje, IdPropietario, " +
-                    "IdConductor from Taxis";
+                command.CommandText = "SELECT Placa, Modelo, Kilometraje, IdPropietario, IdConductor FROM TAXIS";
 
                 var dataReader = command.ExecuteReader();
                 if (dataReader.HasRows)
@@ -79,16 +78,14 @@ namespace DAL
         {
             using (var command = _connection.CreateCommand())
             {
-
-                command.Parameters.Add("@Placa", SqlDbType.VarChar).Value = taxi.Placa;
+                
                 command.Parameters.Add("@Modelo", SqlDbType.Decimal).Value = taxi.Modelo;
-                command.Parameters.Add("@Kilometraje", SqlDbType.Decimal).Value = taxi.Kilometraje;
+                command.Parameters.Add("@Kilometraje", SqlDbType.VarChar).Value = taxi.Kilometraje;
                 command.Parameters.Add("@IdConductor", SqlDbType.VarChar).Value = taxi.Conductor.Identificacion;
                 command.Parameters.Add("@IdPropietario", SqlDbType.VarChar).Value = taxi.Propietario.Identificacion;
+                command.Parameters.Add("@Placa", SqlDbType.VarChar).Value = taxi.Placa;
 
-                command.CommandText = "Update Taxis set Modelo = @Modelo," +
-                   " Kilometraje = @Kilometraje, IdConductor =  @IdConductor, " +
-                   "IdPropietario = @IdPropietario, where Placa = @Placa";
+                command.CommandText = "Update Taxis set Modelo = @Modelo, Kilometraje = @Kilometraje, IdConductor =  @IdConductor, IdPropietario = @IdPropietario where Placa = @Placa";
                 return command.ExecuteNonQuery();
             }
         }
@@ -107,22 +104,25 @@ namespace DAL
         private Taxi DataReaderMapToTaxi(SqlDataReader dataReader)
         {
             Taxi taxi = null;
-            Conductor conductor;
-            Propietario propietario;
+            
             if (!dataReader.HasRows) return taxi;
             else
             {
-                taxi = new Taxi();
-                taxi.Placa = (string)dataReader["Placa"];
-                taxi.Modelo = (string)dataReader["Modelo"];
-                taxi.Kilometraje = (double)dataReader["Kilometraje"];
-                propietario = repository.BuscarPropietario((string)dataReader["IdPropietario"]);
-                taxi.Propietario = propietario;
-                conductor = repository.BuscarConductor((string)dataReader["IdConductor"]);
-                taxi.Conductor = conductor;
+                string placa = (string)dataReader["Placa"];
+                string modelo = (string)dataReader["Modelo"];
+                string kilometraje = (string)dataReader["Kilometraje"];
+
+                Conductor conductor = (Conductor)repository.BuscarPorIdentificacion((string)dataReader["IdConductor"]);
+                Propietario propietario = (Propietario)repository.BuscarPorIdentificacion((string)dataReader["IdPropietario"]);
+
+                taxi = new Taxi(propietario, conductor)
+                {
+                    Placa = (string)dataReader["Placa"],
+                    Modelo = (string)dataReader["Modelo"],
+                    Kilometraje = (string)dataReader["Kilometraje"]
+                };            
             }
             return taxi;
-
         }
     }
 }
