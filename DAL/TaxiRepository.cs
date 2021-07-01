@@ -107,19 +107,19 @@ namespace DAL
         private Taxi DataReaderMapToTaxi(SqlDataReader dataReader)
         {
             Taxi taxi = null;
-            Persona persona;
+            Conductor conductor;
+            Propietario propietario;
             if (!dataReader.HasRows) return taxi;
             else
             {
                 taxi = new Taxi();
-
-                taxi.Placa = dataReader.GetString(0);
-                taxi.Modelo = dataReader.GetDouble(1);
-                taxi.Kilometraje = dataReader.GetDouble(2);
-                persona = repository.BuscarPorIdentificacion(dataReader.GetString(3));
-                taxi.Propietario = (Propietario)persona;
-                persona = repository.BuscarPorIdentificacion(dataReader.GetString(4));
-                taxi.Conductor = (Conductor)persona;
+                taxi.Placa = (string)dataReader["Placa"];
+                taxi.Modelo = (string)dataReader["Modelo"];
+                taxi.Kilometraje = (double)dataReader["Kilometraje"];
+                propietario = repository.BuscarPropietario((string)dataReader["IdPropietario"]);
+                taxi.Propietario = propietario;
+                conductor = repository.BuscarConductor((string)dataReader["IdConductor"]);
+                taxi.Conductor = conductor;
             }
             return taxi;
 

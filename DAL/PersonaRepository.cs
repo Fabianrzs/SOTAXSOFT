@@ -40,7 +40,6 @@ namespace DAL
 
         public Persona BuscarPorIdentificacion(string identificacion)
         {
-
             using (var command = _connection.CreateCommand())
             {
                 command.Parameters.Add("@Identificacion", SqlDbType.VarChar).Value = identificacion;
@@ -52,6 +51,38 @@ namespace DAL
 
                 return DataReaderMapToPerson(dataReader);
             } 
+        }
+
+        public Conductor BuscarConductor(string identificacion)
+        {
+
+            using (var command = _connection.CreateCommand())
+            {
+                command.Parameters.Add("@Identificacion", SqlDbType.VarChar).Value = identificacion;
+                command.CommandText = "select Identificacion, PrimerNombre, SegundoNombre, PrimerApellido, " +
+                    "SegundoApellido, NumeroContacto, Rol from personas where Identificacion=@Identificacion";
+
+                var dataReader = command.ExecuteReader();
+                dataReader.Read();
+
+                return (Conductor)DataReaderMapToPerson(dataReader);
+            }
+        }
+
+        public Propietario BuscarPropietario(string identificacion)
+        {
+
+            using (var command = _connection.CreateCommand())
+            {
+                command.Parameters.Add("@Identificacion", SqlDbType.VarChar).Value = identificacion;
+                command.CommandText = "select Identificacion, PrimerNombre, SegundoNombre, PrimerApellido, " +
+                    "SegundoApellido, NumeroContacto, Rol from personas where Identificacion=@Identificacion";
+
+                var dataReader = command.ExecuteReader();
+                dataReader.Read();
+
+                return (Propietario)DataReaderMapToPerson(dataReader);
+            }
         }
 
         //public Persona BuscarPersona(string identificacion, string rol)
@@ -128,31 +159,29 @@ namespace DAL
         private Persona DataReaderMapToPerson(SqlDataReader dataReader)
         {
 
-            Persona persona = null;
-
-            if (!dataReader.HasRows) return persona;
+            if (!dataReader.HasRows) return null;
 
             if (dataReader.GetString(6).Equals("propietario"))
             {
-                persona = new Propietario();
-                persona.Identificacion = dataReader.GetString(0);
-                persona.PrimerNombre = dataReader.GetString(1);
-                persona.SegundoNombre = dataReader.GetString(2);
-                persona.PrimerApellido = dataReader.GetString(3);
-                persona.SegundoApellido = dataReader.GetString(4);
-                persona.NumeroContacto = dataReader.GetString(5);
-                return persona;
+                Propietario propietario = new Propietario();
+                propietario.Identificacion = dataReader.GetString(0);
+                propietario.PrimerNombre = dataReader.GetString(1);
+                propietario.SegundoNombre = dataReader.GetString(2);
+                propietario.PrimerApellido = dataReader.GetString(3);
+                propietario.SegundoApellido = dataReader.GetString(4);
+                propietario.NumeroContacto = dataReader.GetString(5);
+                return (Propietario)propietario;
             }
             else
             {
-                persona = new Conductor();
-                persona.Identificacion = dataReader.GetString(0);
-                persona.PrimerNombre = dataReader.GetString(1);
-                persona.SegundoNombre = dataReader.GetString(2);
-                persona.PrimerApellido = dataReader.GetString(3);
-                persona.SegundoApellido = dataReader.GetString(4);
-                persona.NumeroContacto = dataReader.GetString(5);
-                return persona;
+                Conductor conductor = new Conductor();
+                conductor.Identificacion = dataReader.GetString(0);
+                conductor.PrimerNombre = dataReader.GetString(1);
+                conductor.SegundoNombre = dataReader.GetString(2);
+                conductor.PrimerApellido = dataReader.GetString(3);
+                conductor.SegundoApellido = dataReader.GetString(4);
+                conductor.NumeroContacto = dataReader.GetString(5);
+                return (Conductor)conductor;
             }
 
         }

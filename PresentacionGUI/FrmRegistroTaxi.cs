@@ -46,7 +46,7 @@ namespace PresentacionGUI
             Taxi taxi = new Taxi()
             {
                 Placa = TxtPlaca.Text,
-                Modelo = Convert.ToDouble(TxtModelo.Text),
+                Modelo = TxtModelo.Text,
                 Kilometraje = Convert.ToDouble(TxtKilometraje.Text)
             };
 
